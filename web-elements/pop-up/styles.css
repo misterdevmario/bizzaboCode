@@ -1,0 +1,11 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 120, 120);
+    color: #fff;
+    background-image: url("https://res.cloudinary.com/dfiho6azg/image/upload/v1701815500/text-box-png-27_rst9dp.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    font-weight: bold;
+}
