@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        //Scroll to HOME
+        document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(1) > a > div").removeAttribute("href")
+        let home = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(1) > a > div")
+        home.addEventListener("click", ()=>scroll("section-3985356"))
+        //Scroll to ABOUT
+       document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(2) > a").removeAttribute("href")
+        let about = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(2) > a")
+        about.addEventListener("click", ()=>scroll("section-3985357"))
+        //Scroll to SPEAKERS
+        document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(3) > a").removeAttribute("href")
+        let speakers = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(3) > a")
+        speakers.addEventListener("click", ()=>scroll("section-4019890"))
+
+
+        function scroll(scrollTo) {
+            const element = document.getElementById(scrollTo);
+            element.scrollIntoView();
+        }
+    </script>
+</body>
+
+</html>

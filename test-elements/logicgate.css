@@ -1,360 +1,61 @@
-/* 2X Custom */
-
-body, .react-main, .agenda-view.agenda-day-selector {
-    background-color: transparent !important;
-}
-.login-buttons-container, .agenda-view .tab-buttons-container {
-    display: none;
-}
-.agenda-view {
-    font-family: 'Inter', sans-serif;
-    /*color: #FFF;*/
-}
-.agenda-view .day-title {
-    color: #FFF !important;
-}
-.agenda-view .agenda-search-container .agenda-search .agenda-separator {
-    display: none;
-}
-.days-row {
-    text-align: center;
-}
-.days-row .day-button-container {
-    padding: 5px 10px !important;
+/*Seting speakers in row of 5  -mario.r@bizzabo.com 01/02/24*/
+#section-3847645 > div > div{
+  width: 99vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.days-row .day-button-container .day-button-wrapper .day-elems {
-    color: #FFF;
-    border: 1px solid #FFF !important;
-    border-radius: 4px;
-    padding: 8px 30px !important;
+#section-3847645 > div > div > div.col-xs-12.text-center.attendees-faces-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
 }
-.days-row .day-button-container .day-button-wrapper .day-elems.selected {
-    background-color: #8bff8b;
-    border: 1px solid #8bff8b !important;
-    color: #000;
-    background-image: linear-gradient(to right, #8bff8b, #00e0df);
-    transition: 0.3s;
+#section-3847645 > div > div > div.col-xs-12.text-center.attendees-faces-holder > div{
+  width: 60vw;
+  min-height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.days-row .day-button-container .day-button-wrapper .day-elem-border {
-    height: 0 !important;
-}
-.agenda-view.session-list-view.sideBySide {
-    margin-top: 180px !important;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container {
-    background-color: #323232 !important;
-    border-radius: 16px;
-    border: none;
-}
-.session-info-text {
-    margin-bottom: 10px;
-}
-.session-info-text .session-time, .session-info-text .session-info-text-light {
-    color: #FFF;
-}
-.session-info-text .session-info-text-light.session-duration {
-    color: #8BFF8B;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .session-name a, 
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .session-name span,
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .session-info .session-location,
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .icon-AgendaAtt_arrow,
-.session-location .location-icon {
-    color: #FFF;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .session-info .session-location {
-    font-size: 14px;
-    font-weight: 400;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .session-name {
-    font-size: 21px;
-    line-height: 1.4;
-    font-weight: 600;
-    margin-bottom: 2px;
-}
-.slick-list > .slick-track > .slick-slide > div > .session-container > .session-info > div:nth-child(2) > .session-name {
-    /*height: 130px;*/
-    min-height: 124px !important;
-    margin-top: -22px;
+/*Eliminating space among speakers info elements -mario.r@bizzabo.com 01/02/24*/
+.attendees-faces-holder > .row > div{
+  width: 250px;
+  height: 390px;
+margin:10px;
+display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.agenda-view .session-list-container .session-carousel .slider-container .session-container .description-container,
-.agenda-view .location-wrapper {
-    min-height: 0px;
-}
-.session-carousel .session-container {
-    min-height: 330px !important;
-}
-.agenda-view .session-list-container .session-carousel .slider-container .session-container .session-info {
-    min-height: unset;
-}
-.agenda-view .session-list-container .session-carousel .slider-container .session-container .session-name {
-    -webkit-line-clamp: 4;
-}
-.agenda-view .session-list-container .session-carousel .slider-container .session-container .session-name a {
-    white-space: unset !important;
-}
-i.starIcon {
-    color: #000;
-}
-.speaker-photo .image-holder.round {
-    overflow: hidden;
-    border-radius: 100%;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-info .speaker-name, 
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-info .speaker-title, 
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-info .speaker-company {
-    color: #FFF !important;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-info .speaker-position {
-    color: #a3a3a3 !important;
-}
-.speakers-container.has-speakers:not(:empty) {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-info .text-ellipsis {
-    /*
-    white-space: unset !important;
-    overflow: unset !important;
-    text-overflow: unset !important;
-    */
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-info .speaker-name {
-    padding: 0px 0 5px 0 !important;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container.has-speakers {
-    min-height: 0px;
-}
-.agenda-view .session-list-container .session-day-container .time-row .time-elem {
-    margin-top: 0;
-}
-.agenda-view .session-list-container .session-day-container .time-row .time-elem > div {
-    background-color: #88FF88 !important;
-    background-image: linear-gradient(to right, #8bff8b, #00e0df) !important;
-    border: 1px solid #8bff8b !important;
-    color: #000;
-    font-weight: 700;
-}
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .full-width time span.session-duration > span {
-    display: none;
-}
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .full-width time span:nth-child(4),
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .full-width time span:nth-child(5),
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .full-width time span:nth-child(6),
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .full-width time span:nth-child(7) {
-    display: none;
-}
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .slider-container time span:nth-child(7),
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .slider-container time > br {
-    display: none !important;
-}
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .full-width time span.session-duration::before,
-.agenda-view .session-list-container .session-day-container .sessions-time-elem .slider-container time span.session-duration::before {
-    content: '\00a0'; /* Unicode character for non-breaking space */
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-photo img,
-.agenda-view .session-page .session-speaker-container .speaker-photo img,
-.speaker-view .speaker-container .speaker-profile .speaker-image-wrapper .speaker-image-stub {
-    filter: grayscale(1);
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-photo .image-holder img,
-.agenda-view .session-page .session-speaker-container .speaker-photo .image-holder img,
-.speaker-view .speaker-container .speaker-profile .speaker-image-wrapper img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-    object-position: center center;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-photo .image-holder,
-.agenda-view .session-page .session-speaker-container .speaker-photo .image-holder,
-.speaker-view .speaker-container .speaker-profile .speaker-image-wrapper {
-    position: relative;
-    padding: 8px;
-    border-radius: 100%;
-    overflow: hidden;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-photo .image-holder:before,
-.agenda-view .session-page .session-speaker-container .speaker-photo .image-holder:before,
-.speaker-view .speaker-container .speaker-profile .speaker-image-wrapper:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 100%;
-    padding: 8px;
-    background: linear-gradient(45deg, #8bff8b, #00E0DF);
-    -webkit-mask:
-     linear-gradient(#fff 0 0) content-box, 
-     linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-          mask-composite: exclude;
-}
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-photo .image-holder,
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .speakers-container .speakers-carousel .speaker-photo .image-holder:before {
-    padding: .16rem;
-}
-.speaker-view .speaker-container .speaker-profile .speaker-image-wrapper,
-.speaker-view .speaker-container .speaker-profile .speaker-image-wrapper:before {
-    padding: 12px;
-}
-.speaker-view .speaker-container .speaker-profile .speaker-image-wrapper {
-    transform: scale(.75);
+
+/*Setting flex wrap to speakers on speakers page -mario.r@bizzabo.com*/
+#section-599458 > div > div > div.col-xs-12.text-center.attendees-faces-holder > div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-@media (min-width: 1200px){
-    .agenda-view .agenda-search-container .agenda-search .search-row .search-session {
-        width: 16.66666667%;
-    }
+/*Eliminating space among speakers info elements -mario.r@bizzabo.com 02/02/24*/
+.atom-fullname,.attendee-name, .atom-text1, .attendee-title, .atom-text2, .attendee-company{
+width: initial;
+margin-bottom: 0px !important;
+margin-top: 0px !important;
 }
 
-/* Session page */
-body.color-1-background-opacity {
-    background-color: rgba(0, 0, 0, 0) !important;
-}
-.agenda-view.top-agenda-margin-double {
-    margin-top: 50px;
-}
-.agenda-view .session-page .session-info-container .session-dates {
-    color: #000;
-}
-.agenda-view .session-page .session-control-buttons .control-button.back-to-agenda {
-    background-color: #00E0DF !important;
-    color: #000 !important;
-    font-weight: 700;
-    letter-spacing: .15em;
-}
-.agenda-view .session-page .session-info-container .session-location {
-    color: #000;
-    font-size: 16px;
-}
-.agenda-view .session-page .session-info-container .session-location .location-icon {
-    font-weight: 600;
-}
-.agenda-view .session-page .session-info-container .session-location .location-icon,
-.agenda-view .session-page .session-speaker-container .speaker-info .speaker-name,
-.agenda-view .session-page .session-speaker-container .speaker-info .speaker-title,
-.agenda-view .session-page .session-speaker-container .speaker-info .speaker-company {
-    color: #000 !important;
-}
-.agenda-view .session-page .session-speaker-container .speaker-info .speaker-position {
-    color: #a3a3a3 !important;
-}
-.agenda-view .session-page .session-speaker-container .speaker-info .speaker-name {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-.agenda-view .session-page .session-info-container .session-title {
-    color: #000;
-    font-weight: 700;
-}
-.agenda-view .session-page .session-section-title {
-    color: #000;
-    font-size: 22px !important;
-}
-.agenda-view .session-page .session-section-container {
-    padding: 20px 20px 30px 40px;
-}
-.agenda-view .session-page .title-indicator {
-    left: -40px !important;
-    background-color: #000 !important;
+@media screen and (max-width: 1920px) {
+  #section-3847645 > div > div > div.col-xs-12.text-center.attendees-faces-holder > div{
+      width: 60vw;
+ }
 }
 
-/* Speaker page */
-.speaker-view .speaker-container {
-    padding-top: 40px !important;
+@media screen and (max-width: 1800px) {
+  #section-3847645 > div > div > div.col-xs-12.text-center.attendees-faces-holder > div{
+      width: 90vw;
+   
+  }
 }
-.speaker-view .speaker-container .speaker-profile .speaker-back-button, 
-.speaker-view .speaker-container .speaker-profile .speaker-share-button {
-    color: #000 !important;
-    font-weight: 700;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    background-color: #00E0DF !important;
-}
-.speaker-view .speaker-container .speaker-profile .speaker-image-wrapper .speaker-image-stub {
-    border-radius: 100%;
-    border: none !important;
-    /*width: 200px;
-    height: 200px;*/
-}
-.speaker-view .speaker-container .speaker-profile .speaker-bio-wrapper {
-    min-height: 100px;
-}
-.speaker-view .speaker-container .speaker-profile {
-    padding: 0 0;
-    display: flex;
-    align-items: center;
-}
-.speaker-view .speaker-container .speaker-profile .speaker-name-wrapper .speaker-name,
-.speaker-view .speaker-container .speaker-profile .speaker-bio-wrapper,
-.speaker-view {
-    color: #000;
-    font-family: "Inter", sans-serif;
-}
-.speaker-view .speaker-container .speaker-profile .speaker-bio-wrapper {
-    font-weight: 500;
-}
-.speaker-view .speaker-container .speaker-profile .speaker-community-like-wrapper {
-    display: none;
-}
-.speaker-view .speaker-container .speaker-section-notch {
-    background-color: #000;
-}
-.speaker-view .speaker-container .speaker-sessions-twitter-wrapper .speaker-sessions h1.speaker-sessions-title {
-    color: #000;
-    text-transform: capitalize;
-}
-.speaker-session .session-info-text .session-time,
-.speaker-session .session-info-text .session-info-text-light {
-    color: #000 !important;
-}
-.speaker-view .speaker-container .speaker-sessions-twitter-wrapper .speaker-sessions .speaker-session a .speaker-session-title {
-    font-size: 22px;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-.speaker-view .speaker-container .speaker-sessions-twitter-wrapper .speaker-sessions .speaker-session a .speaker-session-title > span{
-    display:none;
-}
-.speaker-view .speaker-container .speaker-sessions-twitter-wrapper .speaker-sessions .speaker-session .speaker-session-location {
-    color: #000;
-    text-transform: capitalize;
-    font-weight: 500;
-    font-size: 16px;
-}
-.speaker-view .speaker-container .speaker-sessions-twitter-wrapper .speaker-sessions .speaker-session .speaker-session-location .speaker-session-location-icon {
-    color: #000;
-    font-weight: 600;
-}
-
-.main-view .home-page .atom-sectionMain{background-color: transparent;padding-bottom: 0}
-
-#section-3657448 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-5922501,
-#section-3657448 > div > div > div > div:nth-child(4){
-  display: none
-}
-
-#section-3657448 > div > div > div > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div:nth-child(1) > div{
-  margin-top: 1rem;
-}
-
-#section-1790937 > div > div > div > div.element-9396160 > h2{
-  color: black!important;
-}
-
-.atom-sectionMain .main-app-container .speaker-text .attendee-name, .atom-sectionMain .main-app-container .speaker-text .attendee-title, .atom-sectionMain .main-app-container .speaker-text .attendee-company{color: #FFF;font-family: "Inter", sans-serif}
-.atom-sectionMain .main-app-container .speaker-text .attendee-name{font-weight: 600;font-size: 20px;line-height: 1.1}
-.atom-sectionMain .main-app-container .speaker-text .attendee-title{font-size: 15px;line-height: 1.3;margin-bottom: 0;margin-top: 10px}
-.atom-sectionMain .main-app-container .speaker-text .attendee-company{font-size: 14px;line-height: 1.3;margin-bottom: 0;margin-top: 5px}
-.trade-template .entity-photo-holder{margin-bottom: 50px}
-.trade-template .speakers .entity-photo-holder img, .trade-template .speakers .object-trade-thumbnail{width: 190px;min-width: 190px;height: 190px;border-radius: 50%;filter: grayscale(1)}
-.entity-photo-holder > a{background: linear-gradient(75deg, #8bff8b, #00E0DF);display: flex;justify-content: center;align-items: center;width: 205px;height: 205px;border-radius: 50%;overflow: hidden;margin: 0 auto}
-
-
-

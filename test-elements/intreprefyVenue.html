@@ -1,0 +1,74 @@
+<script>
+
+    //-----------ONLY EDIT THIS AREA--------------
+    const sessionTable = {
+      Bizzabo_Session_ID1: "External_Session_URL1",   //<----------- Bizzabo Session ID: "External Session URL"
+      Bizzabo_Session_ID2: "External_Session_URL2", //<------------ Ex: 4XXXXX : "https://URL HERE"
+      Bizzabo_Session_ID3: "External_Session_URL3"  //<------------ Last session no comma
+    };
+  
+    const embedHeight = "250px" //<---------------------------------Height in Pixels(px)
+    //------DO NOT EDIT ANYTHING BELOW------------
+  
+    const sessionMapper = (sessionID) => sessionTable[sessionID] || "Error";
+  
+    onLoaded();
+  
+    function onLoaded(){
+  
+      const targetNode = document.getElementsByClassName("video-view-layout sm down-md down-lg down-xl")
+      const targetNodeLg = document.getElementsByClassName("video-view-layout sm md down-lg down-xl")
+      const mobileNode = document.getElementsByClassName("video-view-layout down-sm down-md down-lg down-xl")
+  
+      const getURI = window.location.pathname;
+  
+      if (getURI.indexOf("agenda/activity") !== -1) {
+        setTimeout(function () {
+          let sessionID = window.location.pathname.split("/").pop()
+          sessionID = sessionMapper(sessionID)
+          
+          if (sessionID != "Error" && document.getElementsByClassName("broadcast-captions").length == 0) {
+  
+            //Desktop (small)
+            try{
+              
+              const placeholder = document.createElement("div");
+              placeholder.innerHTML = '<div class="broadcast-captions"><iframe src="'+ sessionID + '" style="width:100%; height:'+ embedHeight +'; border:0;"></iframe></div>'
+              targetNode[0].appendChild(placeholder)
+          
+            }
+            catch(error){} 
+            //Desktop (large)
+            try{
+  
+              const placeholder = document.createElement("div");
+              placeholder.innerHTML = '<div class="broadcast-captions"><iframe src="'+ sessionID + '" style="width:100%; height:'+ embedHeight +'; border:0;"></iframe></div>'
+              targetNodeLg[0].appendChild(placeholder)           
+  
+            }
+            catch{}
+            
+            //Mobile
+            try{
+  
+              const placeholder = document.createElement("div");
+              placeholder.innerHTML = '<div class="broadcast-captions"><iframe src="'+ sessionID + '" style="width:100%; height:'+ embedHeight +'; border:0;"></iframe></div>'
+              mobileNode[0].appendChild(placeholder)
+  
+            }
+            catch(error){}
+  
+          }
+  
+        }, 3000)
+      }
+    }
+  
+    window.addEventListener('pushstate', function (event) {
+      onLoaded();
+    });
+  
+    window.addEventListener('popstate', function (event) {
+      onLoaded();
+    });
+  </script>
