@@ -1,0 +1,8 @@
+Git Alias
+
+git config --global alias.tree "log --graph --decorate --all --oneline"
+git config --global alias.c --commit -m
+
+
+git reset --hard "log" works in both ways
+git reflog
