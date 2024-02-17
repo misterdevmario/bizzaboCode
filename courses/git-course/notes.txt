@@ -1,6 +1,8 @@
 Git Alias
 
 git config --global alias.tree "log --graph --decorate --all --oneline"
+git config --global alias.login "switch login"
+git config --global alias.bizzaboSide "switch bizzaboSide"
 git config --global alias.c --commit -m
 
 
