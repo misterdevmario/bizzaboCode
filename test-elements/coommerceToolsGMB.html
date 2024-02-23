@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.querySelector(".container-fluid").setAttribute("style", " background-color: #f3e9e9;")
+        document.querySelector("#bs-example-navbar-collapse-1").setAttribute("style", " background-color: transparent")
+        document.querySelector("#bs-example-navbar-collapse-1 > ul").setAttribute("style", " margin-left:8vw; width: 80vw; display: flex; justify-content: space-between; align-items: center;" )
+        document.querySelectorAll(".nav-menu-btn").forEach(i => i.setAttribute("style", "color: black; font-family: 'Courier New', Courier, monospace; font-size: 30px; font-weight: 550;"))
+
+        //Footer
+        document.querySelector(".footer").setAttribute("style", " background-color: #f3e9e9;")
+        document.querySelector(".add-to-calendar").setAttribute("style", "color: black; text-transform: uppercase;")
+        document.querySelectorAll(".footer-text-color").forEach(i => {
+            i.setAttribute("style", "color: black; font-family: 'Courier New', Courier, monospace; font-size: 30px; font-weight: 550;text-transform: uppercase;")
+        });
+        
+    </script>
+
+    <script>
+        document.querySelector("body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > a > span").style.display = "none"
+    </script>
+</body>
+</html>

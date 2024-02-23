@@ -8,28 +8,118 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
+        //mario.r@bizzabo.com 02/22/24
+        //Adding phrase and instagram logo under "Register" button on home page
+      let igLink = document.createElement("a")
+      igLink.setAttribute("rel", "nofollow noopener noreferrer")
+      igLink.setAttribute("target", "_blank")
+      igLink.setAttribute("href", "https://www.instagram.com/excelerateher/")
+      
+      let instagram = document.createElement("img")
+      instagram.setAttribute("src", "https://bizzabo-demo-res.cloudinary.com/image/upload/v1708613736/ig-logo_vzwfrm.png")
+      instagram.setAttribute("alt", "Instagram logo")
+      instagram.setAttribute("style", "width:50px; height:auto;  display: block; margin-left: auto; margin-right: auto;")
+      
+      igLink.appendChild(instagram)
+      
+      let phrase = document.createElement("h3")
+      phrase.innerText ="Invitation only"
+      phrase.setAttribute("style", "text-align: center; font-style: normal; font-weight: 700; color: #fff;")
+      
+      document.querySelector("#section-3985356 > div > div").appendChild(phrase)
+      document.querySelector("#section-3985356 > div > div").appendChild(igLink)
+      
+        
+        // Adding scroll functionality to HOME, ABOUT, SPEAKERS and PARTNERS -mario.r@bizzabo.com 02/15/24
+      
+               //Scroll to HOME
+               document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(1) > a > div").removeAttribute("href")
+              let home = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(1) > a > div")
+              home.addEventListener("click", ()=>scroll("section-3985356"))
+              //Scroll to ABOUT
+             document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(2) > a").removeAttribute("href")
+              let about = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(2) > a")
+              about.addEventListener("click", ()=>scroll("section-3985357"))
+              //Scroll to SPEAKERS
+              document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(3) > a").removeAttribute("href")
+              let speakers = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(3) > a")
+              speakers.addEventListener("click", ()=>scroll("section-4019890"))
+              //Scroll to PARTNERS
+              document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(4) > a ").removeAttribute("href")
+              let partners = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(4) > a ")
+              partners.addEventListener("click", ()=>scroll("section-4069796"))
+              //Scroll to AGENDA
+              document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(5) > a").removeAttribute("href")
+              let agenda = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(5) > a ")
+              agenda.addEventListener("click", ()=>scroll("section-4069798"))
+              //Scroll to CONNECT
+              document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(6) > a ").removeAttribute("href")
+              let connect = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(6) > a ")
+              connect.addEventListener("click", ()=>scroll("section-4069907"))
+      
+      
+              function scroll(scrollTo) {
+                  const element = document.getElementById(scrollTo);
+                  element.scrollIntoView();
+              }
+      
+      </script>
+      
+      
+       <script>
+      
+      //Setting attribute to redirect to ABOUT, SPEAKERS and PARTNERS on HOME page -mario.r@bizzabo.com 02/15/24
+      
+          if (
+           // window.location.href == "https://events.bizzabo.com/576732/agenda" ||
+            //window.location.href == "https://events.bizzabo.com/576732/tweets" ||
+            window.location.href ==
+              "https://events.bizzabo.com/576732/page/3569082/join" ||
+            window.location.href ==
+              "https://events.bizzabo.com/576732/page/3569083/excelerateher-2023" ||
+            window.location.href ==
+              "https://events.bizzabo.com/576732/page/3579886/host-site" ||
+            window.location.href ==
+              "https://events.bizzabo.com/576732/page/3579900/faq"
+          ) {
+              //Navbar ABOUT
+            document
+              .querySelector(
+                "#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(2) > a"
+              )
+              .setAttribute("href","https://events.bizzabo.com/576732/home#section-3985357");
+              //Navbar SPEAKERS
+            document
+              .querySelector(
+                "#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(3) > a"
+              )
+              .setAttribute("href", "https://events.bizzabo.com/576732/home#section-4019890");
+              //Navbar PARTNERS
+            document
+              .querySelector(
+                "#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(4) > a"
+              )
+              .setAttribute("href", "https://events.bizzabo.com/576732/home#section-4069796");
+              //Navbar AGENDA
+            document
+              .querySelector(
+                "#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(5) > a"
+              )
+              .setAttribute("href", "https://events.bizzabo.com/576732/home#section-4069798");
+              //Navbar CONNECT
+            document
+              .querySelector(
+                "#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(6) > a"
+              )
+              .setAttribute("href", "https://events.bizzabo.com/576732/home#section-4069907");
+          }
+        </script> -->
 
-
-        //Scroll to HOME
-        document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(1) > a > div").removeAttribute("href")
-        let home = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(1) > a > div")
-        home.addEventListener("click", ()=>scroll("section-3985356"))
-        //Scroll to ABOUT
-       document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(2) > a").removeAttribute("href")
-        let about = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(2) > a")
-        about.addEventListener("click", ()=>scroll("section-3985357"))
-        //Scroll to SPEAKERS
-        document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(3) > a").removeAttribute("href")
-        let speakers = document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(3) > a")
-        speakers.addEventListener("click", ()=>scroll("section-4019890"))
-
-
-        function scroll(scrollTo) {
-            const element = document.getElementById(scrollTo);
-            element.scrollIntoView();
-        }
-    </script>
+        <iframe src="https://www.youtube.com/" frameborder="0"></iframe>
+      
 </body>
 
 </html>
+
+
