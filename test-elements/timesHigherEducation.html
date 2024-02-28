@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(() => {
+             document.querySelector(".filter-label").innerText = "Filter sessions"
+         }, 700);
+ </script>
+ 
+ 
+ <script>
+   var baseURL = 'https://www.timeshighered-events.com/latin-america-universities-summit-2024';
+   var userDefinedMenu = [
+     { title: 'Home', url: '/home' },
+     // { title: 'Agenda', url: '/agenda' },
+     { title: 'Speakers', url: '/page/3372781/speakers' },
+     // { title: 'Community', url: '/community' },
+     { title: 'Location', url: '/page/3372783/location' },
+     { title: 'Partners',
+       subPages: [
+         { title: 'Partners', url: '/page/3372784/sponsors' },
+         { title: 'Host partner', url: '/page/3372785/host-partner' }
+       ]
+     },
+     { title: 'Get involved', url: '/page/3561155/get-involved' },
+     { title: 'Book tickets', url: '/page/3372786/book-tickets' },
+   ];
+ 
+   function createCustomMenu(menuItems) {
+     var customMenu = [];
+ 
+     menuItems.forEach(function (menuItem) {
+       var page = {
+         title: menuItem.title,
+         menuLevel: menuItem.menuLevel || 'main', // Default to 'main' if menuLevel is not provided
+       };
+ 
+       // If subPages are provided, add them to the page object
+       if (menuItem.subPages && Array.isArray(menuItem.subPages)) {
+         page.subPages = menuItem.subPages.map(function (subPage) {
+           return {
+             title: subPage.title,
+             // Modify the URL by appending it to the base URL
+             url: subPage.url !== undefined && subPage.url !== '' ? baseURL + subPage.url : null,
+           };
+         });
+       }
+ 
+       // Set the URL for the main page
+       page.url = menuItem.url !== undefined && menuItem.url !== '' ? baseURL + menuItem.url : null;
+ 
+       if (page.url !== undefined) {
+         customMenu.push(page);
+       }
+     });
+ 
+     return customMenu;
+   }
+ 
+     // Function to replace the default menu with custom menu
+     function replaceDefaultMenu(customMenu) {
+         var defaultMenuContainer = document.querySelector('ul.nav');
+         defaultMenuContainer.classList.add('nav-changed');
+         var currentPageUrl = window.location.href;
+ 
+         if (defaultMenuContainer) {
+             // Remove all existing li elements except the first one
+             var existingLiElements = defaultMenuContainer.querySelectorAll('li:not(:first-child)');
+             existingLiElements.forEach(function (liElement) {
+             liElement.remove();
+             });
+ 
+             // Iterate through each custom main menu item
+             customMenu.forEach(function (page) {
+             // Append the page title as a list item
+             var pageItemElement = document.createElement('li');
+             var pageLinkElement = document.createElement('a');
+             pageLinkElement.textContent = page.title;
+             pageLinkElement.href = page.url;
+ 
+             // Check if the current page URL contains the menu item URL
+             if( currentPageUrl === page.url ) {
+                 pageItemElement.classList.add('active');
+             }
+             // Check if the current page URL is the base URL
+             if (currentPageUrl === baseURL && page.url === baseURL + '/home') {
+                 pageItemElement.classList.add('active');
+             }
+ 
+             if (page.url === null) {
+                 pageLinkElement.removeAttribute('href'); // Remove the 'href' attribute
+                 pageLinkElement.style.cursor = 'default'; // Change the cursor to default to indicate non-clickable
+                 pageItemElement.classList.add('no-link'); // Add the 'no-link' class
+             }
+             pageItemElement.appendChild(pageLinkElement);
+ 
+             // Check if there are sub-pages
+             if (page.subPages && page.subPages.length > 0) {
+                 pageItemElement.classList.add('has-child');
+                 var pageItemArrow = document.createElement('span');
+                 pageItemArrow.classList.add('has-child-arrow');
+                 pageItemArrow.textContent = "Arrow";
+                 pageItemElement.appendChild(pageItemArrow);
+                 // Create a sub-menu container
+                 var subMenuElement = document.createElement('ul');
+ 
+                 // Iterate through each sub-page
+                 page.subPages.forEach(function (subPage) {
+                 // Append the sub-page title as a list item under the main page
+                 var subPageItemElement = document.createElement('li');
+                 var subPageLinkElement = document.createElement('a');
+                 subPageLinkElement.textContent = subPage.title;
+                 subPageLinkElement.href = subPage.url;
+ 
+                 // Check if the current page URL contains the sub-page URL
+                 if (currentPageUrl.includes(subPage.url)) {
+                     pageItemElement.classList.add('active');
+                 }
+ 
+                 if (subPage.url !== null) {
+                     subPageItemElement.appendChild(subPageLinkElement);
+                 }
+ 
+                 // Append the sub-page list item to the sub-menu container
+                 subMenuElement.appendChild(subPageItemElement);
+                 });
+ 
+                 // Append the sub-menu container to the main page list item
+                 pageItemElement.appendChild(subMenuElement);
+                 pageItemArrow.addEventListener('click', function () {
+                 pageItemElement.classList.toggle('visible');
+                 });
+             }
+ 
+             // Append the main page list item to the menu container
+             defaultMenuContainer.appendChild(pageItemElement);
+             });
+         } else {
+             console.error('Default Bizzabo menu container not found.');
+         }
+     }
+ 
+   var customMenu = createCustomMenu(userDefinedMenu);
+   replaceDefaultMenu(customMenu);
+ 
+ </script>
+ 
+</body>
+</html>

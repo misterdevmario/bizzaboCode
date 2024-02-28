@@ -1,35 +1,13 @@
-.container-fluid {
-  background-color: #f3e9e9;
+.d{
+	position: absolute;
+	top: 0;
+	left: 2vw;
 }
 
-#bs-example-navbar-collapse-1 {
-  background-color: transparent;
-}
-
-#bs-example-navbar-collapse-1 > ul {
-  margin-left: 8vw;
-  width: 80vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-menu-btn {
-  color: #c2bfbf;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
-  font-weight: 550;
-}
-
-.color-3-background-selected.selected,
-.color-3-background-selected.custom-color.selected {
-  background-color: #c2bfbf;
-}
-
-.footer-text-color, .add-to-calendar {
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
-  font-weight: 550;
-  text-transform: uppercase;
-}
+#bs-example-navbar-collapse-1 > ul:nth-child(1) {
+	margin-left: 8vw;
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }

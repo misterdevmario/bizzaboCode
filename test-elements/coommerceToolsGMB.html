@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+
+        //Header
         document.querySelector(".container-fluid").setAttribute("style", " background-color: #f3e9e9;")
         document.querySelector("#bs-example-navbar-collapse-1").setAttribute("style", " background-color: transparent")
-        document.querySelector("#bs-example-navbar-collapse-1 > ul").setAttribute("style", " margin-left:8vw; width: 80vw; display: flex; justify-content: space-between; align-items: center;" )
+        document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1)").setAttribute("style", " margin-left:8vw; width: 80vw; display: flex; justify-content: space-between; align-items: center;")
         document.querySelectorAll(".nav-menu-btn").forEach(i => i.setAttribute("style", "color: black; font-family: 'Courier New', Courier, monospace; font-size: 30px; font-weight: 550;"))
 
         //Footer
@@ -18,11 +22,20 @@
         document.querySelectorAll(".footer-text-color").forEach(i => {
             i.setAttribute("style", "color: black; font-family: 'Courier New', Courier, monospace; font-size: 30px; font-weight: 550;text-transform: uppercase;")
         });
-        
+
     </script>
 
     <script>
-        document.querySelector("body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > a > span").style.display = "none"
+        document.querySelector("body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > a > span").style.display = "none";
+        document.querySelector("body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > a").style.display = "none";
+    </script>
+
+    <script>
+        document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right.hidden-sm > li > div > div.more-tabs-dropdown.dropdown-tip.me-btn-holder.me-avatar > button > div").setAttribute("style", "position: absolute; top: 0;left: 2vw;")
     </script>
 </body>
+
 </html>
+
+document.querySelector(".navbar-nav").setAttribute("style", " margin-left:20vw; " )
+document.querySelector(".nav-menu-btn").setAttribute("style", " margin-left:10vw !important; " )
