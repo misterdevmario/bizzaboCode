@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="atom-text1 color speaker-title">Group Manager, Cybersecurity Risk and Operations Management  OneTech</div>
+
+    <!-- <script>
+const title = document.querySelectorAll("#section-1656175 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div >div > div:nth-child(2) ")    
+let newTitle = ""
+title.forEach(element => {
+    if(element.textContent.includes("OneTech")){
+        let titleToArray = element.textContent.split(" ")
+        titleToArray[titleToArray.length - 2] = <br />
+        newTitle = titleToArray.toString().replaceAll(","," ")
+        element.textContent = newTitle
+    }
+    console.log(element);
+});
+</script> -->
+
+
+<script>
+    const title = document.querySelectorAll("#section-1656175 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div >div > div:nth-child(2) ")    
+let newTitle = ""
+title.forEach(element => {
+    if(element.textContent.includes("OneTech")){
+        let titleToArray = element.textContent.split(" ")
+        titleToArray[titleToArray.length - 2] = "<br />"
+        newTitle = titleToArray.toString().replaceAll(","," ")
+        element.textContent = newTitle
+    }
+    console.log(element);
+});
+</script>
+
+</body>
+</html>

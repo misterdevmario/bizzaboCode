@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* CSS FOR JS POPUP NOTIFICATION */
+        .jsPop-cont {
+        box-sizing: border-box;
+        width: 248px; /* popup container width - if update, also change right pos */
+        max-width:80%;
+        background: #262A33; /* popup container background color */
+        border: 4px solid #ffffff; /* popup container border */
+        position:fixed;
+        bottom:24px;
+        right:-258px; /* popup container position - must update if adjust width */
+        transition-property: right;
+        transition-duration: 2s;
+        transition-delay: 0.25s;
+        }
+        
+        .jsPop-cont-in {
+        right:24px;
+        }
+        
+        .jsPop-cont img {
+        width:100%;
+        height:auto;
+        }
+        
+        .jsPop-cont .jsPop-content {
+        padding:18px 20px 20px 20px;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 18px !important; /* popup font size */
+        line-height: 115%;
+        color: #FFFFFF; /* popup font color */
+        }
+        
+        .jsPop-cont .jsPop-content a {
+        margin-top:20px;
+        display: block;
+        background-color:#FCD0B1; /* popup button color */
+        color:#FFFFFF; /* popup button text color */
+        font-weight: 500!important;
+        font-size:18px!important;
+        text-transform: uppercase!important;
+        text-align:center!important;
+        text-decoration:none!important;
+        padding: 13px 16px 8px 16px!important;
+        border-radius: 0px;
+        border-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition-property: background-color color;
+        transition-duration: 0.25s;
+        transition-delay: 0s;
+        }
+        
+        .jsPop-cont .jsPop-content a:hover {
+        background-color:#000000; /* popup button color hover */
+        color:#ffffff; /* popup button text color hover */
+        }
+        
+        .jsPop-cont .jsPop-content .clear {
+        clear: both;
+        }
+        
+        .jsPop-close {
+        z-index:2;
+        position:absolute;
+        right: 12px;
+        top: 12px;
+        cursor: pointer;
+        }
+        
+        .jsPop-close img {
+        width:16px;
+        height:16px;
+        }
+        /* END CSS FOR JS POPUP NOTIFICATION */
+        </style>
+        <script type="text/javascript">
+        /* EDIT CODE FOR POPUP */
+        
+        // MUST EDIT URL HERE!!!! - User will go here on Button Click
+        let registerLink = "https://usdecarbonization.live.ft.com/page/3498505/brochure";
+        
+        // EDIT: time until the popup notification is displayed in
+        // milliseconds so for example 6000 = 6 seconds
+        let timeUntilNotification = 6000;
+        
+        // EDIT: popup text
+        let popupText = "Learn more about the world class leaders and speakers, key networking experiences and more with the event brochure.";
+        
+        // EDIT: popup button text copy
+        let popupButtonText = "ACCESS BROCHURE";
+        
+        // EDIT: popup image url
+        let popupImgURL = "https://s3.amazonaws.com/bizzabo.users.files/e8lzTi5cRAiW2xUH7OPs_US%20Decarb_Exponea-Header-600x350%20(1).gif";
+        
+        // EDIT: popup close button
+        let popupCloseButton = "https://s3.amazonaws.com/bizzabo.users.files/QCX6oRwyRxCOkp4CJI7z_jspopup-close.png" // CURRENTLY WHITE
+        
+        /* WHITE CLOSE BUTTON LINK
+        https://s3.amazonaws.com/bizzabo.users.files/QCX6oRwyRxCOkp4CJI7z_jspopup-close.png
+        */
+        
+        /* BLACK CLOSE BUTTON LINK
+        https://s3.amazonaws.com/bizzabo.users.files/yOvISYAITOea3gJ695VH_jspopup-close-black.png
+        */
+        
+        /* END EDIT CODE FOR POPUP */
+        
+        /* SCRIPT FOR POPUP NOTIFICATION */
+        
+        // Check if the popup already exists - if it does, delete
+        var popupExists = document.querySelector('#jsPopup');
+        if (popupExists)
+        {
+        popupExists.parentNode.removeChild(popupExists);
+        }
+        
+        // Add jsPopup HTML to the body
+        document.body.insertAdjacentHTML('beforeend', '<div id="jsPopup" class="jsPop-cont"><div id="jsPopClose" data-trackable="ft-live-popup-close" class="jsPop-close"><img src="'+popupCloseButton+'" /></div><img src="'+popupImgURL+'" /><div class="jsPop-content"><span>'+popupText+'</span><a id="popupBtn" data-trackable="ft-live-popup-button" ><span>'+popupButtonText+'</span></a></div><div class="clear"></div></div>');
+        
+        // Function called when Register button clicked
+        jsPopRegisterClick = function(e){
+        /* EDIT: OPEN RegisterLink URL in CURRENT BROWSER WINDOW OR in NEW WINDOW. One or the other.
+        
+        /* below opens the URL in the current browser */
+        //window.location.href = registerLink;
+        
+        /* below opens the URL in a new window */
+        window.open(registerLink);
+        }
+        
+        document.getElementById("popupBtn").addEventListener("click", jsPopRegisterClick);
+        
+        // Function called when Close button clicked
+        var jsPopClose = document.getElementById("jsPopClose");
+        jsPopClose.onclick = function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        
+        var popupCont = this.parentElement;
+        if (popupCont.classList.contains("jsPop-cont-in"))
+        {
+        popupCont.classList.remove("jsPop-cont-in");
+        }
+        
+        // Hide div after 3s, after animation
+        setTimeout(function(){ popupCont.style.display = "none"; }, 3000);
+        }
+        
+        // Add Timeout to Animate popup via CSS Class
+        setTimeout(function(){
+        document.getElementById("jsPopup").classList.add("jsPop-cont-in");
+        document.body.dispatchEvent(
+        new CustomEvent('oTracking.event', {
+        detail: {
+        action: 'ft-live-popup-shown'
+        },
+        bubbles: true
+        })
+        )
+        }, timeUntilNotification);
+        
+        /* check for clicks on the page - if user clicks on Navigation button, remove popup */
+        document.addEventListener('click', (event) => {
+        if (event.target.classList.contains('nav-menu-btn')) {
+        var popupExists = document.querySelector('#jsPopup');
+        if (popupExists)
+        {
+        popupExists.parentNode.removeChild(popupExists);
+        }
+        } else if (event.target.classList.contains('btn')) {
+        var popupExists = document.querySelector('#jsPopup');
+        if (popupExists)
+        {
+        popupExists.parentNode.removeChild(popupExists);
+        }
+        }
+        });
+        
+        /* END SCRIPT FOR POPUP NOTIFICATION */
+        </script>
+</body>
+</html>

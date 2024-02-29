@@ -1,0 +1,216 @@
+/* Change border color on countdown clock - Kerlyn @ Bizzabo */
+.global-template .count-container {
+    color:#004059;
+}
+/* Fix Header Background Image Colour @Tucker (Bizzabo) */
+.trade-template .cover-photo-background {
+  background-image: url(https://res.cloudinary.com/bizzaboprod/image/upload/q_auto:best,c_crop,g_custom/v1648553137/snxszfohrs9oebpxnx4e.jpg) !important
+}
+
+/* Navbar button styling */
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(8) > a > div {
+  background-color: #EEC47E;  color: #004059;  font-weight: 600;  padding: 10px 15px 10px 15px;  display: inline;
+  border: none;  text-align: center;  text-decoration: none;   border-radius:5px;  margin-left:5px;
+}
+
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(6) > a > div:hover {
+  background-color: #000;  color: #fff!important;
+}
+
+
+/*Top navigation bar container and underline*/
+.template-nav {border-bottom: 1px #004059;
+  background-color: #004059 !important;}
+
+/*specific pages container*/
+.home-custom-css{}
+.community-custom-css{}
+.agenda-custom-css{}
+.speakers-custom-css{}
+
+/*main container of each section*/
+.main-app-container {}
+
+/*
+call-to-action buttons e.g:
+Register, Join The Community etc
+*/
+.btn-register {}
+
+/*Top navigation bar container*/
+.template-nav {}
+
+/*Top navigation bar items container*/
+#bs-example-navbar-collapse-1 {}
+
+/*social share buttons container*/
+.social-share-button {}
+
+/*social share buttons per social network*/
+.social-share-button.facebook {}
+.social-share-button.twitter {}
+.social-share-button.linkedin {}
+.social-share-button.google {}
+/*hide looking for your ticket*/
+.looking-ticket-link{
+display:none;
+}
+/* hide add to calendar */
+.add-to-calendar {
+ display: none !important;
+}
+  /* Help page accordion */
+/* Bruna - for accordion, copy lines 1384 - 1440 */
+
+.faq-question {
+
+  text-align:center;
+  font-size:20px!important;
+  padding: 18px 18px 14px 33px;
+  border-bottom:1px solid #ccc1b7;
+  width: 100%;
+  transition: 0.8s;
+  margin: 0 0;
+  transition:0.3s;
+}
+
+.faq-question:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 12px;
+  padding-top:10px;
+  color: #333;
+  float: right;
+  margin-left: 5px;
+}
+
+
+.active:after {
+  transition: max-height 0.8s ease-out;
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  color: #333;
+}
+
+.faq-question:hover {
+  background-color:#FAEADC!important;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 20px 0;
+    transition: max-height 0.8s ease-out;
+}
+
+.panel {
+  padding: 0px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+    margin:0px;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 12px;
+  padding-top:14px;
+  color: #333;
+  float: right;
+  margin-left: 5px;
+}
+/*Display all navigation items (stop more drop-down)*/
+
+#bs-example-navbar-collapse-1 > .navbar-nav.show-more-tab>li:not(.more-tabs-dropdown).hide-tab {
+  width:auto;
+  height:auto;
+}
+/* the following two @media values shrink menu bar text 
+ at 1350 and 1070px widths, to make sure that menus 
+with lots of entries don't wrap at certain screen sizes. 
+DISABLE THEM BOTH if you don't have lots of menu items. To use
+this code on any other site you may need to adjust the 1350 and 
+1070 values depending on how large your menu is, how many words
+each menu item contains etc. */
+@media (max-width: 1350px) {
+.trade-template .nav-menu-btn {
+  font-size:.8rem!important;
+}
+}
+
+@media (max-width: 1070px) {
+.trade-template .nav-menu-btn {
+  font-size:.8rem!important;
+}
+}
+
+/* this one means that mobile hambuger isn't adversely affected by the two codes above */
+@media (max-width: 1024px) {
+.trade-template .nav-menu-btn {
+  font-size:1rem!important;
+}
+}
+  /* Help page accordion */
+/* Bruna - for accordion, copy lines 1384 - 1440 */
+
+.faq-question {
+
+  text-align:center;
+  font-size:20px!important;
+  padding: 18px 18px 14px 33px;
+  border-bottom:1px solid #E2BB5E;
+  width: 100%;
+  transition: 0.8s;
+  margin: 0 0;
+  transition:0.3s;
+}
+
+.faq-question:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 12px;
+  padding-top:10px;
+  color: #ffffff;
+  float: right;
+  margin-left: 5px;
+}
+
+
+.active:after {
+  transition: max-height 0.8s ease-out;
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  color: #E2BB5E;
+}
+
+.faq-question:hover {
+  background-color:#E2BB5E!important;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 20px 0;
+    transition: max-height 0.8s ease-out;
+}
+
+.panel {
+  padding: 0px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+    margin:0px;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 14px;
+  padding-top:14px;
+  color: #ffffff;
+  float: right;
+  margin-left: 5px;
+}
+/* change text for looking for ticket*/
+.looking-ticket-link span{
+ display: none !important;
+}
+
+/* hide add to calendar */
+.add-to-calendar {
+ display: none !important;
+}
+

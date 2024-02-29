@@ -1,72 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.d{
+	position: absolute;
+	top: 0;
+	left: 2vw;
 }
 
-.filter-label{
-    width: 100%;
-    height: 40vh;
-    background-color: antiquewhite;
-}
-
-/* .toggle{
-    position: absolute;
-    top: 50%;
-    transform: translate(50%, -50%);
-    width: 50%;
-    height: 80vh;
-    overflow-y: auto;
-
-} */
-
-.toggle::-webkit-scrollbar {
-    display: none;
+#bs-example-navbar-collapse-1 > ul:nth-child(1) {
+	margin-left: 8vw;
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
   }
-.close{
-  width: 100%;
-  height: 40px;
-  position: relative;
-}
-
-/* .x{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin:0 0 10px 95%;
-    width: 35px;
-    height: 35px;
-    background-color: red;
-    border-radius: 100%;
-    color: #fff;
-    position: fixed;
-    cursor: pointer;
-
-} */
-
-.btn{
-    position: absolute;
-    top: 60vh;
-    left: 45vw;
-    transform: translate(50%, -50%);
-    background-color: red;
-    width: 100px;
-    height: 30px;
-    border-radius: 15px;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    font-family:'Open';
-    line-height: 1.5 !important;
-}
-
-.section-3547100 .atom-sectionMain {
-    background-color: rgba(199,200,230,1);
-    max-height: 250vh;
-    overflow-y: scroll;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
