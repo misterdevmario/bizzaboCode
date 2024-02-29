@@ -1,22 +1,19 @@
+// const a = [2, 6];
+// const b = [16, 32, 96];
+
 const a = [2, 6];
 const b = [24, 36];
 
+const max = Math.max(...b);
+const multiplesOfA = [];
+const factorsOfB = [];
+const ab = new Set(multiplesOfA);
 function getTotalX(a, b) {
-  const factorA = [];
-  const factorB = [];
-  const factors = [];
+  for (let i = 0; i < 2; i++) {
 
-  // Write your code here
-  for (let i = 0; i < 10; i++) {
-    for (let j = 1; j < 100; j++) {
-      if (a[i] !== undefined && a[i] % j == 0) factorA.push(j);
-      if (b[i] !== undefined && b[i] % j == 0) factorB.push(j);
-    }
+      for (let j = 0; j < max; j++) {console.log(a[i])}
   }
-  const arrAB = [...a, ...b];
-  const commonFactors = Array.from(new Set([...factorA, ...factorB]));
-
-console.log(arrAB, commonFactors)
+  console.log(max)
 }
 
 getTotalX(a, b);
