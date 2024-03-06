@@ -1,0 +1,29 @@
+
+@media screen and (max-width: 768px) {
+    .global-template .global-cover-photo-background{
+        background-size: 768px;
+    
+    }
+    
+    .section-4085771 .custom-space-bottom {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .section-4085771{
+        height: 33vh;
+    }
+    .global-template .global-cover-photo-background{
+        background-size: 100vw !important;
+        background-repeat: no-repeat !important;
+        background-position: top !important;
+    }
+    
+    .section-4085771 .custom-space-bottom {
+        padding: 0;
+    }
+}
+
+    
