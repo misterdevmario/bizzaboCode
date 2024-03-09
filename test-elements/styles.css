@@ -1,13 +1,32 @@
-.d{
-	position: absolute;
-	top: 0;
-	left: 2vw;
+/*Hidding elements and moving logo on navbar -mario.r@bizzabo.com*/
+#bs-example-navbar-collapse-1 > ul:nth-child(1){
+   margin-right: 85vw;
 }
 
-#bs-example-navbar-collapse-1 > ul:nth-child(1) {
-	margin-left: 8vw;
-	width: 80vw;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
+.nav-button-wrapper{
+   display: none !important;
+}
+
+/*Media queries of header element -mario.r@bizzabo.com*/
+@media screen and (max-width: 768px) {
+   .section-4067459 .custom-space-bottom {
+       padding-top: 35vh;
+   }
+   .section-4067459 .element-20039354.cover-image-background {
+       background-size: 768px;
+   
+   }
+}
+
+@media screen and (max-width: 440px) {
+   .section-4067459 .custom-space-top {
+     padding-top: 9vh;
+       padding-bottom: 12vh;
+   }
+   
+   
+   .section-4067459 .element-20039354.cover-image-background {
+       background-size: 440px;
+     
+   }
+}
