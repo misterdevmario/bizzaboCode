@@ -1,0 +1,140 @@
+/*2024 USI Annual Meeting*/
+/*Home page header responsive -mario.r@bizzabo.com 03/14/24*/
+
+@media screen and (max-width: 1024px){
+    .section-1039973 .custom-space-bottom {
+        padding: 0;
+    }
+    .video-element{
+        width: 1035px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-1039973 .custom-space-bottom {
+        padding: 0;
+    }
+    .video-element{
+        width: 768px;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 440px){
+    .section-1039973 .custom-space-bottom {
+        padding: 0;
+    }
+    .video-element{
+        width: 440px;
+        height: auto;
+    }
+    #section-1039973> div {
+        background-size: 0px;
+    }
+    #section-1039973 > div > div > div:nth-child(2){
+        margin-top: 5vh;
+    }
+}
+/*2024 USI Annual Meeting  */
+
+/*T. Rowe Price 2024 Executive Roundtable*/
+/*Home page header responsive -mario.r@bizzabo.com 03/14/24*/
+.section-3996619 .custom-space-bottom {
+    padding: 250px;
+}
+@media screen and (min-width: 2400px){
+    .section-3996619 .custom-space-bottom {
+        padding: 330px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-3996619 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+        font-size: 74px;
+        width: 23vw;
+        margin-right: 4vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-3996619 .custom-space-bottom {
+        padding: 100px;
+    }
+    .video-element{
+        width: 768px;
+        height: auto;
+    }
+    #section-4143486 > div{
+        height: 35vh;
+    }
+}
+
+
+@media screen and (max-width: 440px){
+    .section-3996619 .custom-space-bottom {
+        padding: 0;
+    }
+    #section-3996619 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+        font-size: 32px;
+    }
+    .video-element{
+        width: 440px;
+        height: auto;
+    }
+    #section-4143486 > div{
+        height: 25vh;
+    }
+}
+
+/*T. Rowe Price UK Investment Conference*/
+/*Home page header responsive -mario.r@bizzabo.com 03/14/24*/
+.section-3996619 .custom-space-bottom {
+    padding: 250px;
+}
+
+@media screen and (min-width: 2200px){
+    .section-3996619 .custom-space-bottom {
+        padding: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-3996619 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+        font-size: 74px;
+        width: 23vw;
+        margin-right: 4vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-3996619 .custom-space-bottom {
+        padding: 100px;
+    }
+    .video-element{
+        width: 768px;
+        height: auto;
+    }
+    #section-4143486 > div{
+        height: 35vh;
+    }
+}
+
+
+@media screen and (max-width: 440px){
+    .section-3996619 .custom-space-bottom {
+        padding: 0;
+    }
+    #section-3996619 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+        font-size: 32px;
+    }
+    .video-element{
+        width: 440px;
+        height: auto;
+    }
+    #section-4143486 > div{
+        height: 25vh;
+    }
+}
