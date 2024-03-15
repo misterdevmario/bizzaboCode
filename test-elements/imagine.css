@@ -1,0 +1,229 @@
+/*Media queries of home's header element -mario.r@bizzabo.com*/
+
+.section-4095438 .custom-space-bottom, .section-4111710 .custom-space-bottom  {
+  padding: 0;
+  height: 680px;
+}
+
+@media screen and (max-width: 1900px) {
+  .section-4095438 .custom-space-bottom {
+    padding: 0;
+    height: 600px;
+  }
+}
+  @media screen and (max-width: 1680px) {
+    .section-4095438 .custom-space-bottom, .section-4111710 .custom-space-bottom  {
+      padding: 0;
+      height: 550px;
+    }
+  }
+@media screen and (max-width: 1520px) {
+  .section-4095438 .custom-space-bottom, .section-4111710 .custom-space-bottom  {
+    padding: 0;
+    height: 500px;
+  }
+  .section-4095438 .element-20167180.cover-image-background, .section-4111710 .element-20233886 .cover-image-background  {
+    background-size: 1520px;
+  }
+  #section-4110233 > div {
+    height: 78vh;
+  }
+
+  #section-4110233 > div > div:nth-child(1) > video {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section-4095438 .custom-space-bottom, .section-4111710 .custom-space-bottom  {
+    padding: 0;
+    height: 365px;
+  }
+  .section-4095438 .element-20167180.cover-image-background, .section-4111710 .element-20233886 .cover-image-background {
+    background-size: 1100px;
+  }
+  #section-4110233 > div {
+    height: 50vh;
+  }
+
+  #section-4110233 > div > div:nth-child(1) > video {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-4095438 .custom-space-bottom, .section-4111710 .custom-space-bottom  {
+    padding: 0;
+    height: 275px;
+  }
+
+  .section-4095438 .element-20167180.cover-image-background, .section-4111710 .element-20233886 .cover-image-background {
+    background-size: 768px;
+  }
+  #section-4110233 > div {
+    height: 40vh;
+  }
+  #section-4110233 > div > div:nth-child(1) > video {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .section-4095438 .custom-space-top, .section-4111710 .custom-space-bottom  {
+    height: 155px;
+    padding: 0px;
+  }
+
+  .section-4095438 .element-20167180.cover-image-background,.section-4111710 .element-20233886 .cover-image-background {
+    background-size: 440px;
+  }
+  .element-20167197 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-4110233 > div {
+    height: 30vh;
+  }
+  #section-4110233 > div > div:nth-child(1) > video {
+    width: 100vw;
+  }
+}
+
+/*Media queries of hotel's header element -mario.r@bizzabo.com*/
+.section-4111710 .custom-space-bottom {
+  padding: 0;
+  height: 680px;
+}
+@media screen and (max-width: 1900px) {
+  .section-4111710 .custom-space-bottom {
+    padding: 0;
+    height: 600px;
+  }
+}
+  @media screen and (max-width: 1680px) {
+    .section-4111710 .custom-space-bottom {
+      padding: 0;
+      height: 550px;
+    }
+  }
+
+@media screen and (max-width: 1520px) {
+  .section-4111710 .custom-space-bottom {
+    padding: 0;
+    height: 500px;
+  }
+  .section-4111710 .element-20233886 .cover-image-background {
+    background-size: 1520px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section-4111710 .custom-space-bottom {
+    padding: 0;
+    height: 365px;
+  }
+  .section-4111710 .element-20233886 .cover-image-background {
+    background-size: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-4111710 .custom-space-bottom {
+    padding: 0;
+    height: 275px;
+  }
+
+  .section-4111710 .element-20233886 .cover-image-background {
+    background-size: 768px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .section-4111710 .custom-space-top {
+    height: 155px;
+    padding: 0px;
+  }
+
+  .section-4111710 .element-20233886 .cover-image-background {
+    background-size: 440px;
+  }
+  .element-20167197 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*Media queries of register's header element -mario.r@bizzabo.com*/
+
+.section-4110047  .custom-space-bottom {
+  padding: 0;
+  height: 680px;
+}
+
+@media screen and (max-width:1900px) {
+  .section-4110047 .custom-space-bottom {
+    padding: 0;
+    height: 600px;
+  }
+}
+
+  @media screen and (max-width: 1680px) {
+    .section-4110047 .custom-space-bottom {
+      padding: 0;
+      height: 550px;
+    }
+  }
+
+@media screen and (max-width: 1520px) {
+  .section-4110047  .custom-space-bottom {
+    padding: 0;
+    height: 500px;
+  }
+  .section-4110047  .element-20226294  .cover-image-background {
+    background-size: 1520px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section-4110047  .custom-space-bottom {
+    padding: 0;
+    height: 365px;
+  }
+  .section-4110047  .element-20226294  .cover-image-background {
+    background-size: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-4110047  .custom-space-bottom {
+    padding: 0;
+    height: 275px;
+  }
+
+  .section-4110047  .element-20226294  .cover-image-background {
+    background-size: 768px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .section-4110047  .custom-space-top {
+    height: 155px;
+    padding: 0px;
+  }
+
+  .section-4110047  .element-20226294  .cover-image-background {
+    background-size: 440px;
+  }
+  .element-20167197 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
