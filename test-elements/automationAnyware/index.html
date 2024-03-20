@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      const regElement = document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1)"
+      );
+      regElement.setAttribute("style", "position: relative");
+      let regButton = null;
+      if (window.screen.width > 1024 ) {
+        regButton = document.createElement("button");
+        regButton.setAttribute(
+          "style",
+          "background-color: rgba(255, 159, 0, 1);border-color: rgba(255, 159, 0, 1); border-radius: 3px; color: #ffffff;width: 35%; height: 80%; z-index:9999999; border: none; position: absolute; left: 45vw; top:8px;  font-weight: bold; font-size: 1.11rem;"
+        );
+        regButton.innerText = "Register";
+        regButton.addEventListener("click", goRegister);
+        regElement.appendChild(regButton);
+      }
+
+      function goRegister() {
+        window.open(
+          "https://imagine.automationanywhere.com/page/3629102/register"
+        );
+      }
+    </script>
+
+    <script>
+      //Hidding button on register page
+      if (
+        document.location.href ==
+        "https://imagine.automationanywhere.com/page/3629102/register"
+      ) {
+        document.querySelector(
+          "#bs-example-navbar-collapse-1 > ul:nth-child(1) > button"
+        ).style.display = "none";
+      }
+    </script>
+
+<script>
+        const p =document.querySelectorAll('p')
+        p.forEach(element => {
+        console.log(element)   
+        });
+</script>
+
+</body>
+</html>
