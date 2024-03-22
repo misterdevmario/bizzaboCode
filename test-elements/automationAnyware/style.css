@@ -39,9 +39,16 @@ body > p {
     height: 47vw;
   }
 
+  /*Register and hotel pages header image responsive*/
+  #section-4110047 > div,
+  #section-4111710 > div{
+    background-size: 100vw;
+    width: 100vw;
+    height: 34vw;
+  }
 
 /*Making responsive header element*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
 
   /*Are You an Automation Anywhere Partner? Section*/
   #section-4111430
@@ -142,10 +149,20 @@ body > p {
     font-weight: 500;
 
   }
-  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(4) > span > span > span,
-  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(5) > span > span > span{
+  /*Don’t miss Imagine Austin June 11 – 12 at the Fairmont element*/
+  /*Setting background-img*/
+  #section-4095440 > div{
+    background-image: url("https://res.cloudinary.com/bizzaboprod/image/upload/v1710947928/imagine_Home_panel_cysqek.jpg") !important;
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(3){
+    text-align: center;
+    line-height: 1.15 !important;
+    margin-bottom: 3vh;
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(3) > span > span > span > strong{
     font-size: 23px;
     font-weight: 600;
+
   }
   #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(6){
     text-align: center;
@@ -154,19 +171,172 @@ body > p {
     margin-top: 10vw;
     margin-left: 12vw;
   }
-  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(6) > span > strong{
-    font-weight: 400;
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(4) > span > strong{
+    font-weight: 400!important;
   }
 }
 
+/*Questions section*/
+#section-4095663 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(4){
+  color: #FF8A00;
+  font-weight: 600 !important;
+}
+
+/*Setting new header image  mobile */
 @media screen and (max-width: 440px) {
   .section-4095438 .custom-space-bottom,
   .section-4111710 .custom-space-bottom {
     padding: 0;
-    height: 50vw;
+    height: 60vw;
   }
 
-  #section-4095438 > div{
-    background-image: url("https://res.cloudinary.com/bizzaboprod/image/upload/v1710943235/Mobile_Homepage_Panel_1_qfsnsy.jpg");
+  #section-4095438 > div,
+  #section-4111710 > div,
+  #section-4110047 > div{
+    background-image: url("https://res.cloudinary.com/bizzaboprod/image/upload/v1710943235/Mobile_Homepage_Panel_1_qfsnsy.jpg")!important;
+    background-size: 100vw;
+    width: 100vw;
+    height: 60vw;
   }
+
+
+
+  #section-4095440 > div > div{
+    padding: 0;
+    height: 504px;
+  }
+
+/*Use code IMAGINENOW to save 50% off registration*/
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(4){
+    text-align: center;
+    line-height: 1.5;
+    width: 80vw;
+    margin-left: 3vw;
+  }
+
+  /*Get Ready To Put AI To Work. Section*/
+  /*Container*/
+  .section-4095441 .custom-space-bottom {
+    padding-top: 8px;
+    padding-bottom: 57px;
+  }
+  /*Title*/
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(1) > span > span,
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(1),
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(1) > span > span > span > strong{
+    font-size: 36px !important;
+    font-weight: 500 !important;
+    line-height: 1.15 !important;
+  }
+
+  /*Don't miss this chance to experience Imagine in 2024. Register now to ensure your place.*/
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(5) > span:nth-child(1) > span,
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(5) > span:nth-child(1) > span > strong{
+    font-size: 23px !important;
+    font-weight: 600;
+  }
+
+  /*Are you an Automation Anywhere partner?*/
+
+  /*Container*/
+  .section-4111430 .custom-space-bottom {
+    padding-top:0 ;
+    padding-bottom: 45px;
+  }
+/*Title p*/
+#section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(1){
+  text-align: center;
+  line-height: 1.15;
+  width: 85vw;
 }
+/*Title*/
+  #section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(1) > span > span > span,
+  #section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(1) > span > span > span > strong{
+    font-size: 36px !important;
+    font-weight: 500 !important;
+  }
+
+  #section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(1){
+    text-align: center;
+    line-height: 1.15 !important;
+    width: 85vw;
+    margin-bottom: 3vh;
+  }
+  #section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(2) > span{
+    font-size: 23px !important;
+    
+  }
+
+  /*Cards*/
+  /*Cards Container*/
+  .section-4095679 .custom-space-top {
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+  /*Titles*/
+  #section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1),
+  #section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(1),
+  #section-4098820 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1),
+  #section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(1){
+    text-align: center !important;
+  }
+  #section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2),
+  #section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2),
+  #section-4098820 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2),
+  #section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2),
+  #section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(3) > span > span:nth-child(2){
+    text-align: center !important;
+    line-height: 1.5;
+    width: 80vw;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+    font-size: 20px !important;
+
+  }
+
+  /*Last register section*/
+
+/*Container*/
+.section-4095682 .custom-space-bottom {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+/*Title container*/
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(1){
+  text-align: center;
+  line-height: 1 !important;
+  width: 72vw;
+  margin-left: 9vw;
+  margin-bottom: 3vh;
+}
+
+/*Title text*/
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(1) > span > span,
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(1) > span > span > span > strong{
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(2){
+  text-align: center;
+  line-height: 1.5;
+  width: 60vw;
+  margin-left: 13vw;
+  margin-bottom: 3vh;
+}
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(2) > span > span > span{
+  font-size: 23px;
+    font-weight: 600;
+}
+
+/*Questions section*/
+#section-4095663 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span:nth-child(1){
+  font-size: 16px !important;
+}
+#section-4095663 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(4){
+  font-size: 16px;
+  color: #FF8A00;
+  font-weight: 600 !important;
+}
+}
+
