@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="scroll.css">
-</head>
-
-
-<body>
-    <div class="container">
-        <nav>
-            <a onclick="scroll(1)">One</a><a onclick="scroll(2)">Two</a><a onclick="scroll(3)">Three</a><a
-                onclick="scroll(4)">Four</a>
-        </nav>
-        <div class="div" id="1">Content 1</div>
-        <div class="div" id="2">Content 2</div>
-        <div class="div" id="3">Content 3</div>
-        <div class="div" id="4">Content 4</div>
-    </div>
-
-
+  </head>
+  <body>
     <script>
-        function scroll(element) {
-            const element = document.getElementById(`${element}`);
-            element.scrollIntoView();
-           
-            
-        }
+      //Dropdown menu mario.r@bizzabo.com -03/23/24
+
+      if (window.screen.width > 1024) {
+        document.querySelector(
+          "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a > div"
+        ).innerText = "ABOUT▾";
+
+        const open = () => about.appendChild(dropdown);
+        const close = () => about.removeChild(dropdown);
+
+        const about = document.querySelector(
+          "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a"
+        );
+
+        about.removeAttribute("href");
+        about.setAttribute("style", "position:absolute;");
+
+        const dropdown = document.createElement("div");
+
+        dropdown.setAttribute(
+          "style",
+          "position:absolute; left:0; top:3vh; width:170px; height:90px; background-color: #0f1f2c; display: flex; justify-content:center;  align-items: center; flex-direction: column;"
+        );
+
+        const aboutDegree = document.createElement("a");
+
+        aboutDegree.setAttribute(
+          "style",
+          "width:180px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans,sans-serif;"
+        );
+        aboutDegree.setAttribute(
+          "href",
+          "https://events.degreed.com/focus-toronto-2024/page/3668537/about-degreed"
+        );
+        aboutDegree.innerText = "ABOUT DEGREED";
+
+        const whatIsFocus = document.createElement("a");
+
+        whatIsFocus.setAttribute(
+          "style",
+          "width:180px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans, sans-serif;"
+        );
+        whatIsFocus.setAttribute(
+          "href",
+          "https://events.degreed.com/focus-toronto-2024/page/3668538/what-is-focus"
+        );
+        whatIsFocus.innerText = "WHAT IS FOCUS?";
+
+        dropdown.appendChild(whatIsFocus);
+        dropdown.appendChild(aboutDegree);
+
+        about.addEventListener("mouseenter", open);
+        dropdown.addEventListener("mouseenter", open);
+        about.addEventListener("mouseleave", close);
+      }
     </script>
-
-</body>
-
+  </body>
 </html>

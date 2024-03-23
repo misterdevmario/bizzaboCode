@@ -1,0 +1,10 @@
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4) > a,
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(5){
+  display: none;
+}
+
+/*
+https://events.degreed.com/focus-toronto-2024/page/3668537/about-degreed
+https://events.degreed.com/focus-toronto-2024/page/3668538/what-is-focus
+
+*/

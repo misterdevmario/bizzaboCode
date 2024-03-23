@@ -25,13 +25,23 @@ body > p {
   justify-content: center;
   align-items: center;
 }
-/*Making responsive header element*/
-@media screen and (min-width: 768px) {
+
+/*Making header image and video responsive*/
+#section-4110233 > div > div:nth-child(1) > video{
+  width: 100vw;
+}
+  #section-4110233 > div {
+    height: 56vw;
+  }
   .section-4095438 .custom-space-bottom,
   .section-4111710 .custom-space-bottom {
     padding: 0;
     height: 47vw;
   }
+
+
+/*Making responsive header element*/
+@media screen and (min-width: 768px) {
 
   /*Are You an Automation Anywhere Partner? Section*/
   #section-4111430
@@ -43,9 +53,7 @@ body > p {
     > div {
     width: 773px;
   }
-}
-
-/*Are you a business leader?, Are you a developer?, Do you lead a Center of Excellence? and Forge new business relationships. Sections*/
+  /*Are you a business leader?, Are you a developer?, Do you lead a Center of Excellence? and Forge new business relationships. Sections*/
 .section-4095679 .atom-sectionMain, .section-4098793 .atom-sectionMain, .section-4098820 .atom-sectionMain, .section-4098821 .atom-sectionMain  {
   min-height: 593px;
   
@@ -55,7 +63,7 @@ body > p {
   max-width: 100vw;
 }
 
-/*Are you a business leader? and Are you a developer? Sections*/
+/*Are you a business leader? and Do you lead a Center of Excellence? Sections*/
 
 /*First element*/
 #section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
@@ -80,10 +88,74 @@ body > p {
   top: 1vw;
 }
 
-/*Making video responsive*/
-@media screen and (min-width: 220px) {
-  #section-4110233 > div {
-    height: 56vw;
+
+/*Are you a developer? and Forge new business relationships. Sections*/
+
+/*First element*/
+#section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2),
+#section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  height: 438px;
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  margin-left: 3vw
+}
+/*First element p*/
+#section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2),
+#section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2){
+  width: 25vw;
+}
+/*Second element img*/
+#section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  width: 668px;
+  height: 441px;
+  margin-left: 6vw;
+  top: 1vw;
+}
+
+/*Adjusting text on section-4095682*/
+
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(1){
+  text-align: center;
+  line-height: 1.5;
+  width: 45vw;
+  margin-left: 3vw;
+}
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(3){
+  text-align: center;
+  line-height: 1.15;
+  width: 50vw;
+}
+
+}
+
+
+
+/*The Convergence of Inspiration and Innovation. section*/
+@media screen and (max-width: 768px) {
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(1) > strong > span,
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(2) > span > strong > span,
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(2) > span > span > span > strong,
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(2) > span > span > span{
+    font-size: 36px !important;
+    font-weight: 500;
+
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(4) > span > span > span,
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(5) > span > span > span{
+    font-size: 23px;
+    font-weight: 600;
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(6){
+    text-align: center;
+    line-height: 1.5;
+    width: 69vw;
+    margin-top: 10vw;
+    margin-left: 12vw;
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(6) > span > strong{
+    font-weight: 400;
   }
 }
 
