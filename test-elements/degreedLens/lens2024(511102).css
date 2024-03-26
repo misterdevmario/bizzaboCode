@@ -1,0 +1,5 @@
+/*Hidding chat bar, yellow chat button, main hour above session card*/
+
+.AppToolbar-container, body > div:nth-child(11), .time-slots-text{
+    display: none;
+}
