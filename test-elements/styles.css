@@ -1,32 +1,38 @@
-/*Hidding elements and moving logo on navbar -mario.r@bizzabo.com*/
-#bs-example-navbar-collapse-1 > ul:nth-child(1){
-   margin-right: 85vw;
+/*Header responsive mario.r@bizzabo.com 03/22/24*/
+#section-4182111 > div {
+  background-size: 100vw !important;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url(https://res.cloudinary.com/bizzaboprod/image/upload/q_auto,f_auto,c_scale,c_crop,g_custom/v1711043700/txzf77zfuv1xqn1kynsd) !important;
+}
+#section-4182111 > div > div > div > div.col-xs-12.col-sm-9.col-md-8.left {
+  display: none !important;
+}
+.section-4182111 .custom-space-bottom{
+  padding: 0;
+  height: 42vw;
 }
 
-.nav-button-wrapper{
-   display: none !important;
-}
-
-/*Media queries of header element -mario.r@bizzabo.com*/
 @media screen and (max-width: 768px) {
-   .section-4067459 .custom-space-bottom {
-       padding-top: 35vh;
-   }
-   .section-4067459 .element-20039354.cover-image-background {
-       background-size: 768px;
-   
-   }
-}
 
-@media screen and (max-width: 440px) {
-   .section-4067459 .custom-space-top {
-     padding-top: 9vh;
-       padding-bottom: 12vh;
+   body > div.main-view.footer-padding.footer-padding-confirmation > div > ul > div.global-template.section-4182111{
+      height: 42vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
-   
-   
-   .section-4067459 .element-20039354.cover-image-background {
-       background-size: 440px;
-     
+   #section-4182111{
+      width: 100vw;
    }
+   .section-4182111 .custom-space-bottom{
+    padding: 0;
+    height: 42vw;
+  }
+  #section-4182111 > div > div > div > div.col-xs-12.col-sm-9.col-md-8.left {
+    display: none !important;
+  }
 }
