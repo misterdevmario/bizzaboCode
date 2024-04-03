@@ -1,0 +1,46 @@
+/*Hidding chat bar, yellow chat button, main hour above session card mario.r@bizzabo.com*/
+
+.AppToolbar-container,
+body > div:nth-child(14),
+body > div:nth-child(15),
+body > div:nth-child(16),
+.time-slots-text {
+  display: none;
+}
+
+/*Changing time to LENS on demand*/
+.time-slots-time{
+    font-size: 0px;
+}
+.time-slots-time::after {
+  content: "LENS On Demand";
+  font-size: 48px;
+  font-family: La Nord;
+}
+
+/*Hiding dates below sessions videos and ading space to the container*/
+
+.session-info-top{
+    margin-top:50px ;
+}
+.session-info-info{
+    display: none;
+}
+
+#main-wrap > main > div > div > div.agenda-layout-layout > div > div > div.grid-cards-separated-opt-root.cardsXl > div.time-slots-loadMoreCard > span{
+    font-size: 0;
+}
+
+#main-wrap > main > div > div > div.agenda-layout-layout > div > div > div.grid-cards-separated-opt-root.cardsXl > div.time-slots-loadMoreCard > span::after{
+    content: "+2 more sessions";
+    font-size: 48px;
+    font-family: La Nord;
+}
+
+/*End of CSS mario.r@bizzabo.com*/
+
+
+/*Hide Chat button on Agenda Page mario.r@bizzabo.com 03/04/24*/
+
+
+/*End of CSS mario.r@bizzabo.com*/

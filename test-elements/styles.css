@@ -1,38 +1,25 @@
-/*Header responsive mario.r@bizzabo.com 03/22/24*/
-#section-4182111 > div {
+/*Header responsive mario.r@bizzabo.com 03/27/24*/
+#section-4145383 > div {
   background-size: 100vw !important;
+}
 
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
-    ),
-    url(https://res.cloudinary.com/bizzaboprod/image/upload/q_auto,f_auto,c_scale,c_crop,g_custom/v1711043700/txzf77zfuv1xqn1kynsd) !important;
+@media screen and (max-width:768px) {
+  .section-4145383 .custom-space-bottom{
+    padding-top: 148px;
+    padding-bottom: 15px;
+  }
 }
-#section-4182111 > div > div > div > div.col-xs-12.col-sm-9.col-md-8.left {
-  display: none !important;
+
+
+/*Header responsive mario.r@bizzabo.com 03/27/24*/
+
+#section-3135270 > div > div:nth-child(1) > video{
+width: 100vw;
 }
-.section-4182111 .custom-space-bottom{
+
+.section-3135270 .custom-space-bottom{
+  height: 55vw;
   padding: 0;
-  height: 42vw;
 }
 
-@media screen and (max-width: 768px) {
-
-   body > div.main-view.footer-padding.footer-padding-confirmation > div > ul > div.global-template.section-4182111{
-      height: 42vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-   #section-4182111{
-      width: 100vw;
-   }
-   .section-4182111 .custom-space-bottom{
-    padding: 0;
-    height: 42vw;
-  }
-  #section-4182111 > div > div > div > div.col-xs-12.col-sm-9.col-md-8.left {
-    display: none !important;
-  }
-}
+/*End CSS mario.r@bizzabo.com 03/27/24*/

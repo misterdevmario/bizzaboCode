@@ -1,0 +1,26 @@
+<script>
+
+    //Hiding dates on general sessions days
+    if (window.location.href.includes("1709596800000")) {
+        document.querySelector("#main-wrap > main > div > div > div.agenda-layout-layout > div > div > div.grid-cards-separated-opt-root.cardsXl > div > div.session-card-contentWrap.sm.md.down-lg.down-xl.session-card-contentWrapSingle > div.session-card-main.session-card-mainSingle.sm.md.down-lg.down-xl > div.session-card-content.session-card-contentWide.sm.md.down-lg.down-xl > div.card-title-oneColumnContainer > span").textContent = "Day 1 general sessions"
+    }
+    if (window.location.href.includes("1709683200000")) {
+        document.querySelector("#main-wrap > main > div > div > div.agenda-layout-layout > div > div > div.grid-cards-separated-opt-root.cardsXl > div > div.session-card-contentWrap.sm.md.down-lg.down-xl.session-card-contentWrapSingle > div.session-card-main.session-card-mainSingle.sm.md.down-lg.down-xl > div.session-card-content.session-card-contentWide.sm.md.down-lg.down-xl > div.card-title-oneColumnContainer > span").textContent = "Day 2 general sessions"
+    }
+
+    //Changing 9:00AM to LENS On Demand
+
+    document.querySelectorAll(".time-slots-time").forEach(text => text.textContent = "LENS On Demand")
+
+</script>
+
+<script>
+    document.querySelector("#main-wrap > main > div > div > div.agenda-layout-layout > div > div > div.time-slots-timeWrap > span.time-slots-time").textContent = "LENS On Demand"
+    alert("Test")
+</script>
+
+<script>
+    /*Hide Chat button on Agenda Page mario.r@bizzabo.com 03/04/24*/
+
+    document.getElementById("launcher").style.display = "none" 
+</script>
