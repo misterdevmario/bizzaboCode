@@ -1,4 +1,4 @@
-/*Prtners Summit Page*/
+/*Partners Summit Page*/
 
 /*Header Image*/
 
@@ -93,6 +93,7 @@ display: none;
     height: 441px;
     width: 662px;
     margin-right: 50px;
+    margin-left: 69px;
   }
 
   #section-4220655 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > img{
@@ -101,9 +102,111 @@ display: none;
 
 /*First photo Section "P's container*/
 #section-4220655 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
-    width: 379px;
+    width: 394px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+/*Event Details Section*/
+
+/*Container*/
+#section-4102363 > div > div{
+  max-width: 100vw !important;  
+  padding: 40px 35px 0px 35px !important;
+}
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  width: 28vw;
+}
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  width: 40vw;
 }
 
 
-AMPLIAR EL ESPACIO DEL SEGUNDO CONTENEDOR P'S CONTAINER
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+  width: 24vw;
+}
+/*Title*/
+#section-4102363 > div > div > div.element-20196659.text-center.fadeInUp > h2{
+  font-size: 40px !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+}
+/*Heding1*/
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(5),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(8),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(11),
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(5),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(9),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(12),
+
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(2),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(6){
+  margin-top: 25px !important;
+}
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1) > strong > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(1) > strong > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(1) > strong > span{
+  color: #FF8A00 !important;
+  font-size: 26px !important;
+  font-weight: 500 !important;
+  font-family:Montserrat !important ;
+}
+
+/*Heding2*/
+
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(5) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(8) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(11) > span > span > span > strong,
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(5) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(9) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(12) > span > strong,
+
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(2) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(6) > span > span > span > strong{
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+
+}
+
+/*Descriptions "p's"*/
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(3) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(4) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(6) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(7) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(9) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(10) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(12) > span > span > span,
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(3) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(4) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(6) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(7) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(8) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(10) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(11) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(13) > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(14) > span,
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(3) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(4) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(6) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(8) > span > span > span > em{
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  font-family:Montserrat !important ;
+line-height: 1 !important;
+}
 

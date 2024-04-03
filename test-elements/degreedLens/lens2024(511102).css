@@ -37,10 +37,22 @@ body > div:nth-child(16),
     font-family: La Nord;
 }
 
+#main-wrap > main > div > div > div.agenda-layout-layout > div > div > div.grid-cards-separated-opt-root.cardsSm > div.time-slots-loadMoreCard > span{
+    font-size: 0;
+}
+
+#main-wrap > main > div > div > div.agenda-layout-layout > div > div > div.grid-cards-separated-opt-root.cardsSm > div.time-slots-loadMoreCard > span::after{
+    content: "+2 more sessions";
+    font-size: 24px;
+    font-family: La Nord;
+}
+
+#launcher{
+    display: none !important;
+}
+
 /*End of CSS mario.r@bizzabo.com*/
 
 
-/*Hide Chat button on Agenda Page mario.r@bizzabo.com 03/04/24*/
 
 
-/*End of CSS mario.r@bizzabo.com*/
