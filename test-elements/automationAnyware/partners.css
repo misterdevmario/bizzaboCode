@@ -93,6 +93,7 @@ display: none;
     height: 441px;
     width: 662px;
     margin-right: 50px;
+    margin-left: 50px;
   }
 
   #section-4220655 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > img{
@@ -101,7 +102,7 @@ display: none;
 
 /*First photo Section "P's container*/
 #section-4220655 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
-    width: 379px;
+    width: 391px;
 }
 
 
