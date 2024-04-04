@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
-      const textContainer = document.createElement("div");
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    setTimeout(() => {
+      if (window.screen.width > 768 && document.location.href == "https://events.bizzabo.com/548767/agenda" ) {
+        const textContainer = document.createElement("div");
+        textContainer.setAttribute("style", "position:fixed; top:25vh; left:84vw; box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);border-radius:5px; padding:5px; width: 15vw; background:#3cb878; color: #fff")
+        const ul = document.createElement("ul");
+        const saveASeat = document.createElement("h3");
+        saveASeat.textContent = "How To Reserve Your Roundtable Seat:";
+        saveASeat.style.fontWeight = "bold"
+        saveASeat.style.color = "black"
+
+        const l1 = document.createElement("li");
+        l1.textContent = 'Choose "Save a Seat" for up to 5 roundtables.';
+        const l2 = document.createElement("li");
+        l2.textContent =
+          "Adding to calendar or “starring” sessions does not reserve your seat.";
+        const l3 = document.createElement("li");
+        l3.textContent = "Seats held for 3 mins. after start time.";
+        const l4 = document.createElement("li");
+        l4.textContent = "Arrive late? Join the waitlist line.";
+        const l5 = document.createElement("li");
+        l5.textContent = "Session full? Join the waitlist line.";
+        const l6 = document.createElement("li");
+        l6.textContent = "Entry to session based on available seats.";
+        const l7 = document.createElement("li");
+        l7.textContent = "Waitlists are first-come, first-serve.";
+
+        ul.appendChild(l1);
+        ul.appendChild(l2);
+        ul.appendChild(l3);
+        ul.appendChild(l4);
+        ul.appendChild(l5);
+        ul.appendChild(l6);
+        ul.appendChild(l7);
+
+        textContainer.appendChild(saveASeat, ul);
+        textContainer.appendChild(ul);
+
+
+
+        document.body.appendChild(textContainer);
+      }
+      
+      if(window.screen.width < 767 && document.location.href == "https://events.bizzabo.com/548767/agenda"){
+        const textContainer = document.createElement("div");
+        textContainer.setAttribute("style", "box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);border-radius:5px; background:#3cb878; color: #fff; margin-top:2vh; padding:8px" )
+
       const ul = document.createElement("ul");
+      ul.setAttribute("style", "padding:8px;")
       const saveASeat = document.createElement("h3");
       saveASeat.textContent = "How To Reserve Your Roundtable Seat:";
       saveASeat.style.fontWeight = "bold"
       saveASeat.style.color = "black"
 
       const l1 = document.createElement("li");
-      l1.textContent = 'Choose "Save a Seat" for up to 5 roundtables';
+      l1.textContent = 'Choose "Save a Seat" for up to 5 roundtables.';
       const l2 = document.createElement("li");
       l2.textContent =
-        "Adding to calendar or “starring” sessions does not reserve your seat";
+        "Adding to calendar or “starring” sessions does not reserve your seat.";
       const l3 = document.createElement("li");
-      l3.textContent = "Seats held for 3 mins. after start time";
+      l3.textContent = "Seats held for 3 mins. after start time.";
       const l4 = document.createElement("li");
-      l4.textContent = "Arrive late? Join the waitlist line";
+      l4.textContent = "Arrive late? Join the waitlist line.";
       const l5 = document.createElement("li");
-      l5.textContent = "Session full? Join the waitlist line";
+      l5.textContent = "Session full? Join the waitlist line.";
       const l6 = document.createElement("li");
-      l6.textContent = "Entry to session based on available seats";
+      l6.textContent = "Entry to session based on available seats.";
       const l7 = document.createElement("li");
-      l7.textContent = "Waitlists are first-come, first-serve";
+      l7.textContent = "Waitlists are first-come, first-serve.";
 
       ul.appendChild(l1);
       ul.appendChild(l2);
@@ -41,14 +90,54 @@
       textContainer.appendChild(saveASeat, ul);
       textContainer.appendChild(ul);
 
-    //   const parent = document.querySelector(
-    //     "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row"
-    //   );
+      const parent = document.querySelector(
+        "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row"
+      );
 
-    //   parent.appendChild(textContainer);
+      parent.appendChild(textContainer);
+      }
+    }, 700)
 
-      document.querySelector("body > div.react-main.footer-padding-confirmation > div > div > div > div:nth-child(1)").prepend(textContainer);
+    // RoundTables
+    const textContainer = document.createElement("div");
+    textContainer.setAttribute("style", "position:fixed; top:25vh; left:84vw; box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);border-radius:5px; padding:5px; width: 15vw; background:#fff")
+    const ul = document.createElement("ul");
+    const saveASeat = document.createElement("h3");
+    saveASeat.textContent = "How To Reserve Your Roundtable Seat:";
+    saveASeat.style.fontWeight = "bold"
+    saveASeat.style.color = "black"
 
-    </script>
-  </body>
+    const l1 = document.createElement("li");
+    l1.textContent = 'Choose "Save a Seat" for up to 5 roundtables.';
+    const l2 = document.createElement("li");
+    l2.textContent =
+      "Adding to calendar or “starring” sessions does not reserve your seat.";
+    const l3 = document.createElement("li");
+    l3.textContent = "Seats held for 3 mins. after start time.";
+    const l4 = document.createElement("li");
+    l4.textContent = "Arrive late? Join the waitlist line.";
+    const l5 = document.createElement("li");
+    l5.textContent = "Session full? Join the waitlist line.";
+    const l6 = document.createElement("li");
+    l6.textContent = "Entry to session based on available seats.";
+    const l7 = document.createElement("li");
+    l7.textContent = "Waitlists are first-come, first-serve.";
+
+    ul.appendChild(l1);
+    ul.appendChild(l2);
+    ul.appendChild(l3);
+    ul.appendChild(l4);
+    ul.appendChild(l5);
+    ul.appendChild(l6);
+    ul.appendChild(l7);
+
+    textContainer.appendChild(saveASeat, ul);
+    textContainer.appendChild(ul);
+
+
+    document.querySelector("body > div.react-main.footer-padding-confirmation > div > div > div > div:nth-child(1)").prepend(textContainer);
+
+  </script>
+</body>
+
 </html>

@@ -70,6 +70,9 @@
     #section-4143486 > div{
         height: 35vh;
     }
+    body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+        display: none;
+    }
 }
 
 
@@ -87,9 +90,12 @@
     #section-4143486 > div{
         height: 25vh;
     }
+    body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+        display: none;
+    }
 }
 
-/*T. Rowe Price UK Investment Conference*/
+/*T. Rowe Price European Investment Conference*/
 /*Home page header responsive -mario.r@bizzabo.com 03/14/24*/
 .section-3996619 .custom-space-bottom {
     padding: 250px;
@@ -175,7 +181,75 @@
     .section-3996619 .custom-space-bottom {
         padding: 100px;
     }
+<<<<<<< HEAD
+    .video-element{
+        width: 768px;
+        height: auto;
+    }
+    #section-4142978 > div{
+        height: 52vh;
+    }
+    body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+        display: none;
+    }
+}
 
+
+@media screen and (max-width: 440px){
+    .section-3996619 .custom-space-bottom {
+        padding: 0;
+    }
+    #section-3996619 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+        font-size: 32px;
+    }
+    .video-element{
+        width: 100vw;
+        height: auto;
+    }
+    #section-4142978 > div{
+        height: 30vh;
+    }
+    body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+        display: none;
+    }
+}
+
+
+/*T. Rowe Price UK Investment Conference*/
+
+/*Home page header responsive -mario.r@bizzabo.com 03/14/24*/
+.section-3996619 .custom-space-bottom {
+    padding: 250px;
+}
+
+@media screen and (min-width: 2200px){
+    .section-3996619 .custom-space-bottom {
+        padding: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-3996619 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+        font-size: 67px;
+        width: 23vw;
+        margin-right: 4vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-3996619 .custom-space-bottom {
+        padding: 100px;
+    }
+    .video-element{
+        width: 768px;
+        height: auto;
+    }
+    #section-4143486 > div{
+        height: 52vh;
+    }
+=======
+
+>>>>>>> 7fee96b96201285c16a3ecd8abfccd7da073e725
     body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
         display: none;
     }
@@ -193,6 +267,16 @@
     body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
         display: none;
     }
+<<<<<<< HEAD
+    #section-4143486 > div{
+        height: 25vh;
+    }
+    body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+        display: none;
+    }
+}
+=======
 }
 
 
+>>>>>>> 7fee96b96201285c16a3ecd8abfccd7da073e725

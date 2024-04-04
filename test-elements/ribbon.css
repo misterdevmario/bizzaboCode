@@ -1,0 +1,18 @@
+/*Header image responsive mario.r@bizzabo.com*/
+
+#section-4186564 > div{
+    background-size: 100vw;
+}
+
+#section-4186564 > div > div{
+    padding: 0;
+    height: 57vw;
+}
+
+@media screen and (min-width:200px) {
+    #section-4186564 > div > div > div.element-20580822.text-center.fadeInUp,
+    #section-4186564 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div{
+        display: none;
+    }
+    
+}

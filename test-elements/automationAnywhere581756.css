@@ -1,0 +1,52 @@
+/*Media queries of header element -mario.r@bizzabo.com*/
+
+.section-4095438 .custom-space-bottom {
+    padding: 0;
+    height: 680px;
+  }
+
+@media screen and (max-width: 1440px) {
+    .section-4095438 .custom-space-bottom {
+      padding: 0;
+      height: 515px;
+    }
+    .section-4095438 .element-20167180.cover-image-background {
+      background-size: 1440px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+      .section-4095438 .custom-space-bottom {
+        padding: 0;
+        height: 365px;
+      }
+      .section-4095438 .element-20167180.cover-image-background {
+        background-size: 1024px;
+      }
+    }
+  @media  screen and (min-width: 1024px) {
+      #bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4){
+          display: none;
+      }
+  }
+  @media screen and (max-width: 768px) {
+    .section-4095438 .custom-space-bottom {
+      padding: 0;
+      height: 275px;
+    }
+  
+    .section-4095438 .element-20167180.cover-image-background {
+      background-size: 768px;
+    }
+  }
+  
+  @media screen and (max-width: 440px) {
+    .section-4095438 .custom-space-top {
+      height: 155px;
+      padding: 0px;
+    }
+  
+    .section-4095438 .element-20167180.cover-image-background {
+      background-size: 440px;
+    }
+  }

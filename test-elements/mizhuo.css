@@ -1,0 +1,29 @@
+/*Location background mario.r@bizzabo.com 03/22/24*/
+#section-4109741 > div{
+    background-color: #fff;
+}
+/*Hide logout button on agenda page mario.r@bizzabo.com 03/22/24*/
+body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div.login-buttons-container{
+    display: none;
+}
+/*Header image responsive mario.r@bizzabo.com 03/22/24*/
+#section-2953883 > div > div{
+    height: 57vw;
+}
+
+
+/* mobile view less than 768px */
+@media only screen and (max-width: 768px) {
+    #section-3325697 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p > span > a > span > u > strong{
+      line-height: normal;
+    }
+    #section-2953883 > div {
+      padding: 0;
+      margin-bottom: -1em;
+      margin-top: -1.6em;
+      max-height: 29vh;
+      background-size: contain; /*display full image*/
+      background-color: #001B6F;/*match background color*/
+   
+    }
+  }

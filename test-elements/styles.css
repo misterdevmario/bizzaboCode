@@ -1,0 +1,25 @@
+/*Header responsive mario.r@bizzabo.com 03/27/24*/
+#section-4145383 > div {
+  background-size: 100vw !important;
+}
+
+@media screen and (max-width:768px) {
+  .section-4145383 .custom-space-bottom{
+    padding-top: 148px;
+    padding-bottom: 15px;
+  }
+}
+
+
+/*Header responsive mario.r@bizzabo.com 03/27/24*/
+
+#section-3135270 > div > div:nth-child(1) > video{
+width: 100vw;
+}
+
+.section-3135270 .custom-space-bottom{
+  height: 55vw;
+  padding: 0;
+}
+
+/*End CSS mario.r@bizzabo.com 03/27/24*/

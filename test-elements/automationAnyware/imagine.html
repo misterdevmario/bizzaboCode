@@ -6,66 +6,46 @@
     <title>Document</title>
   </head>
   <body>
-    <script>
-      const regElement = document.querySelector(
-        "#bs-example-navbar-collapse-1 > ul:nth-child(1)"
-      );
-      regElement.setAttribute("style", "position: relative");
-      let regButton = null;
-      if (window.screen.width > 1024 ) {
-        regButton = document.createElement("button");
-        regButton.setAttribute(
-          "style",
-          "background-color: rgba(255, 159, 0, 1);border-color: rgba(255, 159, 0, 1);color: #ffffff;width: 35%; height: 80%; z-index:9999999; border: none; position: absolute; left: 45vw; top:8px;"
-        );
-        regButton.innerText = "Register Now";
-        regButton.addEventListener("click", goRegister);
-        regElement.appendChild(regButton);
-      }
+    <p>
+      <span style="color: rgb(99, 99, 99); font-size: 14px"
+        ><strong>Where is the event?</strong><strong><br /></strong>The Partner
+        Summit will be hosted at the Fairmont Austin on the 7th Floor on Monday,
+        June 10th- in the same building as Imagine. Imagine will run from June
+        11-12.</span
+      >
+    </p>
 
-      function goRegister() {
-        window.open(
-          "https://imagine.automationanywhere.com/page/3629102/register"
-        );
-      }
-    </script>
-
-    <script>
-      if (
-        document.location.href ==
-        "https://imagine.automationanywhere.com/page/3629102/register"
-      ) {
-        document.querySelector(
-          "#bs-example-navbar-collapse-1 > ul:nth-child(1) > button"
-        ).style.display = "none";
-      }
-    </script>
-
-<script>
-  let container = document.querySelector(".section-4220511")
-  let title = document.createElement("div")
-  title.textContent = " Partner Summit"
-
-  container.appendChild(title)
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>
-  <p><span style="color: rgb(255, 255, 255); font-size: 60px;">Partner Summit</span></p>
-</p>
-
+    <p>
+      <span
+        style="
+          color: rgb(99, 99, 99);
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+        "
+        ><strong>Will there be food?</strong></span
+      ><span
+        style="
+          color: rgb(99, 99, 99);
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+        "
+        ><strong><br />
+        </strong>We will offer an afternoon snack and
+        refreshments (coffee, tea) during the partner summit. There will be
+        light appetizers served at the welcome reception as well.&nbsp;<br /><br />
+        
+        <strong>How does badging work?<br /></strong
+        >You will receive one badge that will grant you access to the Partner
+        Summit, Imagine and all related sessions.&nbsp;<br /><br /><strong
+          >When should I plan to arrive?<br /></strong
+        >Badge pickup will start at 1:30 pm at the Fairmont, with the Partner
+        Summit presentations set to start at 2:30 pm. From 1:30 - 2:30 we will
+        be hosting an afternoon coffee reception for folks that arrive
+        early.&nbsp;<br /><br /><strong
+          >Will you be announcing the Partner of the Year awards again?<br /></strong
+        >Yes! Except the awards will be announced on the main stage of Imagine
+        this year instead of at the Partner Summit<br
+      /></span>
+    </p>
   </body>
 </html>

@@ -1,13 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <script>
-    document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a").removeAttribute("href")
+    //Dropdown menu mario.r@bizzabo.com -03/23/24
+    if (window.screen.width > 1024) {
+      document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a").removeAttribute("href")
+      document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a > div"
+      ).innerText = "ABOUT▾";
+
+      const open = () => about.appendChild(dropdown);
+      const close = () => about.removeChild(dropdown);
+
+      const about = document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a"
+      );
+
+      about.removeAttribute("href");
+      about.setAttribute("style", "position:absolute;");
+
+      const dropdown = document.createElement("div");
+
+      dropdown.setAttribute(
+        "style",
+        "position:absolute; left:0; top:40px; width:170px; height:90px; background-color: #0f1f2c; display: flex; justify-content:center;  align-items: center; flex-direction: column;"
+      );
+
+      const aboutDegree = document.createElement("a");
+
+      aboutDegree.setAttribute(
+        "style",
+        "width:180px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans,sans-serif;"
+      );
+      aboutDegree.setAttribute(
+        "href",
+        "https://events.degreed.com/focus-toronto-2024/page/3668537/about-degreed"
+      );
+      aboutDegree.innerText = "ABOUT DEGREED";
+
+      const whatIsFocus = document.createElement("a");
+
+      whatIsFocus.setAttribute(
+        "style",
+        "width:180px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans, sans-serif;"
+      );
+      whatIsFocus.setAttribute(
+        "href",
+        "https://events.degreed.com/focus-toronto-2024/page/3668538/what-is-focus"
+      );
+      whatIsFocus.innerText = "WHAT IS FOCUS?";
+
+      dropdown.appendChild(whatIsFocus);
+      dropdown.appendChild(aboutDegree);
+
+      about.addEventListener("mouseenter", open);
+      dropdown.addEventListener("mouseenter", open);
+      about.addEventListener("mouseleave", close);
+
+      
+    }
+    
+    document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7)").style.display = "block"
   </script>
 </body>
+
 </html>
+
+<script>
+
+  //-----------ONLY EDIT THIS AREA--------------
+  const sessionTable = {
+ 
+
+    587849:"https://interpret.world/integrationlink?token=6MmAmCnh&captions=false"
+
+
+  };
+
+  const embedHeight = "250px" //<---------------------------------Height in Pixels(px)
+  //------DO NOT EDIT ANYTHING BELOW------------
+
+  const sessionMapper = (sessionID) => sessionTable[sessionID] || "Error";
+
+
+ $(function () {
+  const mainBody = document.getElementsByTagName("body")[0]
+  const observer = new MutationObserver((mutations) => {
+    let getURI = mutations[0].target.baseURI
+    console.log("executed")
+    if (getURI.indexOf("agenda/session") !== -1) {
+      setTimeout(function () {
+        let sessionID = window.location.pathname.split("/").pop()
+        sessionID = sessionMapper(sessionID)
+        if (sessionID != "Error") {
+          if (
+            $(".live-broadcast-footer")[0] &&
+            $(".broadcast-captions").length == 0
+          ) {
+            $(".live-broadcast-footer").after(
+              '<div class="broadcast-captions"><iframe src="' +
+                sessionID +
+                '" style="width:100%; height:180px; border:0;"></iframe></div>'
+            )
+          }
+        }
+      }, 3000)
+    }
+  })
+  observer.observe(mainBody, {
+    attributeFilter: ["class"],
+  })
+})
+
+  </script>

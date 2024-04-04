@@ -1,0 +1,17 @@
+/*Home page header responsive -mario.r@bizzabo.com 03/15/24*/
+
+@media screen and (max-width: 1024px) {
+  .section-4135488 .custom-space-bottom {
+    padding: 0;
+    height: 55vw;
+
+  }
+}
+
+@media screen and (min-width: 330px) {
+  .section-4135488 .custom-space-bottom {
+    padding: 0;
+    height: 57vw;
+
+  }
+}
