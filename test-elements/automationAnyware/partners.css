@@ -2,20 +2,25 @@
 
 /*Header Image*/
 
-.section-4220511 .custom-space-bottom {
+.section-4264443 .custom-space-bottom {
     padding: 0;
     height: 28vw;
 }
 
 
 /*Header Title Container*/
-#section-4220511 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div{
+#section-4264443 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div{
     height: 24vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
     font-size: 79px;
+}
+
+
+#section-4264443 > div > div > div.element-20909858.text-center.fadeInUp{
+  display: none;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -36,7 +41,8 @@ font-size: 48px;
 /*First "P" Container*/
 #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(1){
     text-align: center;
-    width: 796px;
+    margin-left: 119px;
+    margin-right: 119px;
     line-height: 1.34;
 }
 
@@ -56,19 +62,19 @@ font-size: 48px;
     margin-top: 30px !important;
 }
 
-/*Second "P" text*/
+/*Third "P" text*/
 
-#section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(2) > strong > strong > span{
+#section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(5) > strong > span{
     color: rgb(255, 255, 255);
     font-size: 30px !important;
     font-family: Montserrat, sans-serif;
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 /*--------------------------------------------------------------------------*/
 /*First photo Section*/
 
 /*Containers*/
-.section-4220655 .custom-space-bottom {
+.section-4264470 .custom-space-bottom {
     padding: 0;
     height: 663px;
     max-width: 100vw;
@@ -77,18 +83,18 @@ font-size: 48px;
     align-items: center;
   }
 
-  #section-4220655 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+  #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1{
     display: flex !important;
     justify-content: space-evenly;
     align-items: center;
     width: 84vw;
   }
-  #section-4220655 > div > div > div.element-20729567.text-center.fadeInUp{
+  #section-4264470 > div > div > div.element-20729567.text-center.fadeInUp{
 display: none;
 }
 /*First photo Section image*/
 
-  #section-4220655 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
     padding: 0;
     height: 441px;
     width: 662px;
@@ -96,12 +102,12 @@ display: none;
     margin-left: 69px;
   }
 
-  #section-4220655 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > img{
+  #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > img{
     padding: 0;
   }
 
 /*First photo Section "P's container*/
-#section-4220655 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+#section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
     width: 394px;
 }
 
@@ -265,3 +271,148 @@ line-height: 1 !important;
 #section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
   margin-left: 109px;
 }
+
+
+/*< 768px*/
+
+@media screen and (max-width:768px) {
+
+  /*Header image*/
+  #section-4264443 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(2) > span{
+    font-size:7vw !important
+  }
+
+/*Elevate your partnership Section*/
+
+  #section-4102358 > div > div > div.element-20196607.text-center.fadeInUp > h2{
+    font-size: 36px !important;
+  }
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(1){
+    margin: 0 23px 0 23px !important;
+  }
+
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(1) > span > span > span{
+    font-size: 20px !important;
+  }
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(3) > span{
+    font-size: 12px !important;
+  }
+
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(5) > strong > span{
+    font-size: 16px !important;
+  }
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20196611 > button{
+    width: 192px;
+    height: 59px;
+    font-size: 20px;
+  }
+
+/*One photo Section*/
+/*Containers*/
+#section-4264470{
+  height: 100vh;
+}
+  #section-4264470 > div > div{
+    height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+  flex-direction: column-reverse;
+ }
+
+ #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  padding: 0;
+  height: 56vh;
+  width: 100vw;
+margin: 0;
+ }
+
+ #section-4264470 > div > div > div.element-20909963.text-center.fadeInUp{
+  display: none;
+ }
+
+ #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div{
+  width: 71vw !important;
+ }
+
+/*One photo Section ps*/
+
+#section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(1),
+ #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2){
+  font-size: 20px !important;
+  text-align: center !important;
+  line-height: 1.28;
+  color: #000;
+  margin: 43px 0 43px 0 ;
+ }
+
+ /*Event details Section*/
+/*P container*/ 
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+  width: 100%;
+}
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 *{
+  text-align: center !important;
+}
+
+/*Three photos section*/
+/*Containers*/
+#section-4116712 > div > div{
+  margin-top: 5vh;
+}
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+  flex-direction: column !important;
+}
+
+/*Two photos*/
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  width: 128vw;
+  height: auto;
+}
+/*Third photo*/
+#section-4116773 > div{
+  background-image: url("https://res.cloudinary.com/bizzaboprod/image/upload/v1712439048/Mobile_Partner_Summit_Panel_5_Photo3_i8mrki.jpg");
+}
+
+#section-4116773 > div > div{
+  height: 69vw;
+}
+
+/*Frequently Asked Questions*/
+/*Containers*/
+
+#section-4102510 > div > div{
+  padding: 0;
+  height: 1525px !important;
+  margin-top: 125px;
+  margin-bottom: 82px;
+}
+
+#section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  width: 100vw;
+  margin: 0;
+}
+/*Title*/
+#section-4102510 > div > div > div.element-20197232.text-center.fadeInUp > h2{
+  font-size: 36px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
