@@ -1,0 +1,340 @@
+/*Executive Summit page*/
+
+
+/*Header image*/
+#section-4216981 > div > div{
+ 
+        padding: 0;
+        height: 28vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+/*Title*/
+
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1){
+    text-align: center;
+    line-height: 1 !important;
+    width: 809px !important;
+}
+/*Putting AI to work section Section*/
+
+#section-4216993 > div > div{
+    padding:0;
+    height: 43vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Comfirm your attendance button*/
+/*Button container*/
+
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20167198{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20167198 > button{
+    width: 313px; 
+    height: 25px;
+}
+
+
+
+/*google*/
+
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Book section*/
+
+/*Containers*/
+
+#section-4216994 > div > div{
+    max-width: 85vw;
+}
+
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+    display: flex;
+    justify-content: center;
+}
+
+/*First and second images*/
+
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+    width: 40vw;
+}
+
+/*Third image container*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > img{
+    height: 25vw;
+    width: auto;
+    margin-bottom: 115px;
+}
+
+/*About The Executive Summit Section*/
+
+/*Container*/
+#section-4217457 > div > div{
+    padding: 0;
+    height: 35vw;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Third P*/
+
+#section-4217457 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3){
+    line-height: 1.15;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+/*Agenda Section*/
+/*Title*/
+#section-4279124 > div > div > div.element-20973901.text-center.fadeInUp > h2{
+    color: #000;
+    font-weight: 500;
+}
+/*P's*/
+#section-4279124 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div{
+    padding-left: 147px;
+    padding-right: 147px;
+}
+
+/*Last Section*/
+
+/*Container*/
+
+#section-4279195 > div > div{
+    padding: 0;
+    height: 1260px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Dots section*/
+#section-4279195 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > div{
+    margin-left: 155px;
+    margin-right: 155px;
+}
+
+#section-4279195 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > div > ul{
+    list-style-type: disc;
+    height: 681px !important;
+    display: flex !important;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 800px !important;
+}
+
+/*Hidding last section mobile*/
+body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279908{
+    display: none;
+}
+
+/*<768*/
+
+@media screen and (max-width: 768px) {
+/*Header*/
+/* Title first p*/
+/*Container*/
+
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+    margin-right: 5vw !important;
+}
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1){
+    text-align: center;
+    width: 354px !important;
+    margin-top: 1vh;
+}
+ #section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1) > span{
+        font-size: 22px !important;
+    }
+
+/*Title second p*/    
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(2){
+    display: none;
+}
+
+
+/*Title third p*/
+/*Container*/
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3){
+    text-align: center;
+    width: 240px;
+    margin-left: 13vw;
+}
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span{
+    font-size: 16px !important;
+}
+
+/*Putting AI to work Section*/
+
+/*Containers*/
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div{
+    padding: 0;
+}
+#section-4216993 > div > div{
+    height:430px ;
+}
+
+/*P's*/
+
+#section-4216993 > div > div > div.element-20167194.text-center.fadeInUp{
+    display: none;
+}
+
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(1) > span{
+    font-size: 36px !important;
+}
+
+/*google*/
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > div{
+    flex-direction: column;
+}
+
+
+/*Book section*/
+/*Container*/
+
+#section-4216994 > div > div{
+    max-width: 100vw !important;
+}
+
+/*Fisrt p*/
+#section-4278780 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p > span{
+    font-size: 20px !important;
+}
+/*Background*/
+
+#section-4216994 > div{
+    background-image: none !important;
+}
+
+#section-4278780 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p{
+    text-align: center;
+    line-height: 1.15;
+    width: 74vw;
+}
+
+
+/*Three Photos*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+    flex-direction: column;
+}
+/*First and second photo images*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2),
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+    width: 100vw;
+}
+/*First and second photo description*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div,
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div{
+    display: none !important;
+}
+
+/*Third photo*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > img{
+    background-size: cover !important;
+    width: auto;
+    margin: 0;
+    height: auto;
+}
+
+/*About The Executive Summit Section*/
+
+/*container*/
+#section-4217457 > div > div{
+    height: 596px;
+    width: 100vw;
+}
+
+/*First p*/
+#section-4217457 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1) > span{
+    font-size: 26px !important;
+}
+
+/*Second p*/
+#section-4217457 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3){
+    padding: 0 !important;
+}
+
+/*Third P*/
+#section-4217457 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div{
+    padding-left: 46px !important;
+    padding-right: 46px !important;
+}
+
+#section-4217457 > div > div > div.element-20168386.text-center.fadeInUp{
+    display: none;
+}
+
+/*Two photos section*/
+
+/*Container*/
+#section-4279113 > div > div{
+    padding-top: 17px !important;
+}
+
+
+#section-4279113 > div > div > div.element-20973846.text-center.fadeInUp{
+    display: none;
+}
+
+/*First and second photo*/
+#section-4279113 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4279113 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+    width: 100vw;
+    padding: 0;
+}
+
+/*Agenda Section*/
+ /*p's container*/
+
+ #section-4279124 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div{
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+ }
+
+/*All p's*/
+#section-4279124 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div * {
+    text-align: center;
+}
+
+
+/*Last Section*/
+/*Hiding desktop view*/
+body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279195{
+    display: none;
+}
+
+/*Displaying mobile view*/
+body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279908{
+    display: block;
+}
+
+
+/*Title*/
+
+#section-4279908 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1){
+    width: 88vw !important;
+}
+
+}

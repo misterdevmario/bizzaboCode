@@ -390,7 +390,7 @@ margin: 0;
 
 #section-4102510 > div > div{
   padding: 0;
-  height: 1525px !important;
+  height: 1053px !important;
   margin-top: 125px;
   margin-bottom: 82px;
 }
@@ -405,8 +405,28 @@ margin: 0;
   font-size: 36px;
 }
 
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  width: 113vw;
+  height: auto;
 }
 
+}
+
+
+
+@media screen and (max-width:440px) {
+  /*Frequently Asked Questions*/
+/*Containers*/
+
+#section-4102510 > div > div{
+  padding: 0;
+  height: 1691px !important;
+  margin-top: 125px;
+  margin-bottom: 82px;
+}
+
+}
 
 
 

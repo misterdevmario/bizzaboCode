@@ -49,5 +49,53 @@
         });
 </script>
 
+
+<script>
+  //Confirm Your Attendance Here button
+  document.querySelector("#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20167198 > button").innerText = "Confirm Your Attendance Here"
+  document.querySelector("#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20167198 > button").setAttribute("style", "font-size: 20px; width:390px; height: 59px ")
+</script>
+
+
+<script>
+//Executive summit page navbar, hide original navbar and add a new one with scroll functionality
+
+if(window.location.href.includes("3626412")){
+  document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1)").style.display = "none";
+
+const navbarContainer = document.querySelector("#bs-example-navbar-collapse-1")
+
+const executiveNavbar = document.createElement("div")
+executiveNavbar.setAttribute("style", "width: 88vw; height: 90%; display:flex; justify-content: space-between; align-items: center")
+if(window.screen.width < 1024) executiveNavbar.setAttribute("style", "width: 100vw; height: 90%; display:flex; justify-content: center; align-items: center")
+
+const logo = document.createElement("img")
+logo.setAttribute("src","https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1709160408/mf4ufyo6lzwpwcjjl4mw.png")
+logo.setAttribute("style", "width:auto; height:58px; margin-left:8vw")
+if(window.screen.width < 1024) logo.style.display = "none"
+
+const agendBtn = document.createElement("a")
+agendBtn.setAttribute("style","text-decoration: none; font-size: 18px; font-weight: 500; color: #fff;")
+agendBtn.addEventListener("click", () => scroll("section-4279124"))
+agendBtn.innerText = "AGENDA"
+if(window.screen.width < 1024) agendBtn.setAttribute("style", "padding:35px; text-decoration: none; font-size: 18px; font-weight: 500; color: #fff;")
+
+executiveNavbar.appendChild(logo)
+executiveNavbar.appendChild(agendBtn)
+navbarContainer.appendChild(executiveNavbar)
+
+
+function scroll(scrollTo) {
+  const element = document.getElementById(scrollTo);
+  element.scrollIntoView();
+}
+
+}
+
+
+</script>
+
+
 </body>
 </html>
+
