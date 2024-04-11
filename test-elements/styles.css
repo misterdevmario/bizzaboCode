@@ -1,25 +1,1285 @@
-/*Header responsive mario.r@bizzabo.com 03/27/24*/
-#section-4145383 > div {
-  background-size: 100vw !important;
+/*Hiding Executive summit page*/
+
+
+/*Home page header responsive -mario.r@bizzabo.com 03/20/24*/
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3){
+  display:none;}
+/*Setting font*/
+
+body {
+  font-family: "Montserrat";
 }
 
-@media screen and (max-width:768px) {
-  .section-4145383 .custom-space-bottom{
-    padding-top: 148px;
-    padding-bottom: 15px;
+/*Moving logo top left corner*/
+#bs-example-navbar-collapse-1
+  > ul:nth-child(1)
+  > li.logo-li-holder.hidden-sm.hidden-xs {
+  position: absolute;
+  right: 48vw;
+}
+
+/*Setting width all p tags*/
+body > p {
+  width: 953px;
+}
+
+/*Centering texts on custom elements*/
+.margin-custom-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Making header image and video responsive*/
+#section-4110233 > div > div:nth-child(1) > video{
+  width: 100vw;
+}
+  #section-4110233 > div {
+    height: 56vw;
+  }
+  .section-4095438 .custom-space-bottom,
+  .section-4111710 .custom-space-bottom {
+    padding: 0;
+    height: 47vw;
+  }
+
+  /*Register and hotel pages header image responsive*/
+  #section-4110047 > div,
+  #section-4111710 > div{
+    background-size: 100vw;
+    width: 100vw;
+    height: 34vw;
+  }
+
+/*Making responsive header element*/
+@media screen and (min-width: 1440px) {
+
+  /*Are You an Automation Anywhere Partner? Section*/
+  #section-4111430
+    > div
+    > div
+    > div.element-groups.Component-elementGroups-0-2-1
+    > div
+    > div.atom-main.full-width.margin-custom-element.element-20232643
+    > div {
+    width: 773px;
+  }
+  /*Are you a business leader?, Are you a developer?, Do you lead a Center of Excellence? and Forge new business relationships. Sections*/
+.section-4095679 .atom-sectionMain, .section-4098793 .atom-sectionMain, .section-4098820 .atom-sectionMain, .section-4098821 .atom-sectionMain  {
+  min-height: 593px;
+  
+}
+
+#section-4095679 > div > div, #section-4098793 > div > div, #section-4098820 > div > div, #section-4098821 > div > div{
+  max-width: 100vw;
+}
+
+/*Are you a business leader? and Do you lead a Center of Excellence? Sections*/
+
+/*First element*/
+#section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4098820 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  height: 438px;
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  margin-left: 10vw
+}
+/*First element p*/
+#section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2),
+#section-4098820 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2){
+  width: 25vw;
+}
+/*Second element img*/
+#section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2),
+#section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  width: 668px;
+  height: 441px;
+  margin-left: 6vw;
+  top: 1vw;
+}
+
+
+/*Are you a developer? and Forge new business relationships. Sections*/
+
+/*First element*/
+#section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2),
+#section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  height: 438px;
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  margin-left: 3vw
+}
+/*First element p*/
+#section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2),
+#section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2){
+  width: 25vw;
+}
+/*Second element img*/
+#section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  width: 668px;
+  height: 441px;
+  margin-left: 6vw;
+  top: 1vw;
+}
+
+/*Adjusting text on section-4095682*/
+
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(1){
+  text-align: center;
+  line-height: 1.5;
+  width: 45vw;
+  margin-left: 3vw;
+}
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(3){
+  text-align: center;
+  line-height: 1.15;
+  width: 50vw;
+}
+
+}
+
+
+
+/*The Convergence of Inspiration and Innovation. section*/
+@media screen and (max-width: 768px) {
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(1) > strong > span,
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(2) > span > strong > span,
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(2) > span > span > span > strong,
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(2) > span > span > span{
+    font-size: 36px !important;
+    font-weight: 500;
+
+  }
+  /*Don’t miss Imagine Austin June 11 – 12 at the Fairmont element*/
+  /*Setting background-img*/
+  #section-4095440 > div{
+    background-image: url("https://res.cloudinary.com/bizzaboprod/image/upload/v1710947928/imagine_Home_panel_cysqek.jpg") !important;
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(3){
+    text-align: center;
+    line-height: 1.15 !important;
+    margin-bottom: 3vh;
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(3) > span > span > span > strong{
+    font-size: 23px;
+    font-weight: 600;
+
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(6){
+    text-align: center;
+    line-height: 1.5;
+    width: 69vw;
+    margin-top: 10vw;
+    margin-left: 12vw;
+  }
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(4) > span > strong{
+    font-weight: 400!important;
   }
 }
 
-
-/*Header responsive mario.r@bizzabo.com 03/27/24*/
-
-#section-3135270 > div > div:nth-child(1) > video{
-width: 100vw;
+/*Questions section*/
+#section-4095663 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(4){
+  color: #FF8A00;
+  font-weight: 600 !important;
 }
 
-.section-3135270 .custom-space-bottom{
-  height: 55vw;
+/*Setting new header image  mobile */
+@media screen and (max-width: 440px) {
+  .section-4095438 .custom-space-bottom,
+  .section-4111710 .custom-space-bottom {
+    padding: 0;
+    height: 60vw;
+  }
+
+  #section-4095438 > div,
+  #section-4111710 > div,
+  #section-4110047 > div{
+    background-image: url("https://res.cloudinary.com/bizzaboprod/image/upload/v1710943235/Mobile_Homepage_Panel_1_qfsnsy.jpg")!important;
+    background-size: 100vw;
+    width: 100vw;
+    height: 60vw;
+  }
+
+
+
+  #section-4095440 > div > div{
+    padding: 0;
+    height: 504px;
+  }
+
+/*Use code IMAGINENOW to save 50% off registration*/
+  #section-4095440 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(4){
+    text-align: center;
+    line-height: 1.5;
+    width: 80vw;
+    margin-left: 3vw;
+  }
+
+  /*Get Ready To Put AI To Work. Section*/
+  /*Container*/
+  .section-4095441 .custom-space-bottom {
+    padding-top: 8px;
+    padding-bottom: 57px;
+  }
+  /*Title*/
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(1) > span > span,
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(1),
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(1) > span > span > span > strong{
+    font-size: 36px !important;
+    font-weight: 500 !important;
+    line-height: 1.15 !important;
+  }
+
+  /*Don't miss this chance to experience Imagine in 2024. Register now to ensure your place.*/
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(5) > span:nth-child(1) > span,
+  #section-4095441 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167208 > div > p:nth-child(5) > span:nth-child(1) > span > strong{
+    font-size: 23px !important;
+    font-weight: 600;
+  }
+
+  /*Are you an Automation Anywhere partner?*/
+
+  /*Container*/
+  .section-4111430 .custom-space-bottom {
+    padding-top:0 ;
+    padding-bottom: 45px;
+  }
+/*Title p*/
+#section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(1){
+  text-align: center;
+  line-height: 1.15;
+  width: 85vw;
+}
+/*Title*/
+  #section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(1) > span > span > span,
+  #section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(1) > span > span > span > strong{
+    font-size: 36px !important;
+    font-weight: 500 !important;
+  }
+
+  #section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(1){
+    text-align: center;
+    line-height: 1.15 !important;
+    width: 85vw;
+    margin-bottom: 3vh;
+  }
+  #section-4111430 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20232643 > div > p:nth-child(2) > span{
+    font-size: 23px !important;
+    
+  }
+
+  /*Cards*/
+  /*Cards Container*/
+  .section-4095679 .custom-space-top {
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+  /*Titles*/
+  #section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1),
+  #section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(1),
+  #section-4098820 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1),
+  #section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(1){
+    text-align: center !important;
+  }
+  #section-4095679 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2),
+  #section-4098793 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2),
+  #section-4098820 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2),
+  #section-4098821 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2),
+  #section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(3) > span > span:nth-child(2){
+    text-align: center !important;
+    line-height: 1.5;
+    width: 80vw;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+    font-size: 20px !important;
+
+  }
+
+  /*Last register section*/
+
+/*Container*/
+.section-4095682 .custom-space-bottom {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+/*Title container*/
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(1){
+  text-align: center;
+  line-height: 1 !important;
+  width: 72vw;
+  margin-left: 9vw;
+  margin-bottom: 3vh;
+}
+
+/*Title text*/
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(1) > span > span,
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(1) > span > span > span > strong{
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(2){
+  text-align: center;
+  line-height: 1.5;
+  width: 60vw;
+  margin-left: 13vw;
+  margin-bottom: 3vh;
+}
+#section-4095682 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20168422 > div > p:nth-child(2) > span > span > span{
+  font-size: 23px;
+    font-weight: 600;
+}
+
+/*Questions section*/
+#section-4095663 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span:nth-child(1){
+  font-size: 16px !important;
+}
+#section-4095663 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(4){
+  font-size: 16px;
+  color: #FF8A00;
+  font-weight: 600 !important;
+}
+}
+/*specific pages container*/
+.home-custom-css{}
+.community-custom-css{}
+.agenda-custom-css{}
+.speakers-custom-css{}
+
+/*main container of each section*/
+.main-app-container {}
+
+/*
+call-to-action buttons e.g:
+Register, Join The Community etc
+*/
+.btn-register {}
+
+/*Top navigation bar container*/
+.template-nav {}
+
+/*Top navigation bar items container*/
+#bs-example-navbar-collapse-1 {}
+
+/*social share buttons container*/
+.social-share-button {}
+
+/*social share buttons per social network*/
+.social-share-button.facebook {}
+.social-share-button.twitter {}
+.social-share-button.linkedin {}
+.social-share-button.google {}
+
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > button:nth-child(6) {
+  display:none;
+}
+
+/*-------------End Of Home page----------------*/
+
+
+
+/*Partners Summit Page*/
+
+/*Header Image*/
+
+.section-4264443 .custom-space-bottom {
+    padding: 0;
+    height: 27vw;
+}
+
+
+/*Header Title Container*/
+#section-4264443 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div{
+    height: 24vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 79px;
+}
+
+
+#section-4264443 > div > div > div.element-20909858.text-center.fadeInUp{
+  display: none;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+/*Elevate Your Partnership Section*/
+
+/*Text Title*/
+
+#section-4102358 > div > div > div.element-20196607.text-center.fadeInUp > h2{
+text-transform: capitalize;
+font-weight: 500;
+font-size: 48px;
+}
+
+/*First "P"*/
+
+/*First "P" Container*/
+#section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(1){
+    text-align: center;
+    margin-left: 119px;
+    margin-right: 119px;
+    line-height: 1.34;
+}
+
+/*First "P" text*/
+#section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(1) > span > span > span{
+    font-size: 30px !important;
+}
+
+#section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(1) > span > span > span > strong{
+    font-weight: 400;
+}
+
+/*First "P" Container*/
+
+#section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(2){
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+/*Third "P" text*/
+
+#section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(5) > strong > span{
+    color: rgb(255, 255, 255);
+    font-size: 30px !important;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500 !important;
+}
+/*--------------------------------------------------------------------------*/
+/*First photo Section*/
+
+/*Containers*/
+.section-4264470 .custom-space-bottom {
+    padding: 0;
+    height: 663px;
+    max-width: 100vw;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 84vw;
+  }
+  #section-4264470 > div > div > div.element-20729567.text-center.fadeInUp{
+display: none;
+}
+/*First photo Section image*/
+
+  #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+    padding: 0;
+    height: 441px;
+    width: 662px;
+    margin-right: 50px;
+    margin-left: 69px;
+  }
+
+  #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > img{
+    padding: 0;
+  }
+
+/*First photo Section "P's container*/
+#section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+    width: 394px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+/*Event Details Section*/
+
+/*Container*/
+#section-4102363 > div > div{
+  max-width: 100vw !important;  
+  padding: 40px 35px 0px 35px !important;
+}
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  width: 28vw;
+}
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  width: 40vw;
+}
+
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+  width: 24vw;
+}
+/*Title*/
+#section-4102363 > div > div > div.element-20196659.text-center.fadeInUp > h2{
+  font-size: 40px !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+  color: #000;
+}
+/*Heding1*/
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(5),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(8),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(11),
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(5),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(9),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(12),
+
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(2),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(5){
+  margin-top: 25px !important;
+}
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1) > strong > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(1) > strong > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(1) > strong > span{
+  color: #FF8A00 !important;
+  font-size: 26px !important;
+  font-weight: 500 !important;
+  font-family:Montserrat !important ;
+}
+
+/*Heding2*/
+
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(2) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(5) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(8) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(11) > span > span > span > strong,
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(5) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(9) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(12) > span > strong,
+
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(2) > span > span > span > strong,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(5) > span > span > span > strong{
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+color: #000;
+}
+
+/*Descriptions "p's"*/
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(3) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(4) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(6) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(7) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(9) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(10) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(12) > span > span > span,
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(3) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(4) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(6) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(7) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(8) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(10) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(11) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(13) > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(14) > span,
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(3) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(4) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(6) > span > span > span,
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(7) > span > span > span > em{
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  font-family:Montserrat !important ;
+line-height: 1 !important;
+}
+
+/*Two photos Section*/
+
+/*Container*/
+
+#section-4116712 > div > div,
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  width: 622px;
+  height: 409px;
+}
+
+/*One photo Section*/
+#section-4116773 > div > div{
   padding: 0;
+  height: 36vw;
 }
 
-/*End CSS mario.r@bizzabo.com 03/27/24*/
+/*Frequently Asked Questions Section*/
+
+/*Container*/
+#section-4102510 > div > div{
+  padding: 0;
+  height: 1000px !important;
+  margin-top: 125px;
+}
+
+/*Title*/
+#section-4102510 > div > div > div.element-20197232.text-center.fadeInUp > h2{
+  font-size: 48px;
+  text-transform: capitalize;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: #000;
+}
+
+
+/*p containers*/
+
+#section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  margin-top: 25px;
+  width: 476px;
+}
+
+#section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  margin-left: 109px;
+}
+
+
+/*< 768px*/
+
+@media screen and (max-width:768px) {
+
+  /*Header image*/
+  #section-4264443 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(2) > span{
+    font-size:7vw !important
+  }
+
+/*Elevate your partnership Section*/
+
+  #section-4102358 > div > div > div.element-20196607.text-center.fadeInUp > h2{
+    font-size: 36px !important;
+  }
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(1){
+    margin: 0 23px 0 23px !important;
+  }
+
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(1) > span > span > span{
+    font-size: 20px !important;
+  }
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(3) > span{
+    font-size: 12px !important;
+  }
+
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20196610 > div > p:nth-child(5) > strong > span{
+    font-size: 16px !important;
+  }
+  #section-4102358 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20196611 > button{
+    width: 192px;
+    height: 59px;
+    font-size: 20px;
+  }
+
+/*One photo Section*/
+/*Containers*/
+#section-4264470{
+  height: 100vh;
+}
+  #section-4264470 > div > div{
+    height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+  flex-direction: column-reverse;
+ }
+
+ #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  padding: 0;
+  height: 56vh;
+  width: 100vw;
+margin: 0;
+ }
+
+ #section-4264470 > div > div > div.element-20909963.text-center.fadeInUp{
+  display: none;
+ }
+
+ #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div{
+  width: 71vw !important;
+ }
+
+/*One photo Section ps*/
+
+#section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(1),
+ #section-4264470 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(2){
+  font-size: 20px !important;
+  text-align: center !important;
+  line-height: 1.28;
+  color: #000;
+  margin: 43px 0 43px 0 ;
+ }
+
+ /*Event details Section*/
+/*P container*/ 
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2),
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+  width: 100%;
+}
+
+#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 *{
+  text-align: center !important;
+}
+
+/*Three photos section*/
+/*Containers*/
+#section-4116712 > div > div{
+  margin-top: 5vh;
+}
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+  flex-direction: column !important;
+}
+
+/*Two photos*/
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1){
+  width: 128vw;
+  height: auto;
+}
+/*Third photo*/
+#section-4116773 > div{
+  background-image: url("https://res.cloudinary.com/bizzaboprod/image/upload/v1712439048/Mobile_Partner_Summit_Panel_5_Photo3_i8mrki.jpg");
+}
+
+#section-4116773 > div > div{
+  height: 69vw;
+}
+
+/*Frequently Asked Questions*/
+/*Containers*/
+
+#section-4102510 > div > div{
+  padding: 0;
+  height: 1053px !important;
+  margin-top: 125px;
+  margin-bottom: 82px;
+}
+
+#section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  width: 100vw;
+  margin: 0;
+}
+/*Title*/
+#section-4102510 > div > div > div.element-20197232.text-center.fadeInUp > h2{
+  font-size: 36px;
+}
+
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+  width: 113vw;
+  height: auto;
+}
+
+}
+
+
+
+@media screen and (max-width:440px) {
+  /*Frequently Asked Questions*/
+/*Containers*/
+
+#section-4102510 > div > div{
+  padding: 0;
+  height: 1691px !important;
+  margin-top: 125px;
+  margin-bottom: 82px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*-------End of partner submit page---------*/
+
+
+
+
+
+
+
+/*Venue Page*/
+
+
+/*Containers*/
+
+#section-4111710 > div{
+    width: 100vw;
+    height: 28vw;
+}
+
+/*Header Image*/
+
+#section-4111710 > div > div{
+    padding: 0;
+    height: 28vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Header Title Container*/
+
+#section-4111710 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div{
+    height: 80px;
+
+    font-weight: 500;
+}
+
+/*Fairmont Section*/
+
+#section-4111711 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20233900 > a > button{
+    width: 262px;
+    height: 59px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/*Two photo Section*/
+
+#section-4274938 > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 23vw;
+    max-width: 100vw;
+}
+/*One photo Section*/
+
+#section-4274942 > div > div{
+    padding: 0;
+    height: 42vw;
+}
+
+/*Last Element Section*/
+
+#section-4274986 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div{
+    padding: 61px;
+}
+
+
+
+@media screen  and (max-width:768px){
+
+    /*Header*/
+    #section-4111710 > div{
+        background-image: url("https://res.cloudinary.com/bizzaboprod/image/upload/q_auto,f_auto,c_scale,c_crop,g_custom/v1712605810/uc0vhhxvh6kihxt3vnvo") !important;
+    }
+
+    /*Header title*/
+    #section-4111710 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p > span{
+        font-size: 42px !important;
+    }
+
+
+    /*Fairmont Austin Section*/
+
+    /*Titke*/
+    #section-4111711 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20233899 > div > p:nth-child(1) > span > span{
+        font-size: 30px !important;
+    }
+
+/*First and secon p's*/
+
+#section-4111711 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20233899 > div > p:nth-child(2) > span,
+#section-4111711 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20233899 > div > p:nth-child(3) > span > span{
+    font-size: 24px !important;
+}
+    /*TWo photos container*/
+    #section-4274938 > div > div{
+        height: 79vw;
+    }
+
+    #section-4274938 > div > div > div.element-20954572.text-center.fadeInUp{
+        display: none;
+    }
+/*One photo container*/
+    #section-4274942{
+        padding: 0 27px 17px 27px;
+    }
+
+    /*last Section*/
+    #section-4274986 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div{
+        padding: 14px;
+    }
+}
+
+/*---- End of Venue page--------------*/
+
+
+
+
+
+/*Executive Summit page*/
+
+
+/*Header image*/
+#section-4216981 > div > div{
+ 
+        padding: 0;
+        height: 28vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+/*Title*/
+
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1){
+    text-align: center;
+    line-height: 1 !important;
+    width: 809px !important;
+}
+/*Putting AI to work section Section*/
+
+#section-4216993 > div > div{
+    padding:0;
+    height: 43vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Comfirm your attendance button*/
+/*Button container*/
+
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20167198{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-20167198 > button{
+    width: 313px; 
+    height: 25px;
+}
+
+
+
+/*google*/
+
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Book section*/
+
+/*Containers*/
+
+#section-4216994 > div > div{
+    max-width: 85vw;
+}
+
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+    display: flex;
+    justify-content: center;
+}
+
+/*First and second images*/
+
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+    width: 40vw;
+}
+
+/*Third image container*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > img{
+    height: 25vw;
+    width: auto;
+    margin-bottom: 115px;
+}
+
+/*About The Executive Summit Section*/
+
+/*Container*/
+#section-4217457 > div > div{
+    padding: 0;
+    height: 35vw;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Third P*/
+
+#section-4217457 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3){
+    line-height: 1.15;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+/*Agenda Section*/
+/*Title*/
+#section-4279124 > div > div > div.element-20973901.text-center.fadeInUp > h2{
+    color: #000;
+    font-weight: 500;
+}
+/*P's*/
+#section-4279124 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div{
+    padding-left: 147px;
+    padding-right: 147px;
+}
+
+/*Last Section*/
+
+/*Container*/
+
+#section-4279195 > div > div{
+    padding: 0;
+    height: 1260px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Dots section*/
+#section-4279195 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > div{
+    margin-left: 155px;
+    margin-right: 155px;
+}
+
+#section-4279195 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > div > ul{
+    list-style-type: disc;
+    height: 681px !important;
+    display: flex !important;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 800px !important;
+}
+
+/*Hidding last section mobile*/
+body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279908{
+    display: none;
+}
+
+/*<768*/
+
+@media screen and (max-width: 768px) {
+/*Header*/
+/* Title first p*/
+/*Container*/
+
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+    margin-right: 5vw !important;
+}
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1){
+    text-align: center;
+    width: 354px !important;
+    margin-top: 1vh;
+}
+ #section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1) > span{
+        font-size: 22px !important;
+    }
+
+/*Title second p*/    
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(2){
+    display: none;
+}
+
+
+/*Title third p*/
+/*Container*/
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3){
+    text-align: center;
+    width: 240px;
+    margin-left: 13vw;
+}
+#section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span{
+    font-size: 16px !important;
+}
+
+/*Putting AI to work Section*/
+
+/*Containers*/
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div{
+    padding: 0;
+}
+#section-4216993 > div > div{
+    height:430px ;
+}
+
+/*P's*/
+
+#section-4216993 > div > div > div.element-20167194.text-center.fadeInUp{
+    display: none;
+}
+
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > p:nth-child(1) > span{
+    font-size: 36px !important;
+}
+
+/*google*/
+#section-4216993 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-20167197 > div > div{
+    flex-direction: column;
+}
+
+
+/*Book section*/
+/*Container*/
+
+#section-4216994 > div > div{
+    max-width: 100vw !important;
+}
+
+/*Fisrt p*/
+#section-4278780 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p > span{
+    font-size: 20px !important;
+}
+/*Background*/
+
+#section-4216994 > div{
+    background-image: none !important;
+}
+
+#section-4278780 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p{
+    text-align: center;
+    line-height: 1.15;
+    width: 74vw;
+}
+
+
+/*Three Photos*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1{
+    flex-direction: column;
+}
+/*First and second photo images*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2),
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+    width: 100vw;
+}
+/*First and second photo description*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div,
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div{
+    display: none !important;
+}
+
+/*Third photo*/
+#section-4216994 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > img{
+    background-size: cover !important;
+    width: auto;
+    margin: 0;
+    height: auto;
+}
+
+/*About The Executive Summit Section*/
+
+/*container*/
+#section-4217457 > div > div{
+    height: 596px;
+    width: 100vw;
+}
+
+/*First p*/
+#section-4217457 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1) > span{
+    font-size: 26px !important;
+}
+
+/*Second p*/
+#section-4217457 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3){
+    padding: 0 !important;
+}
+
+/*Third P*/
+#section-4217457 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div{
+    padding-left: 46px !important;
+    padding-right: 46px !important;
+}
+
+#section-4217457 > div > div > div.element-20168386.text-center.fadeInUp{
+    display: none;
+}
+
+/*Two photos section*/
+
+/*Container*/
+#section-4279113 > div > div{
+    padding-top: 17px !important;
+}
+
+
+#section-4279113 > div > div > div.element-20973846.text-center.fadeInUp{
+    display: none;
+}
+
+/*First and second photo*/
+#section-4279113 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4279113 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+    width: 100vw;
+    padding: 0;
+}
+
+/*Agenda Section*/
+ /*p's container*/
+
+ #section-4279124 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div{
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+ }
+
+/*All p's*/
+#section-4279124 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div * {
+    text-align: center;
+}
+
+
+/*Last Section*/
+/*Hiding desktop view*/
+body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279195{
+    display: none;
+}
+
+/*Displaying mobile view*/
+body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279908{
+    display: block;
+}
+
+
+/*Title*/
+
+#section-4279908 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1){
+    width: 88vw !important;
+}
+
+}

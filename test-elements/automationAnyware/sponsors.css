@@ -1,0 +1,54 @@
+
+
+/*Header Image*/
+/*Container*/
+
+#section-4289781 > div > div {
+    padding: 0;
+    height: 27vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*Logos section*/
+  /*Sponsor label*/
+  .partner-label-container{
+    display: none;
+}
+
+/*logos container*/
+#section-4052849 > div > div > div.partners-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+/*<768px*/
+  
+  @media screen and (max-width: 768px) {
+    /*Header Image*/
+  
+    /*Container*/
+  
+    #section-4289781 > div {
+      background-image: url(https://res.cloudinary.com/bizzaboprod/image/upload/v1712856350/Sponsor_Mobile-Header_l7hllo.jpg) !important;
+    }
+  
+    #section-4289781 > div > div {
+      height: 64vw !important;
+    }
+  /*Title p's*/
+  
+  #section-4289781 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1) > span > strong > span,
+  #section-4289781 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(2) > span > span,
+  #section-4289781 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span > strong > span{
+      font-size: 32px !important;
+  }
+  
+}
+  
+
+  
+

@@ -1,0 +1,41 @@
+/*-------------------------- Speakers Page--------------------------------*/
+
+/*Header Image*/
+
+/*Container*/
+
+#section-4288004 > div > div {
+  padding: 0;
+  height: 27vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*Header Image*/
+
+  /*Container*/
+
+  #section-4288004 > div {
+    background-image: url(https://res.cloudinary.com/bizzaboprod/image/upload/v1712851728/Speakers-Mobile-Header_smltjq.jpg) !important;
+  }
+
+  #section-4288004 > div > div {
+    height: 64vw !important;
+  }
+/*Title p's*/
+
+#section-4288004 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1) > span,
+#section-4288004 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(2) > span > strong > span > span,
+#section-4288004 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span{
+    font-size: 32px !important;
+}
+
+body > div.main-view.footer-padding > div > ul > div.urban-template.section-4052847{
+    padding: 0 50px 0 50px;
+}
+
+}
+
+
