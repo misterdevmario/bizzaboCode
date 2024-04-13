@@ -187,35 +187,7 @@ display: none;
 color: #000;
 }
 
-/*Descriptions "p's"*/
 
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(3) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(4) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(6) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(7) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(9) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(10) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(12) > span > span > span,
-
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(3) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(4) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(6) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(7) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(8) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(10) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(11) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(13) > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(14) > span,
-
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(3) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(4) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(6) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(7) > span > span > span > em{
-  font-weight: 400 !important;
-  font-size: 20px !important;
-  font-family:Montserrat !important ;
-line-height: 1 !important;
-}
 
 /*Two photos Section*/
 

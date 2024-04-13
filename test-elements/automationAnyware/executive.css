@@ -5,7 +5,7 @@
 #section-4216981 > div > div{
  
         padding: 0;
-        height: 28vw;
+        height: 27vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,7 +21,7 @@
 
 #section-4216993 > div > div{
     padding:0;
-    height: 43vw;
+    height: 37vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +116,7 @@
     padding-right: 147px;
 }
 
-/*Last Section*/
+/*Last Section desktop*/
 
 /*Container*/
 
@@ -132,6 +132,12 @@
 #section-4279195 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > div{
     margin-left: 155px;
     margin-right: 155px;
+}
+/*ul dots*/
+#section-4279195 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > div > ul{
+    list-style-type: disc;
+    list-style-position: outside;
+    color:#fff;
 }
 
 #section-4279195 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > div > ul{

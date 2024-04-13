@@ -66,19 +66,19 @@ if(window.location.href.includes("3626412")){
 const navbarContainer = document.querySelector("#bs-example-navbar-collapse-1")
 
 const executiveNavbar = document.createElement("div")
-executiveNavbar.setAttribute("style", "width: 88vw; height: 90%; display:flex; justify-content: space-between; align-items: center")
-if(window.screen.width < 1024) executiveNavbar.setAttribute("style", "width: 100vw; height: 90%; display:flex; justify-content: center; align-items: center")
+executiveNavbar.setAttribute("style", "width: 88vw; min-height: 60px; display:flex; justify-content: space-between; align-items: center")
+if(window.screen.width < 1024) executiveNavbar.setAttribute("style", "width: 100vw; min-height: 60px; display:flex; justify-content: center; align-items: center")
 
 const logo = document.createElement("img")
 logo.setAttribute("src","https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1709160408/mf4ufyo6lzwpwcjjl4mw.png")
-logo.setAttribute("style", "width:auto; height:58px; margin-left:8vw")
+logo.setAttribute("style", "width:auto; height:35px; margin-left:8vw")
 if(window.screen.width < 1024) logo.style.display = "none"
 
 const agendBtn = document.createElement("a")
-agendBtn.setAttribute("style","text-decoration: none; font-size: 18px; font-weight: 500; color: #fff;")
+agendBtn.setAttribute("style","height: 24px; width: auto; z-index:1; text-decoration: none; font-size: 18px; font-weight: 500; color: #fff;")
 agendBtn.addEventListener("click", () => scroll("section-4279124"))
 agendBtn.innerText = "AGENDA"
-if(window.screen.width < 1024) agendBtn.setAttribute("style", "padding:35px; text-decoration: none; font-size: 18px; font-weight: 500; color: #fff;")
+if(window.screen.width < 1024) agendBtn.setAttribute("style", " height: 24px; width: auto; z-index:1; padding:35px; text-decoration: none; font-size: 18px; font-weight: 500; color: #fff; cursor:pointer;")
 
 executiveNavbar.appendChild(logo)
 executiveNavbar.appendChild(agendBtn)
