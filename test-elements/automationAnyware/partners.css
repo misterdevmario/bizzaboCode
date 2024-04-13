@@ -388,16 +388,71 @@ margin: 0;
 
 
 @media screen and (max-width:440px) {
-  /*Frequently Asked Questions*/
-/*Containers*/
+/*Header*/
 
-#section-4102510 > div > div{
-  padding: 0;
-  height: 1691px !important;
-  margin-top: 125px;
-  margin-bottom: 82px;
+/*Title*/
+
+#section-4264443 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(2){
+  text-align: center;
+  line-height: 1;
 }
 
+#section-4264443 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(2) > span{
+  font-size: 42px !important;
+}
+
+/*Event Details*/
+/*Container*/
+#section-4102363 > div > div{
+  background-color: #fff;
+}
+
+/*Frequently Asked Questions*/
+/*Containers*/
+
+#section-4264443 > div{
+  background-image: url(https://res.cloudinary.com/bizzaboprod/image/upload/v1713018216/Mobile_Partner_Summit_Panel_1_hwgtvd.jpg) !important;
+}
+
+
+#section-4264443 > div > div{
+  padding: 0;
+  height: 41vw !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Three photos Section*/
+
+/*Container*/
+#section-4116712 > div > div{
+  padding-top: 0 !important;
+}
+/*Extra element*/
+#section-4116712 > div > div > div.element-20258305.text-center.fadeInUp{
+  display: none !important;
+
+  
+}
+/*First ans second photo*/
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-4116712 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+padding: 0 !important;
+width: 100vw !important;
+height: auto;
+}
+/*Frequently Asked Questions Section*/
+
+#section-4102510 > div > div{
+  height: 1710px !important;
+  margin-top: 87px;
+}
+
+/*First column container*/
+#section-4102510 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div{
+  height: 882px;
+}
 }
 
 

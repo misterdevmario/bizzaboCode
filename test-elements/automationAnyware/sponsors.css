@@ -18,11 +18,11 @@
 }
 
 /*logos container*/
-#section-4052849 > div > div > div.partners-container{
+.partners-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    margin: 0 !important;
 }
 
 /*<768px*/

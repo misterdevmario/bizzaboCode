@@ -95,6 +95,20 @@ function scroll(scrollTo) {
 
 </script>
 
+<script>
+  // Adding  navabr logos link to home
+//Home page
+  document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li.logo-li-holder.hidden-sm.hidden-xs > div > img").addEventListener("click",()=> goHome())
+//Executive summit page  
+  document.querySelector("#bs-example-navbar-collapse-1 > div > img").addEventListener("click",()=> goHome())
+
+  const goHome = () => {
+    window.location.replace("https://imagine.automationanywhere.com/home");
+
+  }
+
+</script>
+
 
 </body>
 </html>

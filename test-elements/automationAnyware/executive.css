@@ -158,6 +158,14 @@ body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279
 
 @media screen and (max-width: 768px) {
 /*Header*/
+/*Containers*/
+#section-4216981 > div{
+background-image: url(https://res.cloudinary.com/bizzaboprod/image/upload/v1713022541/Mobile_Executive_Summit_Panel_1_gczszu.jpg) !important;
+}
+#section-4216981 > div > div{
+    height: 63vw;
+}
+
 /* Title first p*/
 /*Container*/
 
@@ -169,8 +177,13 @@ body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279
     width: 354px !important;
     margin-top: 1vh;
 }
+/*Title*/
  #section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(1) > span{
-        font-size: 22px !important;
+        font-size: 42px !important;
+    }
+
+    #section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span > span{
+        font-size: 20px !important;
     }
 
 /*Title second p*/    
@@ -181,13 +194,15 @@ body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279
 
 /*Title third p*/
 /*Container*/
+
 #section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3){
     text-align: center;
     width: 240px;
     margin-left: 13vw;
+    line-height: 1.15;
 }
 #section-4216981 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span{
-    font-size: 16px !important;
+    font-size: 20px !important;
 }
 
 /*Putting AI to work Section*/
@@ -344,3 +359,5 @@ body > div.main-view.footer-padding > div > ul > div.trade-template.section-4279
 }
 
 }
+
+
