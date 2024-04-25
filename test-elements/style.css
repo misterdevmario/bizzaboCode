@@ -1,29 +1,88 @@
-/*Descriptions "p's"*/
+/*Header and video - mario.r@bizzabo.com*/
 
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(3) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(4) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(6) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(7) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(9) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(10) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(12) > span > span > span,
+  /*Header container*/
+  #section-3996619 > div > div {
+    padding: 0;
+    height: 47vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/*Header Video*/
+#section-3996619 > div > div > div:nth-child(1) > video{
+  width: 100vw;
+  }
 
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(3) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(4) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(6) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(7) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(8) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(10) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(11) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(13) > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(14) > span,
+/*Header title*/
+#section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+  font-size: 0;
+  font-family: TNR;
+}  
 
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(3) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(4) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(6) > span > span > span,
-#section-4102363 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > div > div > p:nth-child(7) > span > span > span > em{
-  font-weight: 400 !important;
-  font-size: 20px !important;
-  font-family:Montserrat !important ;
-line-height: 1 !important;
+#section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1::after{
+  content: "Want to attend the UK Investment Conference";
+  font-size: 46px;
+  text-transform: none;
+}
+
+/*Header Date*/
+
+#section-3996619 > div > div > div:nth-child(2) > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span{
+  font-size: 0 !important;
+}
+
+#section-3996619 > div > div > div:nth-child(2) > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span::after{
+  font-size: 1.4rem;
+  content: "Thursday, 19 September 2024";
+}
+
+  /*Second video container*/
+body > div.main-view.footer-padding > div > ul > div.trade-template.section-4143486{
+  padding: 6vw;
+
+}
+
+#section-4143486 > div{
+  height: 50vw;
+  }
+
+/*Second Video*/
+#section-4143486 > div > div:nth-child(1) > video{
+  width: 100vw !important;
+}
+
+
+@media screen and (max-width: 767px) {
+/*Second video container*/
+#section-4143486 > div{
+  height: 25vh !important;
+  padding: 6vw ;
+}
+}
+
+@media only screen and (max-width: 440px) {
+
+ /*Header container*/
+ #section-3996619 > div > div{
+  height: 58vh;
+ } 
+
+ /*Header Video*/
+#section-3996619 > div > div > div:nth-child(1) > video{
+ position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: 58vh !important;
+z-index: 0;
+transform: translateX(-81%) translateY(-50%); 
+}
+
+
+#section-4143486 > div{
+ height: 67;
+}
+
 }
