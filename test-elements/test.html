@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <iframe src="https://s3.amazonaws.com/bizzabo.users.files/198466/581728/20594019/CCWLV_Brochure_Update_4_gy1idb.pdf"
+        frameborder="0"></iframe>
+
+    https://bizzabo-demo-res.cloudinary.com/image/upload/v1713981565/2024_BMW_Championship_Bizzabo_Header_EOY_Celebration__5760_3832_px_1_czaphh.jpg
+
+    <style>
+        /*Header container background - mario.r@bizzabo.com 04/24/24*/
+        #section-4345729>div {
+            background-image: url(https://bizzabo-demo-res.cloudinary.com/image/upload/v1713981565/2024_BMW_Championship_Bizzabo_Header_EOY_Celebration__5760_3832_px_1_czaphh.jpg) !important;
+
+        }
+
+        #section-4345729>div>div {
+            padding: 0;
+            height: 66vw;
+        }
+    </style>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector("#main-wrap > main > header > div > nav > ul > li:nth-child(3) > a").removeAttribute("href")
+            document.querySelector("#main-wrap > main > header > div > nav > ul > li:nth-child(3) > a").setAttribute("href", "http://datarobot.com")
+        }, 700);
+    </script>
+
+<script>
+    setTimeout(() => {
+        // navbar tabs list container
+        var tabList = document.querySelector("#main-wrap > main > header > div > nav > ul")
+        // new tab cloned from community tab
+        var newTab = document.querySelector("#main-wrap > main > header > div > nav > ul > li:nth-child(3)").cloneNode(true)
+        newTab.firstChild.href = "http://datarobot.com"
+        newTab.firstChild.target = '_blank'
+        // append new cloned tab to navbar
+        tabList.appendChild(newTab)  
+        var newTab = document.querySelector("#main-wrap > main > header > div > nav > ul > li:nth-child(3)").remove()
+    }, 700);
+     </script>
+
+
+</body>
+
+</html>
