@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Adding link to icon so users can reproduce the audio or download the file. It opnes in a different tab. - mario.r@bizzabo.com.com
+
+      setTimeout(() => {
+        const audioContainer = document.querySelector(
+          "body > div.react-main > div > div > div.agenda-view.top-agenda-margin-double.with-banner.agenda-view--session > div.session-page.padding-bottom-small.container.transparentContainer.margin-bottom-small > div.session-section-container.session-sponsors-container > div.margin-bottom-medium.margin-right-none.margin-left-none.row > div"
+        );
+
+        const audioDiv = document.createElement("div");
+        audioDiv.setAttribute(
+          "style",
+          " width: 160px; height: 160px;  display: flex; justify-content: center; align-items: center; flex-direction: column; margin-left: 200px; cursor: pointer;"
+        );
+        audioDiv.addEventListener("click", () => openAudio());
+
+        const audioIcon = document.createElement("img");
+        audioIcon.setAttribute(
+          "src",
+          "https://bizzabo-demo-res.cloudinary.com/image/upload/v1713886039/audio_icon_n3ocex.png"
+        );
+        audioIcon.setAttribute("alt", "Audio icon");
+        audioIcon.setAttribute("style", "width:158px; height: auto;");
+
+        const audioP = document.createElement("p");
+
+        audioP.setAttribute("style", "text-decoration: none;  color: #000;");
+        audioP.textContent = "Session audio asset";
+
+        audioDiv.appendChild(audioIcon);
+        audioDiv.appendChild(audioP);
+
+        audioContainer.appendChild(audioDiv);
+
+        const openAudio = () => {
+          window.open(
+            "https://s3.amazonaws.com/bizzabo.users.files/198466/581728/20594019/testaudio.MP3"
+          );
+        };
+      }, 700);
+    </script>
+  </body>
+</html>
+
+target="_blank" rel="noopener noreferrer"
