@@ -1,0 +1,24 @@
+/*mario.r@bizzabo.com 15/05/24*/
+/*Small banner*/
+#section-4414534 > div{
+    background-image: url(https://bizzabo-demo-res.cloudinary.com/image/upload/q_100/v1715797552/brands_bar_khle1k.png) !important;
+}
+
+/*Second section Image container*/
+#section-4366320 > div > div{
+    max-width: 94vw;
+}
+
+/*Second section Image container*/
+#section-4366320 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+/*Second section third column image*/
+#section-4366320 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(3) > img{
+    border-radius: 25px;
+}
+

@@ -61,10 +61,16 @@ body > div.main-view.footer-padding > div > ul > div.trade-template.section-4143
   }  
   
   #section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1::after{
+<<<<<<< HEAD
     content: "Would you like to attend the UK Investment Conference";
     font-size: 30px;
     text-transform: none;
     font-weight: 700;
+=======
+    content: "Want to attend the UK Investment Conference";
+    font-size: 30px;
+    text-transform: none;
+>>>>>>> eba65fa09fc098779354f4fa9fb949100a38c3b1
   }
 
   /*My interests button on agenda page*/

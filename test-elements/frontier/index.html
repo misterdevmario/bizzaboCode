@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        const container = document.createElement("div")
+        container.setAttribute("style", " padding:70px; height: 12vw; width: 12vw; border-radius:15px; display: flex; justify-content: center; align-items: center; box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); flex-direction: column; position: absolute; top:25vh; left: 40vw")
+
+
+        const closePopUp = document.createElement("div")
+        closePopUp.innerText = "X"
+        closePopUp.addEventListener("click", close)
+        closePopUp.setAttribute("style","cursor: pointer; position:absolute; top:10px; right:10px; border-radius:100%; background-color:rgb(231, 221, 221); height:20px; width:20px; display: flex; justify-content: center; align-items: center; ")
+
+
+        const text = document.createElement("div")
+        text.innerText = "This is the text that we’d like to have: Thanks for checking out Frontiers Health! Join us in Berlin on October 17-18 for the 2024 global edition. Find more details on our official website:"
+        text.setAttribute("style","text-align:center")
+        
+        
+        const link = document.createElement("a")
+        link.innerText= "www.frontiers.health/"
+        link.setAttribute("href", "https://www.frontiers.health/")
+        link.setAttribute("style", "margin-top:5%")
+        container.appendChild(text)
+        container.appendChild(link)
+        container.appendChild(closePopUp)
+
+        document.body.appendChild(container)
+
+        function close (){
+            document.body.removeChild(container)
+        }
+
+    </script>
+</body>
+</html>

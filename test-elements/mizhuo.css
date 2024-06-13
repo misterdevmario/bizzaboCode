@@ -27,3 +27,27 @@ body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda
    
     }
   }
+
+  @media only screen and (max-width: 440px){
+    .banner-wrapper > img{
+      height: 268px !important;
+    }
+  }
+/*Viceroy section mobile view */
+  @media only screen and (max-width: 440px){
+    #section-4460544 > div > div{
+      height: 66vh;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    #section-4460544 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+      margin-top: 20%;
+    }
+
+    #section-4460544 > div > div {
+      padding: 0;
+      height: 83vw;
+  }
+
+  }
+ 
