@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+          let currentURL = window.location.href;
+        
+        // Check if the URL matches either https://cultivate.eightfold.ai/home or https://cultivate.eightfold.ai/
+        if (currentURL === 'https://cultivate.eightfold.ai/home' || currentURL === 'https://cultivate.eightfold.ai/') {
+              //toggle navdark
+          $('.navbar-toggle').on('click', function() {
+              if ($(this).hasClass('collapsed')) {
+                  $('.navColors').addClass('navbarDark');
+                } else {
+                  $('.navColors').removeClass('navbarDark');
+                }
+            });
+        } else {
+          $('.navColors').addClass('navbarDark');
+        }
+          
+          //herovideo
+          //$('.section-3721912 video').attr('src', 'https://res.cloudinary.com/dpanc7doa/video/upload/q_100/v1710451012/resize_3_1_au7lja.mp4');
+          
+            // speakers: add block for fading bg out near top of the div
+            let targetElements = document.querySelectorAll('.element-20192807');
+            let colorFadeDiv = document.createElement('div');
+            colorFadeDiv.classList.add('colorFade');
+            if (targetElements) {
+                targetElements.forEach(function (element) {
+                    // Clone the div for each element to avoid conflicts
+                    const clonedDiv = colorFadeDiv.cloneNode(true);
+                    element.appendChild(clonedDiv);
+                });
+            }
+         
+        
+          
+            let totalHTML = '';
+            $('.accordion h4').each(function (index) {
+                $(this)
+                    .nextUntil('hr')
+                    .andSelf()
+                    .wrapAll("<div class='faq-qa-wrapper'></div>");
+                $(this).nextUntil('hr').wrapAll('<div class="bizz-answer"></div>');
+                $(this).wrapAll('<div class="bizz-question"></div>');
+            });
+        
+            $('.accordion').fadeIn();
+        
+            $('.bizz-question').click(function () {
+                $(this).next('.bizz-answer').slideToggle();
+                $(this).toggleClass('show-answer');
+            });
+        });
+        //text fade in
+        $(document).on('scroll', function () {
+            let pageTop = $(document).scrollTop();
+            let pageBottom = pageTop + $(window).height();
+            let tags = $('.section-4098431');
+            // for the text that appears on scroll
+            if (tags.length > 0) {
+                for (var i = 0; i < tags.length; i++) {
+                    var tag = tags[i];
+                    if ($(tag).position().top < pageBottom) {
+                        $(tag).addClass('visible');
+                    } else {
+                        $(tag).removeClass('visible');
+                    }
+                }
+            }
+        
+            //video1 play on scroll
+            let videoOne = $('.section-3811489');
+            if (videoOne.length > 0) {
+                for (var i = 0; i < videoOne.length; i++) {
+                    var videoO = videoOne[i];
+                    if ($(videoO).position().top < pageBottom - 300) {
+                        $('.videoTextTwo')[0].play();
+                    }
+                }
+            }
+                //video2 play on scroll
+            let videoTwo = $('.section-4098062');
+            if (videoTwo.length > 0) {
+                for (var i = 0; i < videoTwo.length; i++) {
+                    var videoT = videoTwo[i];
+                    if ($(videoT).position().top < pageBottom - 300) {
+                        $('.videoTextTwo')[1].play();
+                    }
+                }
+            }
+        
+            //nav on scroll
+            //desktop
+          let currentURL = window.location.href;
+          if (currentURL === 'https://cultivate.eightfold.ai/home' || currentURL === 'https://cultivate.eightfold.ai/') {
+            let navbar = $('.navColors');
+            if ($(window).width() > 768) {
+                   if (pageTop > 500) {
+                    navbar.addClass('navbarDark');
+                } else {
+                    navbar.removeClass('navbarDark');
+                }
+            } else if ($(window).width() <= 768) {
+                if (pageTop > 200) {
+                    navbar.addClass('navbarDark');
+                } else {
+                    navbar.removeClass('navbarDark');
+                }
+            }
+          }
+        });
+        </script>
+        
+        
+        <!-- Bizzabo Reg Embed1: START -->
+        <script type="text/javascript">
+            // Function to inject Bizzabo registration embed code
+            function injectBizzaboRegistrationEmbed() {
+                var elements = document.querySelectorAll('.bizzabo-reg-embed1');
+        
+                elements.forEach(function(element) {
+                    // Create the main div element
+                    var div = document.createElement('div');
+                    div.style.display = 'inline-flex';
+                    div.style.width = '100%';
+                    div.classList.add('bz-widget-tickets-inline');
+                    div.setAttribute('data-flow-id', '7885347b-9e41-4f54-82f9-357f10230af9');
+                    div.setAttribute('data-event-id', '556920');
+                    div.setAttribute('data-registration-proxy', 'true');
+        
+                    // Create the first script element
+                    var script1 = document.createElement('script');
+                    script1.type = 'text/javascript';
+                    script1.classList.add('bz-inline-widget-script');
+                    script1.id = 'bz-inline-registration-script-7885347b-9e41-4f54-82f9-357f10230af9';
+                    script1.innerHTML = '(function(){var bz=document.createElement("script");bz.type="text/javascript";bz.async=true;bz.src="https://organizer.bizzabo.com/widgets/flows/tickets/ticketsSelect.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bz,s);})();';
+        
+                    // Create the second script element
+                    var script2 = document.createElement('script');
+                    script2.type = 'text/javascript';
+                    script2.id = 'bz-popup-registration-script-7885347b-9e41-4f54-82f9-357f10230af9';
+                    script2.setAttribute('data-event-id', '556920');
+                    script2.setAttribute('data-registration-proxy', 'true');
+                    script2.setAttribute('data-unique-name', '556920');
+                    script2.setAttribute('data-flow-id', '7885347b-9e41-4f54-82f9-357f10230af9');
+                    script2.setAttribute('data-inline-widget', 'true');
+                    script2.innerHTML = '(function(){var bz=document.createElement("script");bz.type="text/javascript";bz.async=true;bz.setAttribute("data-flow-id","7885347b-9e41-4f54-82f9-357f10230af9");bz.setAttribute("data-inline-widget", "true");bz.src="https://organizer.bizzabo.com/widgets/flows/popup/registrationPopup.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bz,s);})();';
+        
+                    // Append elements to the main div
+                    div.appendChild(script1);
+                    div.appendChild(script2);
+        
+                    // Replace the original element with the new div
+                    element.parentNode.replaceChild(div, element);
+                });
+            }
+        
+            // Call the function to inject the embed code
+            injectBizzaboRegistrationEmbed();
+        </script>
+        <!-- Bizzabo Reg Embed1: END -->
+        
+        <!-- Bizzabo Reg Embed2: START -->
+        <script type="text/javascript">
+            // Function to inject Bizzabo registration embed code
+            function injectBizzaboRegistrationEmbed() {
+                var elements = document.querySelectorAll('.bizzabo-reg-embed2');
+        
+                elements.forEach(function(element) {
+                    // Create the main div element
+                    var div = document.createElement('div');
+                    div.style.display = 'inline-flex';
+                    div.style.width = '100%';
+                    div.classList.add('bz-widget-tickets-inline');
+                    div.setAttribute('data-flow-id', '59e12b1b-b318-47ef-aaa6-80a446701e25');
+                    div.setAttribute('data-event-id', '556920');
+                    div.setAttribute('data-registration-proxy', 'true');
+        
+                    // Create the first script element
+                    var script1 = document.createElement('script');
+                    script1.type = 'text/javascript';
+                    script1.classList.add('bz-inline-widget-script');
+                    script1.id = 'bz-inline-registration-script-59e12b1b-b318-47ef-aaa6-80a446701e25';
+                    script1.innerHTML = '(function(){var bz=document.createElement("script");bz.type="text/javascript";bz.async=true;bz.src="https://organizer.bizzabo.com/widgets/flows/tickets/ticketsSelect.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bz,s);})();';
+        
+                    // Create the second script element
+                    var script2 = document.createElement('script');
+                    script2.type = 'text/javascript';
+                    script2.id = 'bz-popup-registration-script-59e12b1b-b318-47ef-aaa6-80a446701e25';
+                    script2.setAttribute('data-event-id', '556920');
+                    script2.setAttribute('data-registration-proxy', 'true');
+                    script2.setAttribute('data-unique-name', '556920');
+                    script2.setAttribute('data-flow-id', '59e12b1b-b318-47ef-aaa6-80a446701e25');
+                    script2.setAttribute('data-inline-widget', 'true');
+                    script2.innerHTML = '(function(){var bz=document.createElement("script");bz.type="text/javascript";bz.async=true;bz.setAttribute("data-flow-id","59e12b1b-b318-47ef-aaa6-80a446701e25");bz.setAttribute("data-inline-widget", "true");bz.src="https://organizer.bizzabo.com/widgets/flows/popup/registrationPopup.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bz,s);})();';
+        
+                    // Append elements to the main div
+                    div.appendChild(script1);
+                    div.appendChild(script2);
+        
+                    // Replace the original element with the new div
+                    element.parentNode.replaceChild(div, element);
+                });
+              
+                  var speakerContainer = document.getElementsByClassName('Component-elementGroups-0-2-1');
+                  speakerContainer[8].style.display = "flex";
+                  speakerContainer[8].style.justifyContent = "center";
+            }
+        
+            // Call the function to inject the embed code
+            injectBizzaboRegistrationEmbed();
+        </script>
+        <!-- Bizzabo Reg Embed2: END -->
+        <script>
+            //Adding trigger to the register button so the registration pop up is displayed mario.r@bizzabo.com 03/14/24
+         const registerPopUp = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a")
+         registerPopUp.removeAttribute("href")
+         registerPopUp.setAttribute("id","id")
+        </script>
+        
+            <!-- Bizzabo "2-Day Cultivate Pass" Registration Flow Widget Begin -->
+            <script type = "text/javascript"
+            id="bz-popup-registration-script-7885347b-9e41-4f54-82f9-357f10230af9"
+            data-event-id="556920"
+            data-registration-proxy="true"
+            data-unique-name="556920"
+            data-flow-id="7885347b-9e41-4f54-82f9-357f10230af9"
+            data-inline-widget="true"
+            data-element-id="id" data-element-class="">
+            (function() {
+                    var bz = document.createElement("script");
+                    bz.type = "text/javascript";
+                    bz.async = true;
+                    bz.setAttribute("data-flow-id","7885347b-9e41-4f54-82f9-357f10230af9")
+                    bz.setAttribute("data-inline-widget", "true")
+                    bz.src = "https://organizer.bizzabo.com/widgets/flows/popup/registrationPopup.js";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bz, s);
+                })();
+            </script>
+            <!-- Bizzabo "2-Day Cultivate Pass" Registration Flow Widget End -->
+        <script>
+            // Navigate to the Location.reload article by replacing this page
+window.location.replace(
+  "https://www.ed-fi.org/summit/",
+);
+
+        </script>
+    
+        <script>
+          setTimeout(() => {
+            document
+            .querySelectorAll("a[href='/page/3760099/request-the-brochure']")[1]
+            .href = 'mailto:events@customercontactweek.com?subject=Brochure Request - CCW (NAV)&body=Please send me the full CCW Event Brochure! [Include Signature Details]'
+            
+            document.querySelectorAll("a[href='/page/3771077/sponsor-now']")[1].href = 'mailto:events@customercontactweek.com?subject=Sponsor Request - CCW (NAV)&body=I would like to Sponsor CCW Las Vegas! [Include Signature Details]'
+          }, 1100)
+        </script>
+
+<script>
+
+    //adding to  link to mail “Request Information” -mario.r@bizzabo.com 08/05/24
+    setTimeout(() => {
+        
+        document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a").href = "mailto:events@customercontactweek.com?subject=CCW%20Nashville%20Information%C2%A0Request%20-%20CCW%20(NAV)&body=Please%20send%20me%20info%20on%20CCW%20Nashville%202024!%20[Include%20Signature%20Details]&gt;"
+    }, 700);
+</script>
+
+</body>
+</html>
+
+
+
+
+background-image: url(https://assets.bbhub.io/promo/sites/16/sell-side-bg.png);

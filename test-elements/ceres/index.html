@@ -1,0 +1,45 @@
+<script>
+  document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2) > a").href = 'https://events.bizzabo.com/601740/home#section-4308504'
+  document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3) > a").href = 'https://s3.amazonaws.com/bizzabo.users.files/145310/601740/21278446/Gala%20Sponsorship.pdf'
+  //   document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4) > a").href = 'https://events.bizzabo.com/601740/home#section-4334607'
+  document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3) > a").target = '_blank'
+  // addition by gleb@bizzabo — replace anchor link page refresh with scroll to preserve params in URL  
+  const firstNavLink = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2) > a");
+  firstNavLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetSection = document.querySelector('#section-4308504');
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+  //   const secondNavLink = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4) > a");
+  //   secondNavLink.addEventListener('click', (event) => {
+  //     event.preventDefault(); 
+  //     const targetSection = document.querySelector('#section-4334607');
+  //     targetSection.scrollIntoView({ behavior: 'smooth' });
+  //   });
+  const registerCtaLink = document.querySelector("#section-4308463 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-21106437 > a > button");
+  registerCtaLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetSection = document.querySelector('#section-4308504');
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+<script>
+  let tickets = Array.from(document.querySelector("#section-4308504 > div > div > div.element-groups.Component-elementGroups-0-2-1").childNodes)
+  let secondRow = Array.from(document.querySelector("#section-4308503 > div > div > div.element-groups.Component-elementGroups-0-2-1").childNodes)
+  secondRow.unshift()
+  tickets.push(secondRow[0])
+  tickets.push(secondRow[1])
+  tickets.forEach(ticket => {
+    ticket.style.cursor = 'pointer'
+    ticket.addEventListener('click', () => {
+      document.querySelector("#section-4324079").scrollIntoView(true)
+    })
+  })
+</script>
+<script>
+  if(window.location.href == "https://events.bloomberglive.com/bloomberg-green-festival-seattle-2024" || window.location.href == "https://events.bloomberglive.com/bloomberg-green-festival-seattle-2024/home"){
+    window.location.replace("https://www.bloomberglive.com/greenfestival/");
+  }
+
+</script>

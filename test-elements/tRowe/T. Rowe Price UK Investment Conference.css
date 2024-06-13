@@ -3,7 +3,7 @@
   /*Header container*/
   #section-3996619 > div > div {
     padding: 0;
-    height: 47vw;
+    height: 26vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +51,24 @@ body > div.main-view.footer-padding > div > ul > div.trade-template.section-4143
   width: 100vw !important;
 }
 
+@media screen and (max-width: 1024px){
+  /*Header title*/
+  #section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+    font-size: 0;
+    font-family: TNR;
+  }  
+  
+  #section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1::after{
+    content: "Want to attend the UK Investment Conference";
+    font-size: 30px;
+    text-transform: none;
+  }
+
+  /*My interests button on agenda page*/
+  body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+    display: none;
+  }
+}
 
 @media screen and (max-width: 767px) {
 /*Second video container*/
@@ -77,14 +95,17 @@ min-height: 100%;
 width: auto;
 height: 58vh !important;
 z-index: 0;
-transform: translateX(-81%) translateY(-50%); 
+transform: translateX(-85%) translateY(-50%); 
 }
 
 
 #section-4143486 > div{
  height: 67;
 }
-
+  /*My interests button on agenda page*/
+  body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+    display: none;
+  }
 }
 
 
