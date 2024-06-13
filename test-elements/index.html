@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="scroll.css">
-</head>
+    <link rel="stylesheet" href="scroll.css" />
+  </head>
 
-
-<body>
-    <div class="container">
-        <nav>
-            <a onclick="scroll(1)">One</a><a onclick="scroll(2)">Two</a><a onclick="scroll(3)">Three</a><a
-                onclick="scroll(4)">Four</a>
-        </nav>
-        <div class="div" id="1">Content 1</div>
-        <div class="div" id="2">Content 2</div>
-        <div class="div" id="3">Content 3</div>
-        <div class="div" id="4">Content 4</div>
-    </div>
-
-
+  <body>
     <script>
-        function scroll(element) {
-            const element = document.getElementById(`${element}`);
-            element.scrollIntoView();
-
-
+      document.querySelector(
+        "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+      ).innerText =
+        "Day 1: From Traditional Modeling to Augmented Intelligence";
+      if (window.location.href.includes("1718064000000")) {
+        document.querySelector(
+          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+        ).innerText =
+          "Day 1: From Traditional Modeling to Augmented Intelligence";
+      }
+      if (window.location.href.includes("1718150400000")) {
+        document.querySelector(
+          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+        ).innerText = "Day 2: From Simple Systems to New Modalities";
+      }
+      if (window.location.href.includes("1718236800000")) {
+        document.querySelector(
+          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+        ).innerText =
+          "Day 3: Big Transitions Require Change Management & Schrödinger Platform and Scientific Roadmap";
+      }
+      const allDays = document
+        .querySelector(
+          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(1)"
+        )
+        .addEventListener("click", () => changeAgendaDay());
+      const dayOne = document
+        .querySelector(
+          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(2)"
+        )
+        .addEventListener("click", () => changeAgendaDay());
+      const dayTwo = document
+        .querySelector(
+          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(3)"
+        )
+        .addEventListener("click", () => changeAgendaDay());
+      const dayThree = document
+        .querySelector(
+          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(4)"
+        )
+        .addEventListener("click", () => changeAgendaDay());
+      const changeAgendaDay = () => {
+        if (window.location.href.includes("1718064000000")) {
+          document.querySelector(
+            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+          ).innerText =
+            "Day 1: From Traditional Modeling to Augmented Intelligence";
         }
+        if (window.location.href.includes("1718150400000")) {
+          document.querySelector(
+            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+          ).innerText = "Day 2: From Simple Systems to New Modalities";
+        }
+        if (window.location.href.includes("1718236800000")) {
+          document.querySelector(
+            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+          ).innerText =
+            "Day 3: Big Transitions Require Change Management & Schrödinger Platform and Scientific Roadmap";
+        }
+      };
     </script>
-
-    <script>
-        //Adding controls to background video
-        document.querySelector("#section-4142978 > div > div:nth-child(1) > video").setAttribute("controls", true)
-
-    </script>
-
-</body>
-
+  </body>
 </html>
-
-

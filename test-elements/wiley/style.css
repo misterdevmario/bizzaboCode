@@ -1,0 +1,114 @@
+/*Adding prefixes to speakers'names -  mario.r@bizzabo.com*/
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(1) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(1) > div > div.atom-fullname.speaker-name::after{
+    font-size: 16px;
+    font-weight: 700;
+    content: "Mr. Benson Koh";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(2) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(2) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Ms. Diana Suhaiza Said";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(3) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(3) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Mr. Inkyu Lee";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(4) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(4) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Dr. Charlotte Lawson";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(5) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(5) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Dr. David Monahan";
+}
+
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(6) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(6) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Dr. Jessica Gobbo";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(7) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(7) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Dr. María Yáñez-Mó";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(8) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(8) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Dr. Michele Guescini";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(9) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(9) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Dr. Johan Skog";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(10) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(10) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Dr. Tania Valencia";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(11) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(11) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Dr. Olesia Gololobova";
+}
+
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(12) > div > div.atom-fullname.speaker-name{
+    font-size: 0;
+}
+#section-4197162 > div > div > div.col-xs-12.text-center.business-attendees-faces-holder.attendees-faces-holder > div > div:nth-child(12) > div > div.atom-fullname.speaker-name::after{
+        font-size: 16px;
+    font-weight: 700;
+    content: "Ms. Christina Jenkins";
+}
+
+
+

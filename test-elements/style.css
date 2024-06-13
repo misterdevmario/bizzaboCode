@@ -1,88 +1,53 @@
-/*Header and video - mario.r@bizzabo.com*/
 
-  /*Header container*/
-  #section-3996619 > div > div {
-    padding: 0;
-    height: 47vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*Card container*/
+body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(2) > div > div > div.session-elem.col-md-11.col-md-offset-0 > div{
+  height: 20vh;
+
+}
+
+body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(2) > div > div > div.session-elem.col-md-11.col-md-offset-0 > div > div.speakers-container.has-speakers.col-xs-12 > div > div > div > div{
+  height: 70px;
+}
+
+/*1*/
+body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(2) > div > div > div.session-elem.col-md-11.col-md-offset-0 > div > div.speakers-container.has-speakers.col-xs-12 > div > div > div > div > div > div.slick-slide.slick-active.slick-current > div{
+width: 120px;
+}
+
+body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(2) > div > div > div.session-elem.col-md-11.col-md-offset-0 > div > div.speakers-container.has-speakers.col-xs-12 > div > div > div > div > div > div.slick-slide.slick-active.slick-current > div > div > a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Adjusting image and text on Viceroy hotyel section - mario.r@bizzabo.com*/
+@media screen and (min-width:1440px) {
+  #section-4509304 > div > div{
+    height: 53vw;
   }
-/*Header Video*/
-#section-3996619 > div > div > div:nth-child(1) > video{
-  width: 100vw;
+  
+  #section-4509304 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div{
+    margin-top: 50%;
   }
-
-/*Header title*/
-#section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
-  font-size: 0;
-  font-family: TNR;
-}  
-
-#section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1::after{
-  content: "Want to attend the UK Investment Conference";
-  font-size: 46px;
-  text-transform: none;
 }
 
-/*Header Date*/
+/*Lineup Page Banner*/
 
-#section-3996619 > div > div > div:nth-child(2) > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span{
-  font-size: 0 !important;
+#section-4509305 > div > div{
+  height: 67vw;
+  padding: 0;
 }
 
-#section-3996619 > div > div > div:nth-child(2) > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span::after{
-  font-size: 1.4rem;
-  content: "Thursday, 19 September 2024";
-}
 
-  /*Second video container*/
-body > div.main-view.footer-padding > div > ul > div.trade-template.section-4143486{
-  padding: 6vw;
+/*Adding margin top to agenda widget = mario.r@bizzabo.com 06/11/24*/
 
-}
-
-#section-4143486 > div{
-  height: 50vw;
+@media screen and (min-width:1024px) {
+  body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container{
+    margin-top: 5vh;
   }
-
-/*Second Video*/
-#section-4143486 > div > div:nth-child(1) > video{
-  width: 100vw !important;
-}
-
-
-@media screen and (max-width: 767px) {
-/*Second video container*/
-#section-4143486 > div{
-  height: 25vh !important;
-  padding: 6vw ;
-}
-}
-
-@media only screen and (max-width: 440px) {
-
- /*Header container*/
- #section-3996619 > div > div{
-  height: 58vh;
- } 
-
- /*Header Video*/
-#section-3996619 > div > div > div:nth-child(1) > video{
- position: absolute;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: 58vh !important;
-z-index: 0;
-transform: translateX(-81%) translateY(-50%); 
-}
-
-
-#section-4143486 > div{
- height: 67;
-}
-
+  
+  body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row{
+    margin-top: 315px !important;
+  }
 }

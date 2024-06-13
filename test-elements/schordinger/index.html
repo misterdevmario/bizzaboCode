@@ -7,67 +7,91 @@
   </head>
   <body>
     <script>
-      4;
-      document.querySelector(
-        "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-      ).innerText =
-        "Day 1: From Traditional Modeling to Augmented Intelligence";
-      if (window.location.href.includes("1718064000000")) {
-        document.querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-        ).innerText =
-          "Day 1: From Traditional Modeling to Augmented Intelligence";
-      }
-      if (window.location.href.includes("1718150400000")) {
-        document.querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-        ).innerText = "Day 2: From Simple Systems to New Modalities";
-      }
-      if (window.location.href.includes("1718236800000")) {
-        document.querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-        ).innerText =
-          "Day 3: Big Transitions Require Change Management & Schrödinger Platform and Scientific Roadmap";
-      }
-      const allDays = document
-        .querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(1)"
-        )
-        .addEventListener("click", () => changeAgendaDay());
-      const dayOne = document
-        .querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(2)"
-        )
-        .addEventListener("click", () => changeAgendaDay());
-      const dayTwo = document
-        .querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(3)"
-        )
-        .addEventListener("click", () => changeAgendaDay());
-      const dayThree = document
-        .querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(4)"
-        )
-        .addEventListener("click", () => changeAgendaDay());
-      const changeAgendaDay = () => {
-        if (window.location.href.includes("1718064000000")) {
+
           document.querySelector(
             "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
           ).innerText =
             "Day 1: From Traditional Modeling to Augmented Intelligence";
-        }
-        if (window.location.href.includes("1718150400000")) {
-          document.querySelector(
-            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-          ).innerText = "Day 2: From Simple Systems to New Modalities";
-        }
-        if (window.location.href.includes("1718236800000")) {
-          document.querySelector(
-            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-          ).innerText =
+
+          const dayTitleContainer = document.querySelector(
+            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row"
+          );
+
+          const dayOneTitle = document
+            .querySelector(
+              "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+            )
+            .cloneNode(true);
+          dayOneTitle.innerText =
+            "Day 1: From Traditional Modeling to Augmented Intelligence";
+
+          const dayTwoTitle = document
+            .querySelector(
+              "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+            )
+            .cloneNode(true);
+          dayTwoTitle.innerText =
+            "Day 2: From Simple Systems to New Modalities";
+
+          const dayThreeTitle = document
+            .querySelector(
+              "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+            )
+            .cloneNode(true);
+          dayThreeTitle.innerText =
             "Day 3: Big Transitions Require Change Management & Schrödinger Platform and Scientific Roadmap";
-        }
-      };
+
+          if (window.location.href.includes("1718064000000")) {
+            document
+              .querySelector(
+                "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+              )
+              .remove();
+            dayTitleContainer.appendChild(dayOneTitle);
+          }
+          if (window.location.href.includes("1718150400000")) {
+            document
+              .querySelector(
+                "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+              )
+              .remove();
+            dayTitleContainer.appendChild(dayTwoTitle);
+          }
+          if (window.location.href.includes("1718236800000")) {
+            document
+              .querySelector(
+                "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
+              )
+              .remove();
+            dayTitleContainer.appendChild(dayThreeTitle);
+          }
+
+
     </script>
   </body>
 </html>
+
+<script>
+  setTimeout(() => {
+    // navbar tabs list container
+    var tabList = document.querySelector(
+      "#main-wrap > main > header > div > nav > ul"
+    );
+    // new tab cloned from community tab
+    var newTab = document
+      .querySelector(
+        "#main-wrap > main > header > div > nav > ul > li:nth-child(3)"
+      )
+      .cloneNode(true);
+    newTab.firstChild.href =
+      "https://events.bizzabo.com/549950/page/3642452/expo-hall";
+    newTab.firstChild.target = "_blank";
+    // append new cloned tab to navbar
+    tabList.appendChild(newTab);
+    var newTab = document
+      .querySelector(
+        "#main-wrap > main > header > div > nav > ul > li:nth-child(3)"
+      )
+      .remove();
+  }, 900);
+</script>

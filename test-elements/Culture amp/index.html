@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .AppToolbarItem-rewardsImage {
+            content: url("https://bizzabo-se-sa-assets.s3.us-east-2.amazonaws.com/App+Marketplace+Icons/PhotoBooth.png");
+        }
+    </style>
+    
+    <script>
+        //Script to Add Iframe to Replace Bizzabo Gameification
+        //-----------ONLY EDIT THIS AREA--------------
+    
+        let gameificationURL = "https://app.brandmatic.co/CultureFirstGlobal2024";
+        let gameificationText = "Photo Booth";
+    
+        //------DO NOT EDIT ANYTHING BELOW------------
+    
+        function changeLogo(){
+            let object = document.getElementsByClassName("AppToolbarItem-rewardsImage")[0].parentElement.parentElement;
+            object.childNodes[1].textContent = gameificationText;
+        }
+    
+        function addVenueGamification(){
+    
+            let appContainers = document.getElementsByClassName("AppFrame-frame");
+    
+            if(appContainers.length == 1){
+                //Check if Gamification application on either Slot 1 or 2 of application drawer
+                //if (appContainers[0].src != gameificationURL){
+                if(appContainers[0].src.indexOf("source=gamification") !== -1){
+                
+                    try{
+                        appContainers[0].sandbox.add('allow-top-navigation');
+                        appContainers[0].sandbox.add('allow-popups');
+                        appContainers[0].sandbox.add('allow-popups-to-escape-sandbox');
+                        appContainers[0].sandbox.add('allow-downloads');
+                        appContainers[0].allow = 'camera;microphone';
+                        appContainers[0].src = gameificationURL;
+                    }
+                    catch(error){
+                        console.debug("An error has occurred in Bizzabo services custom code")
+                    } 
+                }
+            }
+            else{
+                if (appContainers[1].src != gameificationURL){
+                    
+                    try{
+                        appContainers[1].sandbox.add('allow-top-navigation');
+                        appContainers[1].sandbox.add('allow-popups');
+                        appContainers[1].sandbox.add('allow-popups-to-escape-sandbox');
+                        appContainers[1].sandbox.add('allow-downloads');
+                        appContainers[1].allow = 'camera;microphone';
+                        appContainers[1].src = gameificationURL;
+                    }
+                    catch(error){
+                        console.debug("An error has occurred in Bizzabo services custom code")
+                    } 
+                }
+             }
+        }
+        
+        // Function to be called when a mutation is observed
+        const gameification_mutationCallback = function(mutationsList, observer) {
+            
+            try{
+                for (const mutation of mutationsList) {
+    
+                    if (mutation.type === 'childList') {
+                    
+                        // Check if "testitem" class is added to any new elements
+                        mutation.addedNodes.forEach(node => {
+                            
+                            if(node.classList && node.classList.contains('AppToolsView-item')){
+                                changeLogo();
+                            }
+                            //Check if Mobile footer for reload
+                            else if(node.classList && node.classList.contains('ring-layout-footer')){
+                                changeLogo();
+                            }
+                            //Check if Desktop header for reload
+                            else if(node.classList && node.classList.contains('drawer-navigation-lg-md-header')){
+                                changeLogo();
+                            }
+                            else if(node.classList && node.classList.contains('agenda-view-layout')){
+                                changeLogo();
+                            }
+                            //Check if app frame opening
+                            else if(node.classList && node.classList.contains('AppFrame-frame')) {
+                                addVenueGamification();
+                            }
+                        });
+                    }
+                }
+            }
+            catch(error){
+                console.debug("An error has occurred in Bizzabo services custom code")
+            }
+        };
+    
+        // Create a Mutation Observer instance
+        const gameification_observer = new MutationObserver(gameification_mutationCallback);
+    
+        // Target element to observe
+        const gameification_targetNode = document.body;
+    
+        // Configuration of the observer
+        const gameification_config = { childList: true, subtree: true };
+    
+        // Start observing the target node for configured mutations
+        gameification_observer.observe(gameification_targetNode, gameification_config);
+    
+    
+    </script>
+    
+    <!--Expo Hall Script Removed, replaced with product feature toggle-->
+    
+    <script>
+    
+        //--------------ONLY EDIT THIS AREA----------------
+        
+        //let pageURL = "PAGE URL HERE"             // <-------------- ex: pageURL = "https://www.bizzabo.com"
+        let pageURL = "https://www.cultureamp.com/lets-chat?utm_source=&utm_medium=&utm_campaign=AP%3AGlobal%20-%20Regional%20-%20Request%20a%20Demo%20-%20Bizzabo%20Platform%7CR%3Aglobal%7CC%3A24cfgvirtual%7CD%3A2024_05_14%7CTe%3Afield_mkt_fmm%7CT%3Ageneral"
+        //let buttonText = "BUTTON TEXT HERE"       // <-------------- ex: buttonText = "Visit Bizzabo"
+        let buttonText = "Request a Demo"
+    
+       //------------DO NOT EDIT ANYTHING BELOW------------
+    
+        //Function to add Custom Page on Navigation Bar
+        function addCustomPageLoad(){
+            
+            let menuItem = document.getElementsByClassName("drawer-navigation-lg-md-link nav-link")
+            let customPageLink = '<a class="drawer-navigation-lg-md-link nav-link" href="' + pageURL + '" target="_blank">'+buttonText+' <svg width="1em" height="1em" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="drawer-navigation-lg-md-arrowIcon"><path d="m11.004 3.414-8.607 8.607-1.414-1.414L9.589 2H2.004V0h11v11h-2V3.414Z" fill="currentColor"></path></svg></a>'
+            //Add Itms
+            try{
+                //console.log(menuItem)
+                for(let i = 0; i < menuItem.length; i++){
+                    //console.log(menuItem[i])
+                    if(menuItem[i].href.indexOf("moreInfo") >-1){
+                        //console.log("More Info Button Found")
+                        menuItem[i].parentElement.innerHTML = customPageLink;
+                    }
+                }
+            }
+            catch(error){
+                console.debug('An error has occurred in Bizzabo services custom code', error);
+            }
+        }
+    
+        //Function to add Custom Page to "More Menu" for compressed screens
+        function addCustomPageMoreMenu(){
+            
+            let moreMenuItem = document.getElementsByClassName("drawer-navigation-lg-md-moreDropdownLink")
+            let moreCustomPageLink = document.createElement("a")
+            moreCustomPageLink.innerHTML='<a class="drawer-navigation-lg-md-moreDropdownLink" href="' + pageURL + '" target="_blank">'+buttonText+' <svg width="1em" height="1em" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="drawer-navigation-lg-md-arrowIcon"><path d="m11.004 3.414-8.607 8.607-1.414-1.414L9.589 2H2.004V0h11v11h-2V3.414Z" fill="currentColor"></path></svg></a>'
+    
+            if(moreMenuItem.length >= 2){
+                moreMenuItem[moreMenuItem.length - 2].style.borderBottom = "1px solid #EBEBEB"
+            }
+            //Add Items
+            try{
+                moreMenuItem[(moreMenuItem.length -1)].style.display='none';
+                moreMenuItem[0].parentElement.appendChild(moreCustomPageLink);
+            }
+            catch(error){
+                console.debug('An error has occurred in Bizzabo services custom code', error);
+            }
+        }
+    
+        //Function to add Custom Page to Mobile Menu
+        function addMobilePageMenu(){
+    
+            let mobileMenuItem = document.getElementsByClassName("drawer-link-base-drawerLink")
+            let mobileCustomPageLink = '<a class="drawer-link-base-drawerLink" href="' + pageURL + '" target="_blank">'+ buttonText +' <svg width="1em" height="1em" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="drawer-navigation-nav-moreInfoIcon"><path d="m11.004 3.414-8.607 8.607-1.414-1.414L9.589 2H2.004V0h11v11h-2V3.414Z" fill="currentColor"></path></svg></a>'
+    
+            try{
+                mobileMenuItem[mobileMenuItem.length - 2].parentElement.innerHTML = mobileCustomPageLink;
+            }
+            catch(error){
+                console.debug('An error has occurred in Bizzabo services custom code', error);
+            }
+    
+        }
+    
+        // Function to be called when a mutation is observed
+        const moreInfo_mutationCallback = function(mutationsList, observer) {
+          for (const mutation of mutationsList) {
+    
+            if (mutation.type === 'childList') {
+              
+                // Check if "testitem" class is added to any new elements
+                //console.log(mutation.addedNodes)
+    
+                mutation.addedNodes.forEach(node => {
+                    //console.log(node.classList);
+                    //Check if Desktop Header
+                    if (node.classList && node.classList.contains('drawer-navigation-lg-md-header')) {
+                        //console.log('Element with class "drawer-navigation-lg-md-header" added:', node);
+                        //addCustomPageLoad();
+                        setTimeout(addCustomPageLoad, 500)
+                    }
+                    //Check if More Dropdown Menu
+                    else if(node.classList && node.classList.contains('drop-down-tooltip')){
+                        //console.log('Element with class "drop-down-tooltip" added:', node)
+                        addCustomPageMoreMenu();
+                    }
+                    //Check if Initial Mobile Load
+                    else if(node.classList && node.classList.contains('navigation-drawer-sidebarIsOpen')){
+                        //console.log('Element with class "navigation-drawer" for mobile added', node)
+                        addCustomPageLoad();
+                    }
+                    //Check if Loaded for Mobile
+                    else if(node.classList && node.classList.contains('ring-layout-layout')){
+                        //console.log('Element with class "ring-layout-layout" for mobile added:', node);
+                        addMobilePageMenu();
+                    }
+                    //Attempt to find page resize for mobile
+                    else if(node.classList && node.classList.contains('drawer-navigation-xs-header')){
+                        //console.log('Element with class "drawer-navigation-xs-header" added:', node);
+                        addMobilePageMenu();
+                    }
+                });
+            }
+          }
+        };
+    
+        // Create a Mutation Observer instance
+        const moreInfo_observer = new MutationObserver(moreInfo_mutationCallback);
+    
+        // Target element to observe
+        const more_info_targetNode = document.body;
+    
+        // Configuration of the observer
+        const moreInfo_config = { childList: true, subtree: true };
+    
+        // Start observing the target node for configured mutations
+        moreInfo_observer.observe(more_info_targetNode, moreInfo_config);
+    
+    
+    </script>
+    
+    <script>
+    
+        //-----------ONLY EDIT THIS AREA--------------
+        const sessionIdToURL = {
+            1334037: "https://live2.syncwords.com/i-GuiElX",
+            1334048: "https://live2.syncwords.com/i-Muu7uZ", //<----------- Bizzabo Session ID: "External Session URL"
+            1334058: "https://live2.syncwords.com/i-k5BCIW", //<------------ Ex: 4XXXXX : "https://URL HERE"
+            1334041: "https://live2.syncwords.com/i-CdWu7d"  //<------------ Last session no comma
+        };
+    
+        const embedHeight = "175" //<---------------------------------Height in Pixels(px)
+        //------DO NOT EDIT ANYTHING BELOW------------
+    
+        const sessionMapper = (sessionID) => sessionIdToURL[sessionID] || "Error";
+    
+        //Function that adds iframe bellow the video player
+        function addFrame(){
+    
+            const targetNode = document.getElementsByClassName("video-view-layout");
+    
+            const getURI = window.location.pathname;
+    
+            if (getURI.indexOf("agenda/activity") !== -1) {
+                let sessionID = window.location.pathname.split("/").pop()
+                sessionID = sessionMapper(sessionID)
+                
+                //Check if Session is in Table, if new element is not already added, and if a live session (red dot)
+                const isSessionConfigured = sessionID !== "Error";
+                const noBroadcastOptions = document.getElementsByClassName("broadcast-captions").length === 0;
+                const isSessionLive = document.getElementsByClassName("animated-red-dot-redDot").length > 0
+                
+                if (isSessionConfigured && noBroadcastOptions && isSessionLive) {
+                    try{
+                        const placeholder = document.createElement("div");
+                        placeholder.innerHTML = '<div class="broadcast-captions"><iframe src="'+ sessionID + '" style="width:100%; height:'+ embedHeight +'px; border:0;"></iframe></div>'
+                        targetNode[0].appendChild(placeholder)
+                    }
+                    catch(error){
+                        console.debug('An error has occurred in Bizzabo services custom code', error);
+                    } 
+                }
+            }
+        }
+    
+        // Function to be called when a mutation is observed
+        const mutationCallback = function(mutationsList, observer) {
+    
+            for (const mutation of mutationsList) {
+                if (mutation.type === 'childList') {
+                    // Check if "Item" class is added to any new elements
+                    mutation.addedNodes.forEach(node => {
+                        //Find Item to trigger Action
+                        if(document.querySelector(".video-view-layout")){
+                            addFrame();
+                        }
+                    });
+                }
+            }
+        };
+    
+        // Create a Mutation Observer instance
+        let observer = new MutationObserver(mutationCallback);
+    
+        // Function to observe mutations when the page changes
+        const observeMutationsOnPageChange = function () {
+            // Target element to observe
+            let targetNode = document.body;
+    
+            // Configuration of the observer
+            let config = { childList: true, subtree: true };
+    
+            // Start observing the target node for configured mutations
+            observer.observe(targetNode, config);
+        };
+    
+        // Initial observation
+        observeMutationsOnPageChange();
+    
+    </script>
+</body>
+</html>

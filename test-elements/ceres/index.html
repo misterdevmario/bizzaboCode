@@ -1,0 +1,90 @@
+<script>
+  document
+    .querySelector(
+      "#section-4437882 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > div > div > p:nth-child(5) > span:nth-child(1)"
+    )
+    .addEventListener("click", () => scroll("section-4438022"));
+
+  function scroll(scrollTo) {
+    const element = document.getElementById(scrollTo);
+    element.scrollIntoView();
+  }
+
+  //adding to  link to mail “Request Information” -mario.r@bizzabo.com 08/05/24
+  setTimeout(() => {
+    document.querySelector(
+      "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a"
+    ).href =
+      "mailto:events@customercontactweek.com?subject=CCW%20Nashville%20Information%C2%A0Request%20-%20CCW%20(NAV)&body=Please%20send%20me%20info%20on%20CCW%20Nashville%202024!%20[Include%20Signature%20Details]&gt;";
+  }, 700);
+</script>
+
+<script>
+
+//Dropdown menu added to "Seesions Guidelines" button on navbar - mario.r@Bizzabo.com 05/24/24
+  
+  const urls = [
+    "https://events.ceres.org/speakers/page/3865760/moderators",
+    "https://events.ceres.org/speakers/page/3865762/panelists",
+    "https://events.ceres.org/speakers/page/3865763/speakers",
+    "https://events.ceres.org/speakers/page/3865764/polling-and-qa",
+  ];
+
+
+  const dropdownButtonContainer = document.querySelector(
+    "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3) > a"
+  );
+  dropdownButtonContainer.removeAttribute("href");
+  dropdownButtonContainer.addEventListener("click", openDropdown);
+
+//Lnks
+
+  const moderators = document.createElement("div");
+  moderators.innerText = "Moderators";
+  //moderators.setAttribute("style","width:100px; height:40px; cursor:pointer; font-family: National2SemiExpandedRegular; font-size: 16px;")
+  moderators.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover")
+  moderators.addEventListener("click", () => navigate("Moderators"));
+
+  const panelists = document.createElement("div");
+  panelists.innerText = "Panelists";
+  //panelists.setAttribute("style","width:100px; height:40px; cursor:pointer; font-family: National2SemiExpandedRegular; font-size: 16px;")
+  panelists.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover")
+  panelists.addEventListener("click", () => navigate("Panelists"));
+
+  const speakers = document.createElement("div");
+  speakers.innerText = "Speakers";
+  //speakers.setAttribute("style","width:100px; height:40px; cursor:pointer; font-family: National2SemiExpandedRegular; font-size: 16px;")
+  speakers.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover")
+  speakers.addEventListener("click", () => navigate("Speakers"));
+
+  const pollingQA = document.createElement("div");
+  pollingQA.innerText = "Polling and Q&A";
+  //pollingQA.setAttribute("style","width:100px; height:40px; cursor:pointer; font-family: National2SemiExpandedRegular; font-size: 16px;")
+  pollingQA.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover")
+  pollingQA.addEventListener("click", () => navigate("Polling and Q&A"));
+
+  
+
+  const linksContainer = document.createElement("div");
+  if(window.screen.width > 1024){
+    linksContainer.setAttribute("style","position:relative; margin-top:20px; width:150px;  display:flex; justify-content:space-around; align-items:center; flex-direction:column; background-color: #fff; ")
+  }else{
+    linksContainer.setAttribute("style","position:relative; margin-top:18px; width:100vw; height: 700px; display:flex; justify-content:space-around; align-items:center; flex-direction:column; background-color: #fff; ")
+    dropdownButtonContainer.setAttribute("style", "display: flex; justify-content: center; align-items: center; flex-direction: column; height: 180px;")
+  }
+  linksContainer.appendChild(moderators);
+  linksContainer.appendChild(panelists);
+  linksContainer.appendChild(speakers);
+  linksContainer.appendChild(pollingQA);
+
+  function openDropdown (){
+    dropdownButtonContainer.appendChild(linksContainer)
+  };
+
+  const navigate = (page) => {
+    if (page == "Moderators") window.location.replace(urls[0]);
+    if (page == "Panelists") window.location.replace(urls[1]);
+    if (page == "Speakers") window.location.replace(urls[2]);
+    if (page == "Polling and Q&A") window.location.replace(urls[3]);
+  };
+</script>

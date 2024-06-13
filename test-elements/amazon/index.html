@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <style>
+ 
+/*Text*/
+        body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div > div.no-sessions-text.col-xs-12 > span{
+            font-size: 0;
+        }
+
+        body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div > div.no-sessions-text.col-xs-12 > span::after{
+            font-size: 24px;
+            content: "Log in or register to view the full agenda";
+        }
+
+        @media screen and (max-width:450px) {
+                   /*Adding margin top on mobile to tect container*/
+        body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div{
+            margin-top: 7vh ;
+        }
+
+        }
+
+        /*Button*/
+        body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div > a{
+            font-size: 0;
+        }
+        body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div > a::after{
+            font-size: 14px;
+            content: "Register";
+        }
+
+    </style>
+
+    <script>
+      //Changing agenda text and button when no session are found - mario.r@bizzabo.com
+      setTimeout(() => {
+        document.querySelector(
+          "body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div > div.no-sessions-text.col-xs-12 > span"
+        ).innerText = "Log in or register to view the full agenda";
+        const agendaBtn = document.querySelector(
+          "body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div > a"
+        );
+        agendaBtn.innerText = "Register";
+        agendaBtn.setAttribute("id", "idagenda");
+      }, 700);
+    </script>
+
+<!-- https://accounts.bizzabo.com/184660/events/588195/dashboard -->
+
+    <!-- Bizzabo "Register Now" Registration Flow Widget Begin -->
+    <script
+      type="text/javascript"
+      id="bz-popup-registration-script-81bd61e3-edea-4456-89f1-57811b648e27"
+      data-event-id="588195"
+      data-registration-proxy="true"
+      data-unique-name="588195"
+      data-flow-id="81bd61e3-edea-4456-89f1-57811b648e27"
+      data-inline-widget="true"
+      data-element-id="idagenda"
+      data-element-class=""
+    >
+      (function () {
+        var bz = document.createElement("script");
+        bz.type = "text/javascript";
+        bz.async = true;
+        bz.setAttribute("data-flow-id", "81bd61e3-edea-4456-89f1-57811b648e27");
+        bz.setAttribute("data-inline-widget", "true");
+        bz.src =
+          "https://organizer.bizzabo.com/widgets/flows/popup/registrationPopup.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bz, s);
+      })();
+    </script>
+    <!-- Bizzabo "Register Now" Registration Flow Widget End -->
+
+
+
+<!--https://accounts.bizzabo.com/184660/events/601911/tickets/setup/flows-->
+<!-- Bizzabo "Register Now" Registration Flow Widget Begin -->
+<script type = "text/javascript"
+    id="bz-popup-registration-script-fbec8654-a8fb-40c7-b681-f5035e79680b"
+    data-event-id="601911"
+    data-registration-proxy="true"
+    data-unique-name="601911"
+    data-flow-id="fbec8654-a8fb-40c7-b681-f5035e79680b"
+    data-inline-widget="true"
+    data-element-id="idagenda" data-element-class="">
+    (function() {
+            var bz = document.createElement("script");
+            bz.type = "text/javascript";
+            bz.async = true;
+            bz.setAttribute("data-flow-id","fbec8654-a8fb-40c7-b681-f5035e79680b")
+            bz.setAttribute("data-inline-widget", "true")
+            bz.src = "https://organizer.bizzabo.com/widgets/flows/popup/registrationPopup.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bz, s);
+        })();
+</script>
+<!-- Bizzabo "Register Now" Registration Flow Widget End -->
+
+  </body>
+</html>

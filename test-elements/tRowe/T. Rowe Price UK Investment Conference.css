@@ -3,7 +3,7 @@
   /*Header container*/
   #section-3996619 > div > div {
     padding: 0;
-    height: 47vw;
+    height: 26vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,9 +20,10 @@
 }  
 
 #section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1::after{
-  content: "Want to attend the UK Investment Conference";
+  content: "Would you like to attend the UK Investment Conference";
   font-size: 46px;
   text-transform: none;
+  font-weight: 700;
 }
 
 /*Header Date*/
@@ -38,7 +39,7 @@
 
   /*Second video container*/
 body > div.main-view.footer-padding > div > ul > div.trade-template.section-4143486{
-  padding: 6vw;
+  padding: 3vw 6vw 4vw 6vw;
 
 }
 
@@ -49,8 +50,28 @@ body > div.main-view.footer-padding > div > ul > div.trade-template.section-4143
 /*Second Video*/
 #section-4143486 > div > div:nth-child(1) > video{
   width: 100vw !important;
+  padding:6vw;
 }
 
+@media screen and (max-width: 1024px){
+  /*Header title*/
+  #section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
+    font-size: 0;
+    font-family: TNR;
+  }  
+  
+  #section-3996619 > div > div > div:nth-child(2) > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1::after{
+    content: "Would you like to attend the UK Investment Conference";
+    font-size: 30px;
+    text-transform: none;
+    font-weight: 700;
+  }
+
+  /*My interests button on agenda page*/
+  body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+    display: none;
+  }
+}
 
 @media screen and (max-width: 767px) {
 /*Second video container*/
@@ -77,14 +98,17 @@ min-height: 100%;
 width: auto;
 height: 58vh !important;
 z-index: 0;
-transform: translateX(-81%) translateY(-50%); 
+transform: translateX(-85%) translateY(-50%); 
 }
 
 
 #section-4143486 > div{
  height: 67;
 }
-
+  /*My interests button on agenda page*/
+  body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
+    display: none;
+  }
 }
 
 
@@ -92,7 +116,8 @@ transform: translateX(-81%) translateY(-50%);
 body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
   display: none;
 }
- 
+
+
  /*Agenda page, adjusting cards with few content*/
  
  body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(7) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div,

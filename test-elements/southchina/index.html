@@ -1,0 +1,198 @@
+<style>
+  /*mario.r@bizzabo.com 05/17/24*/
+  /*Hiding press realeses and media centre tabs*/
+  #bs-example-navbar-collapse-1
+    > ul.nav.navbar-nav.show-more-tab
+    > li:nth-child(7),
+  #bs-example-navbar-collapse-1
+    > ul.nav.navbar-nav.show-more-tab
+    > li.more-tabs-dropdown.dropdown-tip.custom-color.color-2-background {
+    display: none;
+  }
+</style>
+
+<script>
+  //Adding dropdown menu to MORE tab mario.r@bizzabo.com 05/17/24
+
+  const navbar = document.querySelector(
+    "#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab"
+  );
+
+  const moreTab = document.createElement("li");
+  moreTab.setAttribute("style", "position:relative; ");
+
+  const moreTabA = document.createElement("a");
+  moreTabA.setAttribute(
+    "class",
+    "nav-button-wrapper urban-nav-button-wrapper custom-color color-3-background-selected"
+  );
+  moreTabA.addEventListener("click", showDropdown);
+
+  const moreTabDiv = document.createElement("div");
+  moreTabDiv.innerText = "MORE";
+  moreTabDiv.setAttribute(
+    "class",
+    "nav-menu-btn custom-color color-3 color-1-border color-1-hover color-2-selected "
+  );
+
+  const ulDropdown = document.createElement("ul");
+  if (window.screen.width > 1024) {
+    ulDropdown.setAttribute(
+      "style",
+      "width:200px; height:100px; list-style-type: none; position:absolute; background:rgb(242, 90, 49);"
+    );
+  } else {
+    ulDropdown.setAttribute(
+      "style",
+      "width:100vw; height:100px; list-style-type: none; position:absolute; background:rgb(242, 90, 49);"
+    );
+  }
+
+  //Press Realeses
+  const pressRealesesLi = document.createElement("li");
+  const pressRealesesA = document.createElement("a");
+  pressRealesesA.setAttribute(
+    "class",
+    "navigation-dropdown-li nav-menu-btn custom-color color-3 color-1-hover"
+  );
+  if (window.screen.width > 1024) {
+    pressRealesesA.setAttribute(
+      "style",
+      "position: absolute; left: 32px; top: 49px;"
+    );
+  } else {
+    pressRealesesA.setAttribute(
+      "style",
+      "position: absolute; left: 44vw; top: 49px;"
+    );
+  }
+  pressRealesesA.setAttribute(
+    "href",
+    "https://events.hkengage.gov.hk/page/3673910/press-releases"
+  );
+  pressRealesesA.innerText = "Press Releases";
+  pressRealesesLi.appendChild(pressRealesesA);
+
+  //Video Gallery
+  const videoGalleryLi = document.createElement("li");
+  const videoGalleryA = document.createElement("a");
+  videoGalleryA.setAttribute(
+    "class",
+    "navigation-dropdown-li nav-menu-btn custom-color color-3 color-1-hover"
+  );
+  if (window.screen.width > 1024) {
+    videoGalleryA.setAttribute("style", "position: absolute; left: 32px;");
+  } else {
+    videoGalleryA.setAttribute("style", "position: absolute; left: 44vw;");
+  }
+  videoGalleryA.setAttribute(
+    "href",
+    "https://events.hkengage.gov.hk/page/3673910/press-releases"
+  );
+  videoGalleryA.innerText = "Video Gallery";
+  videoGalleryLi.appendChild(videoGalleryA);
+
+  ulDropdown.appendChild(pressRealesesLi);
+  ulDropdown.appendChild(videoGalleryLi);
+
+  moreTab.appendChild(moreTabA);
+  moreTabA.appendChild(moreTabDiv);
+
+  navbar.append(moreTab);
+
+  function showDropdown() {
+    moreTab.appendChild(ulDropdown);
+  }
+
+  // function hideDropdown (){
+  //     navbar.removeChild(ulDropdown)
+  // }
+</script>
+
+<style>
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(2) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(3) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(4) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(5) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(6) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(7) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(2) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(3) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(4) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(5) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(6) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(7) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div{
+height: 175px;
+}
+
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(2) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(3) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(4) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(5) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(6) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(22) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(7) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(2) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(3) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(4) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(5) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(6) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div.session-list-container.row > div > div:nth-child(26) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(7) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a{
+text-overflow: unset;
+white-space: break-spaces;
+overflow: hidden;
+display: block;
+}
+
+/*Day 3*/
+
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(2) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(3) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(4) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(5) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(6) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(7) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(2) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(3) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(4) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(5) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(6) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(7) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div{
+    height: 175px;
+}
+
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(2) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(3) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(4) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(5) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(6) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(9) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(7) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(2) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(3) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(4) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(5) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(6) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a,
+body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(13) > div > div > div.session-elem.sessions-time-elem.padding-horizontal-none.session-carousel.col-md-11.col-md-offset-0 > div > div > div.slick-list > div > div:nth-child(7) > div > div > div.session-info.col-lg-12 > div:nth-child(2) > div > a{
+text-overflow: unset;
+white-space: break-spaces;
+overflow: hidden;
+display: block;
+}
+
+
+.section-4438791 .element-21732538, .section-4438791 .element-21732538, .section-4438791 a.element-21732538, .section-4438791 p.element-21732538, .section-4438791 .element-21732538 p, .section-4438791 .element-21732538 h1, .section-4438791 .element-21732538 h2, .section-4438791 .element-21732538 h3, .section-4438791 .element-21732538 h4, .section-4438791 .element-21732538 h5, .section-4438791 .element-21732538 h6, .section-4438791 .element-21732538 .btn, .section-4438791 .element-21732538 .btn.btn-register, .section-4438791 .element-21732538 .custom-font, .section-4438791 .element-21732538.count-number, .section-4438791 .element-21732538.cover-photo-background, .section-4438791 .element-21732538.global-cover-photo-background, .section-4438791 .element-21732538.cover-image-background
+
+
+
+
+/*Day 4*/
+
+
+</style>

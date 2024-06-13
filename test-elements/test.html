@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
+<style>
+  body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container{
+  width: 20vw;
+  min-height: 50vh;
+  background-color: aquamarine;
+}
+</style>
 <body>
-    <iframe src="https://s3.amazonaws.com/bizzabo.users.files/198466/581728/20594019/CCWLV_Brochure_Update_4_gy1idb.pdf"
-        frameborder="0"></iframe>
-
-    https://bizzabo-demo-res.cloudinary.com/image/upload/v1713981565/2024_BMW_Championship_Bizzabo_Header_EOY_Celebration__5760_3832_px_1_czaphh.jpg
-
-    <style>
-        /*Header container background - mario.r@bizzabo.com 04/24/24*/
-        #section-4345729>div {
-            background-image: url(https://bizzabo-demo-res.cloudinary.com/image/upload/v1713981565/2024_BMW_Championship_Bizzabo_Header_EOY_Celebration__5760_3832_px_1_czaphh.jpg) !important;
-
-        }
-
-        #section-4345729>div>div {
-            padding: 0;
-            height: 66vw;
-        }
-    </style>
-
-    <script>
-        setTimeout(() => {
-            document.querySelector("#main-wrap > main > header > div > nav > ul > li:nth-child(3) > a").removeAttribute("href")
-            document.querySelector("#main-wrap > main > header > div > nav > ul > li:nth-child(3) > a").setAttribute("href", "http://datarobot.com")
-        }, 700);
-    </script>
+  <div class="container">
+    <!-- Bizzabo Tickets Widget Start -->
+<div class="bizzabo-tickets-widget" data-event-id="608008" data-params="isInMinisite=true&widgetId=479760"></div>
+<script type="text/javascript">(function(){var bz=document.createElement("script");bz.type="text/javascript";bz.async=true;bz.src="https://organizer.bizzabo.com/widgets/tickets/tickets.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bz,s);})();</script>
+<!-- Bizzabo Tickets Widget End -->
+  </div>
+</body>
+</html>
 
 <script>
-    setTimeout(() => {
-        // navbar tabs list container
-        var tabList = document.querySelector("#main-wrap > main > header > div > nav > ul")
-        // new tab cloned from community tab
-        var newTab = document.querySelector("#main-wrap > main > header > div > nav > ul > li:nth-child(3)").cloneNode(true)
-        newTab.firstChild.href = "http://datarobot.com"
-        newTab.firstChild.target = '_blank'
-        // append new cloned tab to navbar
-        tabList.appendChild(newTab)  
-        var newTab = document.querySelector("#main-wrap > main > header > div > nav > ul > li:nth-child(3)").remove()
-    }, 700);
-     </script>
+  //adding image with a higher quality to session banner - mario.r@bizzabo.com
+  setTimeout(() => {
+    
+    document.querySelector("body > div.react-main.footer-padding-confirmation > div > div > div.agenda-banner > div > img").setAttribute("src","https://res.cloudinary.com/bizzaboprod/image/upload/q_100/v1717191781/hxsyqx2bkhxo1c2cmo0f.png")
+  }, 700);
+  
+</script>
+
+document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(6) > a").href="https://res.cloudinary.com/bizzaboprod/image/upload/v1717102810/Climate_Week_2024_Sponsorship_-_2024.05.30_z7c2yg.pdf"
+
+<style>
+.main-react-view .agenda-banner .banner-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 478px;
+  overflow: hidden;
+}
 
 
-</body>
+</style>
 
-</html>
+<script>
+  const links = Array.from(document.getElementsByClassName("join-broadcast-btn"))
+  links.forEach(link => link.addEventListener("click", ()=>window.location.replace ="https://events.ringcentral.com/events/lesbians-who-tech-allies-pride-summit-2024"))
+</script>

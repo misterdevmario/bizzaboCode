@@ -1,184 +1,158 @@
-/*Home page header responsive -mario.r@bizzabo.com 03/14/24*/
-.section-3996619 .custom-space-bottom {
-  padding: 250px;
+
+/*Removing gray overlay*/
+#section-4497421 > div.header.rowHolder.element-22005420.atom-sectionMain.global-cover-photo-background{
+
+  background-image:  url(https://res.cloudinary.com/bizzaboprod/image/upload/q_auto,f_auto,c_scale,c_crop,g_custom/v1717685109/arxmzdrxsj5ytri59g28) !important;
 }
 
-.video-element{
-  width: 100vw;
-  height: auto;
-  padding: 6vw;
-
-}
-#section-4142978 > div{
-  height: 56vw;
-  margin-bottom: 3vw;
-
+/*Header element - mario.r@bizzabo.com*/
+@media screen and (min-width:1440px) {
+  /*Header container*/
+#section-4497421 > div.header.rowHolder.element-22005420.atom-sectionMain.global-cover-photo-background > div > div{
+  height: 36vw;
 }
 
-@media screen and (min-width: 2200px){
-  .section-3996619 .custom-space-bottom {
-      padding: 380px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+/*Header button*/
+#section-4497421 > div.header.rowHolder.element-22005420.atom-sectionMain.global-cover-photo-background > div > div > div.col-xs-12.col-sm-3.col-md-4{
+  position: absolute;
+  top: 88%;
+  left: 30%;
+}
+
+}
+
+
+/*Changing home tab text date, Days, Hours, Minutes, Seconds, and footer - mario.r@bizzabo.com 08/06/24*/
+/*Home tab text*/
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2) > a > div{
+  font-size: 0;
+}
+
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2) > a > div::after{
+  font-size: 14px;
+  content: "Inicio";
+}
+
+/*Date*/
+#section-962284 > div.rowHolder.element-4519303.atom-sectionMain.cover-photo-background > div > div > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span{
+  font-size: 0;
+}
+#section-962284 > div.rowHolder.element-4519303.atom-sectionMain.cover-photo-background > div > div > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span::after{
+  font-size: 25px;
+  content: "11 de Julio del 2024";
+}
+
+/*Footer*/
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.add-to-calendar.inline.margin-right-small > div > span,
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > a > span,
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > button > span{
+  font-size: 0;
+}
+
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.add-to-calendar.inline.margin-right-small > div > span::after{
+  font-size: 14px;
+  content: "Agregar al calendario";
+}
+
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > a > span::after{
+  font-size: 14px;
+  content: "¿Buscas tu ticket?";
+}
+
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > button > span::after{
+  font-size: 14px;
+    content: "Contacta al organizador";
+}
+
+/*Days, Hours, Minutes, Seconds*/
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(1),
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(2),
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(3),
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(4){
+  font-size: 0;
+}
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(1)::after{
+  font-size: 1rem;
+  content: "Dias";
+}
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(2)::after{
+  font-size: 1rem;
+  content: "Horas";
+}
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(3)::after{
+  font-size: 1rem;
+  content: "Minutos";
+}
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(4)::after{
+  font-size: 1rem;
+  content: "Segundos";
+}
+
+@media screen and (max-width:768px) {
+  /*Date*/
+  #section-962284 > div.rowHolder.element-4519303.atom-sectionMain.cover-photo-background > div > div > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span{
+    font-size: 0;
+  }
+  #section-962284 > div.rowHolder.element-4519303.atom-sectionMain.cover-photo-background > div > div > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span::after{
+    font-size: 19px;
+    content: "11 de Julio del 2024";
   }
 
-  #section-3996619 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
-      font-size: 74px;
-      width: 23vw;
-      margin-right: 4vw;
-  }
+  /*Days, Hours, Minutes, Seconds*/
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(1),
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(2),
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(3),
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(4){
+  font-size: 0;
 }
 
-@media screen and (min-width: 1440px){
-  .video-element{
-      width: 100vw;
-      height: auto;
-      padding: 15vw;
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(1)::after{
+  font-size: .75rem;
+  content: "Dias";
+}
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(2)::after{
+  font-size: .75rem;
+  content: "Horas";
+}
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(3)::after{
+  font-size: .75rem;
+  content: "Minutos";
+}
+
+#section-1086211 > div > div > div.col-xs-12.landing-event-time > div > div > div:nth-child(2) > div:nth-child(4)::after{
+  font-size: .75rem;
+  content: "Segundos";
+}
+
+  /*Footer*/
   
+  body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.add-to-calendar > div > span,
+  body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > a > span,
+  body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > button > span{
+    font-size: 0;
   }
-  #section-4142978 > div{
-      height: 39vw;
-      margin-bottom: 3vw;
-  
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .section-3996619 .custom-space-bottom {
-      padding: 100px;
+  body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.add-to-calendar > div > span::after{
+    font-size: 14px;
+    content: "Agregar al calendario";
   }
 
-  body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
-      display: none;
+  body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > a > span::after{
+    font-size: 14px;
+    content: "¿Buscas tu ticket?";
   }
-}
-
-
-@media screen and (max-width: 440px){
-  .section-3996619 .custom-space-bottom {
-      padding: 0;
-  }
-  #section-3996619 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-19707030 > h1{
-      font-size: 32px;
+  body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > button > span::after{
+    font-size: 14px;
+    content: "Contacta al organizador";
   }
 
-  body > div.react-main > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row > div.tab-buttons-container.margin-bottom-small > div:nth-child(2){
-      display: none;
-  }
+
 }
-
-/*Agenda page, adjusting cards with few content*/
-
-body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(4) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div,
-body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(7) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div,
-body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(11) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div,
-body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(14) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div{
-  height: 10vh;
-}
-
-@media only screen and (max-width: 500px) {
-  body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(4) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div,
-  body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(7) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div,
-  body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(11) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div,
-  body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.sideBySide.row > div > div > div > div > div:nth-child(14) > div > div > div.session-elem.sessions-time-elem.col-md-11.col-md-offset-0 > div{
-  height: 12vh;
-}
-
-}}
-
-
-
-/*specific pages container*/
-.home-custom-css{}
-.community-custom-css{}
-.agenda-custom-css{}
-.speakers-custom-css{}
-
-/*main container of each section*/
-.main-app-container {}
-.business-logo-holder {
-  width: 450px;
-}
-.col-xs-12.business-event-image-holder {
-  background-color: rgb(0,0,0,0);
-}
-
-/*
-call-to-action buttons e.g:
-Register, Join The Community etc
-*/
-.btn-register {}
-
-/*Top navigation bar container*/
-.template-nav {}
-
-/*Top navigation bar items container*/
-#bs-example-navbar-collapse-1 {}
-
-/*social share buttons container*/
-.social-share-button {}
-
-/*social share buttons per social network*/
-.social-share-button.facebook {}
-.social-share-button.twitter {}
-.social-share-button.linkedin {}
-.social-share-button.google {}
-
-
-/*Remove Session Description Fading*/
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .preview-session-description.faddedAway {
-   -webkit-mask-image: none;
-   mask: -moz-linear-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
-}
-
-/*Expand Session Description*/
-.agenda-view .session-list-container .session-day-container .time-row .session-elem .session-container .preview-session-description {
-   padding-left: 30px;
-   padding-right: 30px;
-   margin-bottom: 10px;
-   -webkit-animation: all 0.3s ease-in-out;
-   -moz-animation: all 0.3s ease-in-out;
-   -ms-animation: all 0.3s ease-in-out;
-   -o-animation: all 0.3s ease-in-out;
-   animation: all 0.3s ease-in-out;
-   transition: all 0.3s ease-in-out;
-   cursor: pointer;
-   max-height: max-content;
-   overflow: hidden;
-}
- /* navbar tabs bolder*/
-div.nav-menu-btn{
-  font-weight: bolder;
-}
-
-#section-1512038 > div > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-7736163 > h1
-{
-  text-transform: capitalize;
-}
-
-/*Change text on Agenda labels leo.arvizu@bizzabo.com*/
-body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span {
-  font-size: 0px;
-}
-body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span:after {
-  font-size: 1.1rem !important;
-  content: "Day 1: From Traditional Modeling to Augmented Intelligence" !important;
-}
-
-body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(14) > div > div.day-title-row.row > div > span {
-font-size: 0px;
-}
-body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(14) > div > div.day-title-row.row > div > span:after {
-  font-size: 1.1rem !important;
-  content: "Day 2: From Simple Systems to New Modalities" !important;
-}
-
-body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(32) > div > div.day-title-row.row > div > span {
-font-size: 0px;
-}
-body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(32) > div > div.day-title-row.row > div > span:after {
-  font-size: 1.1rem !important;
-  content: "Day 3: Big Transitions Require Change Management & Schrödinger Platform and Scientific Roadmap" !important;
-} 
 

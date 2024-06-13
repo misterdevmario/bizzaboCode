@@ -23,6 +23,8 @@
   content: "Want to attend the European Investment Conference";
   font-size: 46px;
   text-transform: none;
+  font-weight: 700;
+
 }
 
 /*Header Date*/
@@ -49,6 +51,7 @@ body > div.main-view.footer-padding > div > ul > div.trade-template.section-4142
 /*Second Video*/
 #section-4142978 > div > div:nth-child(1) > video{
   width: 100vw !important;
+  padding: 6vw;
 }
 
 
