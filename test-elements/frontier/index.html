@@ -48,3 +48,64 @@
     </script>
 </body>
 </html>
+<script>
+    //Dropdown menu mario.r@bizzabo.com -03/23/24
+    if (window.screen.width > 1024) {
+      document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a").removeAttribute("href")
+      document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a > div"
+      ).innerText = "ÜBER▾";
+
+      const open = () => about.appendChild(dropdown);
+      const close = () => about.removeChild(dropdown);
+
+      const about = document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a"
+      );
+
+      about.removeAttribute("href");
+      about.setAttribute("style", "position:absolute;");
+
+      const dropdown = document.createElement("div");
+
+      dropdown.setAttribute(
+        "style",
+        "position:absolute; left:0; top:40px; width:250px; height:90px; background-color: #0f1f2c; display: flex; justify-content:center;  align-items: center; flex-direction: column;"
+      );
+
+      const aboutDegree = document.createElement("a");
+
+      aboutDegree.setAttribute(
+        "style",
+        "width:198px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans,sans-serif;"
+      );
+      aboutDegree.setAttribute(
+        "href",
+        "https://events.degreed.com/focus-toronto-2024/page/3668537/about-degreed"
+      );
+      aboutDegree.innerText = "ÜBER DEGREED";
+
+      const whatIsFocus = document.createElement("a");
+
+      whatIsFocus.setAttribute(
+        "style",
+        "width:198px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans, sans-serif;"
+      );
+      whatIsFocus.setAttribute(
+        "href",
+        "https://events.degreed.com/focus-toronto-2024/page/3668538/what-is-focus"
+      );
+      whatIsFocus.innerText = "ÜBER DEGREED FOCUS";
+
+      dropdown.appendChild(whatIsFocus);
+      dropdown.appendChild(aboutDegree);
+
+      about.addEventListener("mouseenter", open);
+      dropdown.addEventListener("mouseenter", open);
+      about.addEventListener("mouseleave", close);
+
+      
+    }
+    
+    document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7)").style.display = "block"
+  </script>
