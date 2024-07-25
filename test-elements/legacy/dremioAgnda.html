@@ -1,0 +1,43 @@
+<script>
+
+    //-----------ONLY EDIT THIS AREA--------------
+    const sessionTable = {
+        1329925: "https://partners.bizzabo.com/199190/events/619540/sessionRoom?sessionId=1329925"
+    };
+  
+    const embedHeight = "250px" //<---------------------------------Height in Pixels(px)
+    //------DO NOT EDIT ANYTHING BELOW------------
+  
+    const sessionMapper = (sessionID) => sessionTable[sessionID] || "Error";
+  
+  
+   $(function () {
+    const mainBody = document.getElementsByTagName("body")[0]
+    const observer = new MutationObserver((mutations) => {
+      let getURI = mutations[0].target.baseURI
+      console.log("executed")
+      if (getURI.indexOf("agenda/session") !== -1) {
+        setTimeout(function () {
+          let sessionID = window.location.pathname.split("/").pop()
+          sessionID = sessionMapper(sessionID)
+          if (sessionID != "Error") {
+            if (
+              $(".live-broadcast-footer")[0] &&
+              $(".broadcast-captions").length == 0
+            ) {
+              $(".live-broadcast-footer").after(
+                '<div class="broadcast-captions"><iframe src="' +
+                  sessionID +
+                  '" style="width:100%; height:' + embedHeight +'; border:0;"></iframe></div>'
+              )
+            }
+          }
+        }, 3000)
+      }
+    })
+    observer.observe(mainBody, {
+      attributeFilter: ["class"],
+    })
+  })
+  
+    </script>
