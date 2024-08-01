@@ -23,3 +23,13 @@
     </div>
 </body>
 </html>
+
+
+<script>
+    document.getElementById('section-1586423').insertAdjacentElement('afterbegin', document.getElementById('tx-live-lang-container'));
+    
+    let newParent = document.getElementById('section-1586423');
+    let oldParent = document.getElementById('tx-live-lang-container');
+    if (oldParent.childNodes.length) { 	newParent.appendChild(oldParent.firstChild);}
+
+</script>

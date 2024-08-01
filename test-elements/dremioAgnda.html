@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- Bizzabo Web Agenda Begin -->
 
-<div>
-    <a href="https://attendees.bizzabo.com/VIP/agenda?date=1714608000000">Join the Event</a>
-</div>
+    <div>
+        <a href="https://attendees.bizzabo.com/VIP/agenda?date=1714608000000">Join the Event</a>
+    </div>
 
-<!-- Bizzabo Web Agenda End -->
+    <!-- Bizzabo Web Agenda End -->
 </body>
+
 </html>
+
+<script>
+
+    //Addding mailto to Sponsors Tab on navbar - mario.r@bizzabo.com 06/25/24
+    document.querySelector("#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li.more-tabs-dropdown.dropdown-tip.custom-color.color-2-background.open > ul > li:nth-child(4) > a").href = "mailto:events@customercontactweek.com?subject=CCW Nashville Sponsorship (NAV)&body=Please send me information on Sponsoring CCW! [Include Signature Details]"
+</script>
+
+<script>
+    setTimeout(() => {
+
+        if (window.location.href.includes("sessions")) document.querySelectorAll(".session-info-text-light ").forEach(item => item.innerText.includes("GMT") ? item.innerText = " CEST" : null)
+    }, 700);
+
+</script>
+
+<style>
+    /*Changing header background image on home page for mobile - mario.r@bizzabo.com*/
+    @media screen and (min-width: 440px) {
+        #section-4511772>div {
+
+            border-top: 1px solid transparent;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://bizzabo-demo-res.cloudinary.com/image/upload/v1719582115/red-bull-racing-customer-story-marquee_1_vhpxa8.jpg) !important;
+        }
+    }
+</style>

@@ -1,0 +1,40 @@
+<script>
+   
+
+              setTimeout(() => {
+                 // Adding scroll functionality to Home, Registrierung, Agenda, Event Locations and Dresscode -mario.r@bizzabo.com 06/19/24
+      
+               //Scroll to Home
+               document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2) > a").removeAttribute("href")
+              let home = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2) > a")
+              home.addEventListener("click", ()=>scroll("section-4115430"))
+              //Scroll to Registrierung
+             document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3) > a").removeAttribute("href")
+              let Registrierung = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3) > a")
+              Registrierung.addEventListener("click", ()=>scroll("section-2335176"))
+              //Scroll to Agenda
+              document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4) > a").removeAttribute("href")
+              let Agenda = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4) > a")
+              Agenda.addEventListener("click", ()=>scroll("section-2237035"))
+              //Scroll to Event Locations
+              document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(5) > a ").removeAttribute("href")
+              let eventLocations = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(5) > a ")
+              eventLocations.addEventListener("click", ()=>scroll("section-4378850"))
+              //Scroll to An- & Abreise
+              document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(6) > a").removeAttribute("href")
+              let abreise = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(6) > a ")
+              abreise.addEventListener("click", ()=>scroll("section-4407177"))
+              //Scroll to Dresscode
+              document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a ").removeAttribute("href")
+              let dresscode = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a ")
+              dresscode.addEventListener("click", ()=>scroll("section-4452498"))
+           
+      
+      
+              function scroll(scrollTo) {
+                  const element = document.getElementById(scrollTo);
+                  element.scrollIntoView();
+              } 
+              }, 700);
+
+</script>
