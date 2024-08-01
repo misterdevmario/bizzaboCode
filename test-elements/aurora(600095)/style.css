@@ -1,0 +1,99 @@
+/*Increasing size of logo, adding space to navlinks and centering them - mario.r@bizzabo.com 06/20/24*/
+
+body > header > div.trade-template > nav > div{
+    height: 94px;
+  }
+  
+  #bs-example-navbar-collapse-1 > ul:nth-child(1) > li * {
+    margin-left: 10px !important;
+      font-weight: bold;
+    font-size: 17px;
+  }
+  
+  #bs-example-navbar-collapse-1 > ul:nth-child(1){
+  margin-top:20px;
+  }
+  
+  #bs-example-navbar-collapse-1 > ul:nth-child(1) > li.logo-li-holder.hidden-sm.hidden-xs > div > img{
+  margin-bottom:30px;
+  }
+  
+  
+  .image-container-item {
+    position: relative;
+    height: 93px;
+    width: 100%;
+  }
+  
+  .header-top-me {
+    position: absolute;
+    top: 31px;
+    right: 1px;
+    min-width: 180px;
+  }
+  
+  /*-----------End-------------------*/
+  /*Adding margin top to the agenda - mario.r@bizzabo.com 06/20/24*/
+  
+  .main-react-view{
+  margin-top:45px !important;
+  }
+  /*-----------End of Adding margin top to the agenda-------------------*/
+  /*Centering sponsor's logo - mario.r@bizzabo.com 06/20/24*/
+  
+  .partner-logo .partner-logo-img {
+      position: absolute;
+      top: 0;
+      bottom: 130px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: transform .5s;
+      will-change: transform;
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+  }
+  
+  /*---------- End of Centering sponsor's logo -----------*/
+  
+  /*Reducing space between “In partnership with” and the “About” section. -mario.r@bizzabo.com 06/25/24*/
+  #section-4532541 > div > div > div.element-22185796.text-center.fadeInUp > h2{
+  height:15px;
+  }
+  
+  /*--------------End of Reducing space between “In partnership with” and the “About” section-------*/
+  
+  /* Agenda: Remove Local Time */
+  element-8774765 :nth-of-type(2)
+      time span.start-time:not(:nth-of-type(1)) {
+          border:1px solid red;
+          display: none;
+      }
+      time span.end-time:not(:nth-of-type(2)) {
+          border:1px solid green;
+          display: none;
+      }
+  
+      time span.session-info-text-light:not(:nth-of-type(3)) {
+          border:1px solid green;
+          display: none;
+      }
+      time span.session-time:nth-of-type(4) {
+          display: none;
+      } 
+  /*Removing share button from session and speaker cards*/
+  .share, .separator, .speaker-share-button{
+  display:none !important;
+  }
+
+  /*Chanfing "GMT+5" to "CEST* on agenda cards*/
+  time > span:nth-of-type(3){
+    font-size: 0;
+  }
+  time > span:nth-of-type(3)::after{
+    font-size: 14px;
+    content: "CEST";
+  }
+
+  .element-8774765 :nth-of-type(2)

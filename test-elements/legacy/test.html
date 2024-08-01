@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 100vw;
+        height: 50vh;
+    }
+</style>
+
 <body>
-   <script>
-    $$("*").map(el => {
-        return {el, liteners: getEventListeners(el)}
-    }).filter(data => {
-        return Object.keys(data.liteners).length
-    })
-   </script>
+    <div class="container">
+        <img src="https://accounts.bizzabo.com/138326/events/611794/dashboard" alt="">
+    </div>
 </body>
 </html>
+
+
+<style>
+
+    
+ /*Modifying footer -mario.r@bizzabo.com 06/15/24*/
+ footer{
+    background-color: #28343B !important;
+
+ }
+/*Hiding Contact the organizer*/ 
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > button,
+body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > button{
+    display: none !important;
+}
+
+/*Changing "looking for your ticket" text to Contact our Get Together Team" */
+/*Desktop*/
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > a > span{
+    font-size: 0;
+}   
+body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > a > span::after{
+    font-size: 14px;
+    content: "Contact our Get Together Team";
+    color: #DDC9AC;
+}
+/*Mobile*/
+body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > a > span{
+    font-size: 0;
+}
+
+
+body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > a > span::after{
+    font-size: 14px;
+    content: "Contact our Get Together Team";
+    color: #DDC9AC;
+}
+
+
+
+</style>
+
+<script>
+    //adding to  link to mail "Request Information" -mario.r@bizzabo.com 06/15/24
+    setTimeout(() => {
+        document.querySelector("body > footer > footer > div > div > div > div.row.footer-wrapper.hidden-xs > div > div.footer-logo-wrapper.inline > a").href = "mailto:gettogether@travelperk.com"
+        document.querySelector("body > footer > footer > div > div > div > div.footer-wrapper.visible-xs > div > div.footer-logo-wrapper > a").href = "mailto:gettogether@travelperk.com"
+        
+    }, 700);
+</script>
+
+
+

@@ -1,8 +1,9 @@
-const title = "Group Manager, Cybersecurity Risk and Operations Management  OneTech"
 
-let sortTitle = title.split(" ")
-sortTitle[sortTitle.length - 2] = "</br>"
+const myArray = [1, 2, 3, 4, 5];
 
-const newTitle = sortTitle.toString().replaceAll(","," ")
 
-console.log(newTitle);
+
+const x = myArray.splice(4, 1);
+
+console.log(`myArray values: ${myArray}`);
+

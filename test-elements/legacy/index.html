@@ -1,36 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<script>
+  setTimeout(() => {
+    //Addding mailto to Sponsors Tab on navbar - mario.r@bizzabo.com 06/25/24
+    document.querySelector(
+      "li.more-tabs-dropdown.dropdown-tip > ul > li:nth-child(2) > a"
+    ).href =
+      "mailto:events@customercontactweek.com?subject=CCW Nashville Sponsorship (NAV)&body=Please send me information on Sponsoring CCW! [Include Signature Details]";
+  }, 700);
+</script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="scroll.css">
-</head>
+<script>
+  setTimeout(() => {
+    //adding to  link to mail “Request Information” -mario.r@bizzabo.com 08/05/24
+    document.querySelector(
+      "#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.show-more-tab > li:nth-child(7) > a"
+    ).href =
+      "mailto:events@customercontactweek.com?subject=CCW%20Nashville%20Information%C2%A0Request%20-%20CCW%20(NAV)&body=Please%20send%20me%20info%20on%20CCW%20Nashville%202024!%20[Include%20Signature%20Details]&gt;";
+  }, 700);
+</script>
 
+<script>
+  setTimeout(() => {
+    document
+      .querySelectorAll(".session-info-text-light ")
+      .forEach((item) =>
+        item.innerText.includes("Your") ? (item.style.display = "none") : null
+      );
+  }, 700);
+</script>
 
-<body>
-    <div class="container">
-        <nav>
-            <a onclick="scroll(1)">One</a><a onclick="scroll(2)">Two</a><a onclick="scroll(3)">Three</a><a
-                onclick="scroll(4)">Four</a>
-        </nav>
-        <div class="div" id="1">Content 1</div>
-        <div class="div" id="2">Content 2</div>
-        <div class="div" id="3">Content 3</div>
-        <div class="div" id="4">Content 4</div>
-    </div>
-
-
-    <script>
-        function scroll(element) {
-            const element = document.getElementById(`${element}`);
-            element.scrollIntoView();
-           
-            
-        }
-    </script>
-
-</body>
-
-</html>
+<script>
+  //Setting logo in SVG format - mario.r@bizzabo.com 06/27/24
+  document
+    .querySelector(
+      "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li.logo-li-holder.hidden-sm.hidden-xs > div > img"
+    )
+    .setAttribute(
+      "src",
+      "https://bizzabo-demo-res.cloudinary.com/image/upload/v1719494795/EFC_Logo_ivemlt.svg"
+    );
+</script>

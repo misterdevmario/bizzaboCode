@@ -1,111 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-    <title>Document</title>
-    <link rel="stylesheet" href="scroll.css" />
-  </head>
-
-  <body>
-    <script>
-      document.querySelector(
-        "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-      ).innerText =
-        "Day 1: From Traditional Modeling to Augmented Intelligence";
-      if (window.location.href.includes("1718064000000")) {
-        document.querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-        ).innerText =
-          "Day 1: From Traditional Modeling to Augmented Intelligence";
-      }
-      if (window.location.href.includes("1718150400000")) {
-        document.querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-        ).innerText = "Day 2: From Simple Systems to New Modalities";
-      }
-      if (window.location.href.includes("1718236800000")) {
-        document.querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-        ).innerText =
-          "Day 3: Big Transitions Require Change Management & Schrödinger Platform and Scientific Roadmap";
-      }
-      const allDays = document
-        .querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(1)"
-        )
-        .addEventListener("click", () => changeAgendaDay());
-      const dayOne = document
-        .querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(2)"
-        )
-        .addEventListener("click", () => changeAgendaDay());
-      const dayTwo = document
-        .querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(3)"
-        )
-        .addEventListener("click", () => changeAgendaDay());
-      const dayThree = document
-        .querySelector(
-          "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-day-selector.agenda-view--search.row > div.container > div > div > div:nth-child(5) > div.days-row.margin-vertical-xs.row > div > div:nth-child(4)"
-        )
-        .addEventListener("click", () => changeAgendaDay());
-      const changeAgendaDay = () => {
-        if (window.location.href.includes("1718064000000")) {
-          document.querySelector(
-            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-          ).innerText =
-            "Day 1: From Traditional Modeling to Augmented Intelligence";
-        }
-        if (window.location.href.includes("1718150400000")) {
-          document.querySelector(
-            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-          ).innerText = "Day 2: From Simple Systems to New Modalities";
-        }
-        if (window.location.href.includes("1718236800000")) {
-          document.querySelector(
-            "body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(1) > div > div.day-title-row.row > div > span"
-          ).innerText =
-            "Day 3: Big Transitions Require Change Management & Schrödinger Platform and Scientific Roadmap";
-        }
-      };
-    </script>
-<<<<<<< HEAD
-  </body>
-</html>
-=======
-
-    <script>
-        //Adding controls to background video
-        document.querySelector("#section-4142978 > div > div:nth-child(1) > video").setAttribute("controls", true)
-
-    </script>
-<link rel="icon" type="image/x-icon" href="https://bizzabo-demo-res.cloudinary.com/image/upload/v1715872971/aftership_egprnw.ico">
-</body>
-
-</html>
-
 <script>
-    //adding mailto link to "Sponsor Now" URL
-    setTimeout(() => {
-        document
-          .querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(6) > a")
-          .href = "mailto:events@customercontactweek.com?subject=Sponsor%20Request%20-%20CCW%20(NAV)&body=I%20would%20like%20to%20Sponsor%20CCW%20Las%20Vegas%202025!%20[Include Signature Details]&gt;"
-    }, 700);
 
-    	
+    const tab1 = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(1)")
+    tab1.addEventListener("mouseenter",()=>openDropdown("tab1"))
+
+    let dropdownContainer = document.createElement("div")
+    dropdownContainer.setAttribute("style","position: absolute; min-height: 50px; width: 100px; display: flex; justify-content: space-around; align-items: center; flex-direction: column; padding: 5px; background-color: #67247d;")
+    dropdownContainer.addEventListener("mouseleave", closeDropdown)
+    
+
+    const tab1Link1 = document.createElement("a")
+    tab1Link1.innerText ="Link 1"
+    tab1Link1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    tab1Link1.setAttribute("href", "/")
+
+    const tab1Link2 = document.createElement("a")
+    tab1Link2.innerText ="Link 2"
+    tab1Link2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    tab1Link2.setAttribute("href", "/")
+
+    const tab1Link3 = document.createElement("a")
+    tab1Link3.innerText ="Link 3"
+    tab1Link3.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    tab1Link3.setAttribute("href", "/")
+
+    function openDropdown (tab) {
+      if(tab == "tab1") {
+        dropdownContainer.appendChild(tab1Link1)
+        dropdownContainer.appendChild(tab1Link2)
+        dropdownContainer.appendChild(tab1Link3)
+        tab1.appendChild(dropdownContainer)
+      }
+    }
+
+    function closeDropdown () {
+        tab1.removeChild(dropdownContainer)
+
+    }
+
+
 </script>
 
-<style>
+<script>
 
-#section-883099 > div.rowHolder.no-background > div > div:nth-child(2) > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span{font-size: 0;}
-#section-883099 > div.rowHolder.no-background > div > div:nth-child(2) > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div > div > div > span::after{
-    font-size: 30px;
-    content: "Please register for your preferred date";
-}
+  setTimeout(() => {
+    //Addding mailto to Sponsors Tab on navbar - mario.r@bizzabo.com 06/25/24
+document.querySelector("li.more-tabs-dropdown.dropdown-tip > ul > li:nth-child(2) > a").href = "mailto:events@customercontactweek.com?subject=CCW Nashville Sponsorship (NAV)&body=Please send me information on Sponsoring CCW! [Include Signature Details]"
+    
 
-</style>
->>>>>>> eba65fa09fc098779354f4fa9fb949100a38c3b1
+  }, 200);
+</script>

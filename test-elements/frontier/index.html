@@ -1,29 +1,183 @@
-<!-- Bizzabo Registration Widget Begin -->
-<script type = "text/javascript" 
-id="bz-popup-registration-script-60b24367-c65f-48f8-bbee-9b96dee0e118"
-data-event-id="375665"
-data-flow-id="68d9b92b-2688-4fcf-8af7-d25fb086dcab"
-data-element-id=""
-data-element-class="potato2">
-   (function() {
-           var bz = document.createElement("script");
-           bz.type = "text/javascript";
-           bz.async = true;
-           bz.src = "https://organizer.bizzabo.com/widgets/flows/popup/registrationPopup.js";
-           var s = document.getElementsByTagName("script")[0];
-           s.parentNode.insertBefore(bz, s);
-       })();
-</script>
-<!-- Bizzabo Registration Widget End -->
-<!-- Start of LiveChat (www.livechatinc.com) code -->
-<script>
-window.__lc = window.__lc || {};
-window.__lc.license = 12068745;
-;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
-<noscript><a href="https://www.livechatinc.com/chat-with/12068745/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
-<!-- End of LiveChat code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
-<!-- Start of bizzabo Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=30b6aeec-324c-4809-8d1c-e5a72b82651c"> </script>
-<!-- End of bizzabo Zendesk Widget script -->
+<style>
+    div{
+        background-color: #fff;
+    }
+</style>
+
+
+    <script>
+        //Pop up with redirection - mario.r@bizzabo.com 06/13/24
+       const container = document.createElement("div")
+        container.setAttribute("style", " background-color: #fff; padding:70px; height: 15vw; width: 15vw; border-radius:15px; display: flex; justify-content: center; align-items: center; box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); flex-direction: column; position: absolute; top:25vh; left: 40vw")
+
+
+        const closePopUp = document.createElement("div")
+        closePopUp.innerText = "X"
+        closePopUp.addEventListener("click", close)
+        closePopUp.setAttribute("style","cursor: pointer; position:absolute; top:10px; right:10px; border-radius:100%; background-color:rgb(231, 221, 221); height:20px; width:20px; display: flex; justify-content: center; align-items: center; ")
+
+
+        const text = document.createElement("div")
+        text.innerText = "Thanks for checking out Frontiers Health! Join us in Berlin on October 17-18 for the 2024 global edition. Find more details on our official website:"
+        text.setAttribute("style","text-align:center")
+        
+        
+        const link = document.createElement("a")
+        link.innerText= "www.frontiers.health/"
+        link.setAttribute("href", "https://www.frontiers.health/")
+        link.setAttribute("style", "margin-top:5%")
+        container.appendChild(text)
+        container.appendChild(link)
+        container.appendChild(closePopUp)
+
+        document.body.appendChild(container)
+
+        function close (){
+            document.body.removeChild(container)
+        }
+
+    </script>
+</body>
+</html>
+
+https://events.degreed.com/focus_munich_2024/page/3816732/über-degreed<script>
+    //Dropdown menu mario.r@bizzabo.com -03/23/24
+    if (window.screen.width > 1024) {
+      document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a").removeAttribute("href")
+      document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a > div"
+      ).innerText = "ÜBER▾";
+
+      const open = () => about.appendChild(dropdown);
+      const close = () => about.removeChild(dropdown);
+
+      const about = document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a"
+      );
+
+      about.removeAttribute("href");
+      about.setAttribute("style", "position:absolute;");
+
+      const dropdown = document.createElement("div");
+
+      dropdown.setAttribute(
+        "style",
+        "position:absolute; left:0; top:40px; width:250px; height:90px; background-color: #0f1f2c; display: flex; justify-content:center;  align-items: center; flex-direction: column;"
+      );
+
+      const überDegreed = document.createElement("a");
+
+      überDegreed.setAttribute(
+        "style",
+        "width:198px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans,sans-serif;"
+      );
+      überDegreed.setAttribute(
+        "href",
+        "https://events.degreed.com/focus-toronto-2024/page/3668537/about-degreed"
+      );
+      überDegreed.innerText = "ÜBER DEGREED";
+
+      const überDegreedFocus = document.createElement("a");
+
+      überDegreedFocus.setAttribute(
+        "style",
+        "width:198px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans, sans-serif;"
+      );
+      überDegreedFocus.setAttribute(
+        "href",
+        "https://events.degreed.com/focus-toronto-2024/page/3668538/what-is-focus"
+      );
+      überDegreedFocus.innerText = "ÜBER DEGREED FOCUS";
+
+      dropdown.appendChild(überDegreedFocus);
+      dropdown.appendChild(überDegreed);
+
+      about.addEventListener("mouseenter", open);
+      dropdown.addEventListener("mouseenter", open);
+      about.addEventListener("mouseleave", close);
+
+      
+    }
+    
+    document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7)").style.display = "block"
+  </script>
+  https://events.degreed.com/focus_munich_2024/page/3816732/über-degreed
+  https://events.degreed.com/focus_munich_2024/page/3816733/über-degreed-focus
+
+  <script>
+    //Dropdown menu mario.r@bizzabo.com -06/18/24
+    if (window.screen.width > 1024) {
+      document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a").removeAttribute("href")
+      document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a > div"
+      ).innerText = "ÜBER▾";
+
+      const open = () => about.appendChild(dropdown);
+      const close = () => about.removeChild(dropdown);
+
+      const about = document.querySelector(
+        "#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7) > a"
+      );
+
+      about.removeAttribute("href");
+      about.setAttribute("style", "position:absolute;");
+
+      const dropdown = document.createElement("div");
+
+      dropdown.setAttribute(
+        "style",
+        "position:absolute; left:0; top:40px; width:250px; height:90px; background-color: #0f1f2c; display: flex; justify-content:center;  align-items: center; flex-direction: column;"
+      );
+
+      const überDegreed = document.createElement("a");
+
+      überDegreed.setAttribute(
+        "style",
+        "width:198px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans,sans-serif;"
+      );
+      überDegreed.setAttribute(
+        "href",
+        "https://events.degreed.com/focus_munich_2024/page/3816732/über-degreed"
+      );
+      überDegreed.innerText = "ÜBER DEGREED";
+
+      const überDegreedFocus = document.createElement("a");
+
+      überDegreedFocus.setAttribute(
+        "style",
+        "width:198px; height: 50px; display:flex; justify-content:center; align-items:center;  text-decoration: none;  font-size: 16.2px; color:#fff; font-family: Open-Sans, sans-serif;"
+      );
+      überDegreedFocus.setAttribute(
+        "href",
+        "https://events.degreed.com/focus_munich_2024/page/3816733/über-degreed-focus"
+      );
+      überDegreedFocus.innerText = "ÜBER DEGREED FOCUS";
+
+      dropdown.appendChild(überDegreedFocus);
+      dropdown.appendChild(überDegreed);
+
+      about.addEventListener("mouseenter", open);
+      dropdown.addEventListener("mouseenter", open);
+      about.addEventListener("mouseleave", close);
+
+      
+    }
+    
+    document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(7)").style.display = "block"
+  </script>
+
+/*logo increase*/
+.image-container-item img {
+    max-width: 490%;
+    margin-right: -30px !important;
+    margin-top: 2px !important;
+}

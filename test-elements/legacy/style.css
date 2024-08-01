@@ -1,4 +1,30 @@
-iframe{
-    width: 80vw;
-    height: 90vh;
+/*Adding space to navlinks - mario.r@bizzabo.com 06/20/24*/
+
+body > header > div.trade-template > nav > div{
+  height: 94px;
 }
+
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li * {
+  margin-left: 50px !important;
+}
+
+.nav-button-wrapper{
+margin-top: 10%;
+}
+
+.image-container-item {
+  position: relative;
+  height: 93px;
+  width: 100%;
+}
+
+.header-top-me {
+  position: absolute;
+  top: 31px;
+  right: 1px;
+  min-width: 180px;
+}
+
+/*-----------End of Adding space to navlinks-------------------*/
+
+
