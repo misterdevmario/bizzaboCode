@@ -1,0 +1,7 @@
+/*Removing title from header mario.r@bizzabo.com 08/01/24*/
+#section-4768749 > div.header.rowHolder.element-23185649.atom-sectionMain.global-cover-photo-background > div{
+    display: none;
+}
+
+
+/*-------------End ------------*/
