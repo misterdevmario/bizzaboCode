@@ -1,19 +1,19 @@
 <script>
 //HOME TAB
-    const home = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(1)")//Tab selector has to be defined
+    const home = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(1)")//Tab One
     home.addEventListener("mouseenter",()=>openDropdown("home"))
 
     //Dropdown Container
     let dropdownContainer = document.createElement("div")
     dropdownContainer.setAttribute("id","dropdown")
-    dropdownContainer.setAttribute("style","position: absolute; min-height: 50px; min-width: 300px; display: flex; justify-content: space-around; align-items: center; flex-direction: column; padding: 5px; background-color: #67247d;")
+    dropdownContainer.setAttribute("style","position: absolute; min-height: 50px; min-width: 250px; display: flex; justify-content: space-around; align-items: center; flex-direction: column; padding: 5px; background-color: #45257a;")
     dropdownContainer.addEventListener("mouseleave", closeDropdown)
     
 
     const homeLink1 = document.createElement("a")
     homeLink1.innerText ="About Us | DiscoveryX 2025"
     homeLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    homeLink1.setAttribute("href", "https://www.discoveryxconference.ca/page/3900964/about-us")
+    homeLink1.setAttribute("href", "https://www.discoveryxconference.ca/page/3900964/about-us") //---------------------------------------> Add URL Here
 
     const homeLink2 = document.createElement("a")
     homeLink2.innerText ="FAQ"
@@ -27,7 +27,7 @@
     //------------------End HOME TAB -----------------------------------------
 
     //PROGRAM TAB
-    const program = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2)")//Tab selector has to be defined
+    const program = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2)")//Tab Two
     program.addEventListener("mouseenter",()=>openDropdown("program"))
 
  
@@ -39,38 +39,38 @@
     const programLink2 = document.createElement("a")
     programLink2.innerText ="Schedule at a glance"
     programLink2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    programLink2.setAttribute("href", "/")
+    programLink2.setAttribute("href", "/")                                                    //---------------------------------------> Add URL Here
 
 
 //------------------End PROGRAM TAB -----------------------------------------
 
 //SPONSORS TAB
-const sponsors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3)")//Tab selector has to be defined
+const sponsors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3)")//Tab Three
     sponsors.addEventListener("mouseenter",()=>openDropdown("sponsors"))
 
 
     const sponsorsLink1 = document.createElement("a")
     sponsorsLink1.innerText ="Media"
     sponsorsLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    sponsorsLink1.setAttribute("href", "/")
+    sponsorsLink1.setAttribute("href", "/") //--------------------------------------------------------------------------------------------> Add URL Here
 
     const sponsorsLink2 = document.createElement("a")
     sponsorsLink2.innerText ="Past sponsors"
     sponsorsLink2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    sponsorsLink2.setAttribute("href", "/")
+    sponsorsLink2.setAttribute("href", "/")  //-------------------------------------------------------------------------------------------> Add URL Here
 
 
 //------------------End SPONSORS TAB -----------------------------------------
 
 //EXHIBITORS TAB
-const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4)")//Tab selector has to be defined
+const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4)")//Tab Four
     exhibitors.addEventListener("mouseenter",()=>openDropdown("exhibitors"))
 
 
     const exhibitorsLink1 = document.createElement("a")
     exhibitorsLink1.innerText =" Past exhibitors"
     exhibitorsLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    exhibitorsLink1.setAttribute("href", "/")
+    exhibitorsLink1.setAttribute("href", "/") //<------------------------------------------------------------------------------------------? Add URL Here
 
 
 //------------------End EXHIBITORS TAB -----------------------------------------
@@ -80,7 +80,10 @@ const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nt
 
 
         
-       
+        while (dropdownContainer.firstChild) {
+        dropdownContainer.firstChild.remove();
+    }
+
 
         dropdownContainer.appendChild(homeLink1)
         dropdownContainer.appendChild(homeLink2)
@@ -90,7 +93,10 @@ const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nt
 
       if(tab == "program") {
 
-      
+        while (dropdownContainer.firstChild) {
+        dropdownContainer.firstChild.remove();
+    }
+
 
         dropdownContainer.appendChild(programLink1)
         dropdownContainer.appendChild(programLink2)
@@ -99,6 +105,9 @@ const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nt
 
       if(tab == "sponsors") {
 
+        while (dropdownContainer.firstChild) {
+        dropdownContainer.firstChild.remove();
+    }
 
 
         dropdownContainer.appendChild(sponsorsLink1)
@@ -107,6 +116,9 @@ const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nt
       }
 
       if(tab == "exhibitors") {
+        while (dropdownContainer.firstChild) {
+        dropdownContainer.firstChild.remove();
+    }
 
 
         dropdownContainer.appendChild(exhibitorsLink1)
