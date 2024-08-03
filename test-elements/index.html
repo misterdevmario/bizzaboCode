@@ -1,39 +1,28 @@
 <script>
+//EXHIBITORS TAB
+    const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4)")//This selector has to be defined
+    exhibitors.addEventListener("mouseenter",()=>openDropdown("exhibitors"))
 
-    const tab1 = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(1)")
-    tab1.addEventListener("mouseenter",()=>openDropdown("tab1"))
 
-    let dropdownContainer = document.createElement("div")
-    dropdownContainer.setAttribute("style","position: absolute; min-height: 50px; width: 100px; display: flex; justify-content: space-around; align-items: center; flex-direction: column; padding: 5px; background-color: #67247d;")
-    dropdownContainer.addEventListener("mouseleave", closeDropdown)
-    
+    const exhibitorsLink1 = document.createElement("a")
+    exhibitorsLink1.innerText =" Past exhibitors"
+    exhibitorsLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    exhibitorsLink1.setAttribute("href", "/")
 
-    const tab1Link1 = document.createElement("a")
-    tab1Link1.innerText ="Link 1"
-    tab1Link1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    tab1Link1.setAttribute("href", "/")
 
-    const tab1Link2 = document.createElement("a")
-    tab1Link2.innerText ="Link 2"
-    tab1Link2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    tab1Link2.setAttribute("href", "/")
+//------------------End EXHIBITORS TAB -----------------------------------------
 
-    const tab1Link3 = document.createElement("a")
-    tab1Link3.innerText ="Link 3"
-    tab1Link3.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    tab1Link3.setAttribute("href", "/")
+
 
     function openDropdown (tab) {
-      if(tab == "tab1") {
-        dropdownContainer.appendChild(tab1Link1)
-        dropdownContainer.appendChild(tab1Link2)
-        dropdownContainer.appendChild(tab1Link3)
-        tab1.appendChild(dropdownContainer)
+      if(tab == "exhibitors") {
+        dropdownContainer.appendChild(exhibitorsLink1)
+        exhibitors.appendChild(dropdownContainer)
       }
     }
 
     function closeDropdown () {
-        tab1.removeChild(dropdownContainer)
+        exhibitors.removeChild(dropdownContainer)
 
     }
 
@@ -43,8 +32,8 @@
 <script>
 
   setTimeout(() => {
-    //Addding mailto to Sponsors Tab on navbar - mario.r@bizzabo.com 06/25/24
-document.querySelector("li.more-tabs-dropdown.dropdown-tip > ul > li:nth-child(2) > a").href = "mailto:events@customercontactweek.com?subject=CCW Nashville Sponsorship (NAV)&body=Please send me information on Sponsoring CCW! [Include Signature Details]"
+    //Addding mailto to exhibitors Tab on navbar - mario.r@bizzabo.com 06/25/24
+document.querySelector("li.more-tabs-dropdown.dropdown-tip > ul > li:nth-child(2) > a").href = "mailto:events@customercontactweek.com?subject=CCW Nashville exhibitorship (NAV)&body=Please send me information on Sponsoring CCW! [Include Signature Details]"
     
 
   }, 200);

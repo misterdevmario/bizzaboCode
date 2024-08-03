@@ -1,0 +1,123 @@
+<script>
+//HOME TAB
+    const home = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(1)")//Tab selector has to be defined
+    home.addEventListener("mouseenter",()=>openDropdown("home"))
+
+    //Dropdown Container
+    let dropdownContainer = document.createElement("div")
+    dropdownContainer.setAttribute("id","dropdown")
+    dropdownContainer.setAttribute("style","position: absolute; min-height: 50px; min-width: 300px; display: flex; justify-content: space-around; align-items: center; flex-direction: column; padding: 5px; background-color: #67247d;")
+    dropdownContainer.addEventListener("mouseleave", closeDropdown)
+    
+
+    const homeLink1 = document.createElement("a")
+    homeLink1.innerText ="About Us | DiscoveryX 2025"
+    homeLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    homeLink1.setAttribute("href", "https://www.discoveryxconference.ca/page/3900964/about-us")
+
+    const homeLink2 = document.createElement("a")
+    homeLink2.innerText ="FAQ"
+    homeLink2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    homeLink2.setAttribute("href", "/")
+
+    const homeLink3 = document.createElement("a")
+    homeLink3.innerText ="Contact"
+    homeLink3.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    homeLink3.setAttribute("href", "/")
+    //------------------End HOME TAB -----------------------------------------
+
+    //PROGRAM TAB
+    const program = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2)")//Tab selector has to be defined
+    program.addEventListener("mouseenter",()=>openDropdown("program"))
+
+ 
+    const programLink1 = document.createElement("a")
+    programLink1.innerText ="Speakers"
+    programLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    programLink1.setAttribute("href", "/")
+
+    const programLink2 = document.createElement("a")
+    programLink2.innerText ="Schedule at a glance"
+    programLink2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    programLink2.setAttribute("href", "/")
+
+
+//------------------End PROGRAM TAB -----------------------------------------
+
+//SPONSORS TAB
+const sponsors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3)")//Tab selector has to be defined
+    sponsors.addEventListener("mouseenter",()=>openDropdown("sponsors"))
+
+
+    const sponsorsLink1 = document.createElement("a")
+    sponsorsLink1.innerText ="Media"
+    sponsorsLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    sponsorsLink1.setAttribute("href", "/")
+
+    const sponsorsLink2 = document.createElement("a")
+    sponsorsLink2.innerText ="Past sponsors"
+    sponsorsLink2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    sponsorsLink2.setAttribute("href", "/")
+
+
+//------------------End SPONSORS TAB -----------------------------------------
+
+//EXHIBITORS TAB
+const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4)")//Tab selector has to be defined
+    exhibitors.addEventListener("mouseenter",()=>openDropdown("exhibitors"))
+
+
+    const exhibitorsLink1 = document.createElement("a")
+    exhibitorsLink1.innerText =" Past exhibitors"
+    exhibitorsLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
+    exhibitorsLink1.setAttribute("href", "/")
+
+
+//------------------End EXHIBITORS TAB -----------------------------------------
+
+    function openDropdown (tab) {
+      if(tab == "home") {
+
+
+        
+       
+
+        dropdownContainer.appendChild(homeLink1)
+        dropdownContainer.appendChild(homeLink2)
+        dropdownContainer.appendChild(homeLink3)
+        home.appendChild(dropdownContainer)
+      }
+
+      if(tab == "program") {
+
+      
+
+        dropdownContainer.appendChild(programLink1)
+        dropdownContainer.appendChild(programLink2)
+        program.appendChild(dropdownContainer)
+      }
+
+      if(tab == "sponsors") {
+
+
+
+        dropdownContainer.appendChild(sponsorsLink1)
+        dropdownContainer.appendChild(sponsorsLink2)
+        sponsors.appendChild(dropdownContainer)
+      }
+
+      if(tab == "exhibitors") {
+
+
+        dropdownContainer.appendChild(exhibitorsLink1)
+        exhibitors.appendChild(dropdownContainer)
+      }
+    }
+
+    function closeDropdown () {
+      document.getElementById("dropdown").remove()
+    }
+
+</script>
+
+console.log(dropdownContainer.firstChild);

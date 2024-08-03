@@ -1,43 +1,20 @@
-time:nth-child(3),
-time:nth-child(4),
-time:nth-child(5){
-    display: none ;
+
+
+/*Justyfing left header title on mobile views mario.r@bizzabo.com 08/02/2024 ZD:168615*/
+
+@media screen and (max-width: 768px) {
+  #section-3702499 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span > span{
+    font-size: 0 !important;
+  }
+  #section-3702499 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3) > span > span::after{
+    font-family: MuseoSans300, sans-serif;
+    font-size: 48px;
+    content: "Savor the Innovation with Adobe and EPAM";
+  }
+  
+  #section-3702499 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(3){
+    margin-left: 4vw;
+  }
 }
 
-/*Changing position and onceresing font size of language tab mario.r@bizzabo.com 07/31/24 ZD:168453 */
-
-#tx-live-lang-container{
-    top: 16px;
-    left: 41px;
-    right: auto;
-    bottom: auto;
-    border-radius: 0 0 2px 0;
-    -moz-border-radius: 0 0 2px 0;
-    -webkit-border-radius: 0 0 2px 0;
-}
-
-#tx-live-lang-current{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/*------------ End-------------------*/
-
-/*Making header image responsive mario.r@bizzabo.com 07/31/2024*/
-@media screen and (min-width:1024px) {
-    #section-1999192 > div.rowHolder.element-10611839.atom-sectionMain.cover-photo-background > div{
-        padding: 0%;
-        height: 57vw;
-    }
-}
-/*---------- End ---------------*/
-
-
-rtmps://global-live.mux.com:443/app
-a60fed8c-85f8-1081-32e8-bf26f2df1ba2
-a60fed8c-85f8-1081-32e8-bf26f2df1ba2
-gnWnTeIcxJf5lGDv3uxA1MVmgQswO74eVVxxes1eCXc
-
-rtmps://global-live.mux.com:443/app
-a60fed8c-85f8-1081-32e8-bf26f2df1ba2
-gnWnTeIcxJf5lGDv3uxA1MVmgQswO74eVVxxes1eCXc
+/*--------End------------*/
