@@ -1,17 +1,243 @@
 
+/*specific pages container*/
+.home-custom-css{}
+.community-custom-css{}
+.agenda-custom-css{}
+.speakers-custom-css{}
 
-/*Video*/
+/*main container of each section*/
+.main-app-container {}
 
+/*
+call-to-action buttons e.g:
+Register, Join The Community etc
+*/
+.btn-register {}
 
-/*Last Imgage*/
-#section-4511877 > div{
-  height: 37vw;
-  background-size: 100vw;
-  background-repeat: no-repeat;
-  background-attachment: initial;
-  background-position: center center;
+/*Top navigation bar container*/
+.template-nav {}
+
+/*Top navigation bar items container*/
+#bs-example-navbar-collapse-1 {}
+
+/*social share buttons container*/
+.social-share-button {}
+
+/*social share buttons per social network*/
+.social-share-button.facebook {}
+.social-share-button.twitter {}
+.social-share-button.linkedin {}
+.social-share-button.google {}
+
+@media only screen and (max-width: 768px){
+.section-4673996 .custom-space-bottom {
+    padding-bottom: 200px;
+}
+.section-4673996 .custom-space-top {
+    padding-top: 0px;
+}
 }
 
-body > div.react-main > div > div > div > div:nth-child(1) > div.session-info-container > div.session-dates.margin-bottom-small.font-size-14 > div:nth-of-type(3){
+/* Hide Website Footer */
+footer {
   display: none;
 }
+
+/*Left justifing navbar logo mario.r@bizzabo.com 07/19/24 ZD:167915*/
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li.logo-li-holder.hidden-sm.hidden-xs{
+    position: absolute !important;
+    left: 3vw;
+  bottom:0%
+}
+
+/*Header image responsive*/
+#section-4718874 > div > div{
+padding:0;
+  height: 57vw;
+}
+
+/*Reduce spacing on mobile*/
+@media only screen and (max-width: 768px){
+.section-4718909 .element-22936080 .atom-main {
+    color: #3d4751;
+  	margin-bottom: 2px
+}
+}
+
+
+
+/*Changing navbar color,Changing color and font-style to h3 tags on event-terms page mario.r@bizzabo.com 07/23/24 ZD: 168017*/
+#section-4701465 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > h3 *{
+  font-style: normal;
+  color: black !important;
+}
+nav{
+background-color:#ffff !important
+}
+/*------End------*/
+
+/*Remove Padding on Mobile Versions*/
+@media only screen and (max-width: 768px){
+  .section-4733316 .custom-space-bottom {
+    padding-bottom: 0px;
+}
+
+.section-4733316 .custom-space-top {
+    padding-top: 95px;
+}
+#section-4718907 > div > div > div.element-groups.Component-elementGroups-0-2-1 {
+    margin-top: -95px;
+}
+.section-4737703 .element-23031648 .atom-main{
+  width: 118px;
+  height: 47px;
+}
+.section-4737703 .element-23031648, .section-4737703 .element-23031648, .section-4737703 a.element-23031648, .section-4737703 p.element-23031648, .section-4737703 .element-23031648 p, .section-4737703 .element-23031648 h1, .section-4737703 .element-23031648 h2, .section-4737703 .element-23031648 h3, .section-4737703 .element-23031648 h4, .section-4737703 .element-23031648 h5, .section-4737703 .element-23031648 h6, .section-4737703 .element-23031648 .btn, .section-4737703 .element-23031648 .btn.btn-register, .section-4737703 .element-23031648 .custom-font, .section-4737703 .element-23031648.count-number, .section-4737703 .element-23031648.cover-photo-background, .section-4737703 .element-23031648.global-cover-photo-background, .section-4737703 .element-23031648.cover-image-background{
+  font-size: 1.1rem;
+}
+}
+
+#section-4701465 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div > div > p:nth-child(38) > span{
+font-size:inherit !important;
+}
+#section-4742754 > div > div{
+  display: none;
+}
+#section-4737642 > div > div{
+  display: none;
+}
+
+
+/*Register button spacing and container resizing for image multiple scales*/
+@media only screen and (min-width: 360px) and (max-width: 507px){
+      .section-4733316 .custom-space-top {
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 508px) and (max-width: 640px){
+      .section-4733316 .custom-space-top {
+        padding-top: 130px;
+    }
+}
+
+@media only screen and (min-width: 402px) and (max-width: 507px){
+      .section-4733316 .custom-space-top {
+        padding-top: 93px;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px){
+      .section-4733316 .custom-space-top {
+        padding-top: 165px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px){
+      .section-4733316 .custom-space-top {
+        padding-top: 0px;
+    }
+  .section-4733316 .custom-space-bottom {
+    padding-bottom: 220px;
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1230px){
+      .section-4733316 .custom-space-top {
+        padding-top: 0px;
+    }
+  .section-4733316 .custom-space-bottom {
+    padding-bottom: 275px;
+  }
+}
+
+@media only screen and (min-width: 1231px) and (max-width: 1600px){
+      .section-4733316 .custom-space-top {
+        padding-top: 0px;
+    }
+}
+
+/*End of code for multiple scale*/
+
+/* Applied color and font style to agenda page August 7, 2024 */
+/* jasffer.p@bizzabo.com */
+
+.cta-button {
+  font-family: 'ABCRepro 3', sans-serif !important;
+}
+
+input, button, select, textarea {
+    font-family: 'ABCRepro 3', sans-serif !important;
+}
+
+input[type="text"]
+{
+    font-family: 'ABCRepro 3', sans-serif !important;
+}
+
+.tab-button {
+  background: #F1F5F9 !important;
+}
+
+.view-button, .main-react-view, .agenda-view {
+  background-color: #F1F5F9 !important;
+}
+
+/* End of changes - jasffer.p@bizzabo.com */
+
+.color-5, .color-5.custom-color, .dropdown-menu > li > a.color-5, .dropdown-menu > li > a.color-5.custom-color{
+  color: #000000;
+}
+
+.trade-template .nav-menu-btn {
+  font-family: 'ABCRepro 3', sans-serif;
+}
+
+/*gleb@bizzabo — shrink the header image, case 168995
+@media only screen and (min-width: 1024px) {
+    #section-4733316 > div {background-size: 80% auto;}
+}
+*/
+
+
+#section-4733316 > div > div{
+  padding:  0;
+  height: 23vw;
+}
+
+/*--------------------------------------------*/
+
+
+
+@media screen and (max-width: 1440px){
+  /*Colors line*/
+#section-4737555 > div{
+  background-size: 100% 14vh;
+}
+  /*Extra black div below first carrousel*/
+  #section-4736631 > div > div{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+/*Increasing header background image*/
+  #section-4733316 > div{
+    background-size: 130% auto;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-position: center top;
+  }
+  /*header container*/
+  #section-4733316 > div > div{
+    padding: 0;
+    height: 37vw;
+  }
+  /*Colors line*/
+  #section-4737555 > div{
+    background-size: 100% 14vh;
+  
+  }
+
+}
+

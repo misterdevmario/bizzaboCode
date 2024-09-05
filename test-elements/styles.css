@@ -5,3 +5,21 @@
 
 
 /*-------------End ------------*/
+
+/*Removing blank spaces around the iframe mario.r@bizzabo.com ZD:170109*/
+
+/*main app container*/
+.home-page, .home-custom-css, #section-4853202 > div > div {
+    padding: 0;
+}
+
+/*atom section main*/
+
+#section-4853202 > div{
+    height: 4338px;
+}
+
+/*-------------End ------------*/
+
+
+
