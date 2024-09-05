@@ -1,0 +1,19 @@
+ 
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="http://www.okta.com/exkie3pcb62NU1X5i697">
+<md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:X509Data>
+<ds:X509Certificate>MIIDqjCCApKgAwIBAgIGAZG1/od7MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJVUzETMBEG A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU MBIGA1UECwwLU1NPUHJvdmlkZXIxFjAUBgNVBAMMDXRyaWFsLTU0MTU2NzAxHDAaBgkqhkiG9w0B CQEWDWluZm9Ab2t0YS5jb20wHhcNMjQwOTAzMDM0NjIyWhcNMzQwOTAzMDM0NzIyWjCBlTELMAkG A1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDTAL BgNVBAoMBE9rdGExFDASBgNVBAsMC1NTT1Byb3ZpZGVyMRYwFAYDVQQDDA10cmlhbC01NDE1Njcw MRwwGgYJKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEAtaRY+LfF0gkp6/bv9EYcDHgfsMIz7SqQb4GLGfrBcqwnk7AYavY99bXDNkc5isD/UDjn /P0xJ8C/Z9w6ykJoZNb61CcwAlkdek8pjmsMUfO5T/voHiRmw+/8/M4e1wMlAw44Vl4/uFa7pC0c x/3/SPeQRjPbbjjsN6jRec236Yj3mvryg4zBkauA2oF8fFszUx6Si5hUieg5wJNLgN30kYb6XsGc 0pZ63W/fT9Y+kEfB/S5WSXQK4js2jK1POuXX8KoUMRIErwj+fe95oroOzTw/xh/zbvAeiDeMeU8T 9n//Ti6R0DXobJ8qIAC7dxLlmRI8sAmnVdCoe/YKyPC/9QIDAQABMA0GCSqGSIb3DQEBCwUAA4IB AQAjI6c5iwzJYBORbQNi5KQU0zL4PMoQx5pEsIFJwajzYx1INsNpm3NTD2W61+EoITItgXQYRI2F g/cl0Q9h96JIa03vRRaYpZTFq8l0BHBOkSxYl2eRvk/cTZvK9Tzwse//Pwzi21Q42zHsmB98lkoi UB4aPbTsmdcRKIUMqrWzYelr8pPjqLckp21X26pYaRfegOnAgfQ3gdVBVvxdhHzVo+9WpBXYb4hc pdjMEVDcvHCnwe+m5xa1r2H4ShYvg5fT++3xEsuI6jHDUP30vCk+DNhBU0TGPb9+XG4jfaltlta0 wA3+HX9pA7U6jvF4ylG5VjIoDHTat78+mjQb3pSN</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://trial-5415670.okta.com/app/trial-5415670_ssotest_1/exkie3pcb62NU1X5i697/sso/saml"/>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://trial-5415670.okta.com/app/trial-5415670_ssotest_1/exkie3pcb62NU1X5i697/sso/saml"/>
+</md:IDPSSODescriptor>
+</md:EntityDescriptor>
+
+https://accounts.bizzabo.com/198466 
+https://login.bizzabo.com/?accountId=198466

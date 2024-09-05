@@ -1,0 +1,20 @@
+<script>
+    //Removing coma from time start on the session card mario.r@bizzabo.com ZD:169812
+        setTimeout(() => {
+            let timeStartSession = document.querySelector("body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.top-agenda-margin-double.with-banner.agenda-view--session > div:nth-child(1) > div.session-info-container > div.session-dates.margin-bottom-small.font-size-14 > div > time > span:nth-child(1)").innerText
+            const array = Array.from(timeStartSession)
+            array.shift()
+            array.shift()
+    
+            document.querySelector("body > div.react-main.footer-padding-confirmation > div > div > div.agenda-view.top-agenda-margin-double.with-banner.agenda-view--session > div:nth-child(1) > div.session-info-container > div.session-dates.margin-bottom-small.font-size-14 > div > time > span:nth-child(1)").innerText = array.toString().replaceAll(",", "")
+        }, 2000);
+    
+    </script>
+
+<script>
+    const speakersList = document.getElementsByClassName("slick-track")
+    const speakersArray = Array.from(speakersList)
+    speakersArray.forEach(element => {
+    if(element.childElementCount > 1) console.log(element)
+    });
+</script>

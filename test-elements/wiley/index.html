@@ -1,0 +1,50 @@
+<script>
+
+    //adding a time box to the International Partner Award Winner Lunch"session mario.r@bizzabo.com ZD:169588
+    setTimeout(() => {
+//All days tab selected
+        const card = document.querySelector("body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(20) > div > div")
+
+        const timeBoxFirstDiv = document.createElement("div")
+        timeBoxFirstDiv.setAttribute("class", "time-elem col-md-1 col-sm-2 col-xs-3")
+        timeBoxFirstDiv.setAttribute("style", "position: absolute;")
+        const timeBoxSecondDiv = document.createElement("div")
+        timeBoxSecondDiv.setAttribute("style", "background-color: #D9D8D6 !important; color:#191947!important;")
+        timeBoxSecondDiv.innerText = "12:30 PM"
+
+        timeBoxFirstDiv.appendChild(timeBoxSecondDiv)
+
+        card.prepend(timeBoxFirstDiv)
+//Oct 10 tab selected
+//         const card1 = document.querySelector("body > div.react-main > div > div > div.agenda-view.session-list-view.agenda-custom-css.list.row > div > div > div > div > div:nth-child(9) > div > div")
+
+// const timeBoxFirstDiv1 = document.createElement("div")
+// timeBoxFirstDiv1.setAttribute("class", "time-elem col-md-1 col-sm-2 col-xs-3")
+// timeBoxFirstDiv1.setAttribute("style", "position: absolute;")
+// const timeBoxSecondDiv1 = document.createElement("div")
+// timeBoxSecondDiv1.setAttribute("style", "background-color: #D9D8D6 !important; color:#191947!important;")
+// timeBoxSecondDiv1.innerText = "12:30 PM"
+
+// timeBoxFirstDiv1.appendChild(timeBoxSecondDiv1)
+
+// card.prepend(timeBoxFirstDiv1)
+
+    }, 700);
+
+
+</script>
+
+
+
+<script>
+
+    //Hiding Community tab on navbar - mario.r@bizzaabo.com ZD:169527
+   const nav = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1)")
+
+   const items = nav.getElementsByTagName("li")
+
+ for (let i = 0; i < items.length; i++) {
+   if(items[i].innerText == "Community")items[i].setAttribute("style","display:none;")
+ }
+
+</script>

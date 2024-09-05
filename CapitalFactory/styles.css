@@ -1,0 +1,25 @@
+@media (max-width: 440px){
+    body .bz-modal .bz-modal-body {
+        height: 96% !important;
+    }
+
+}
+
+#section-4885325 > div > div{
+    display: none;
+}
+    
+    @media screen and (max-width: 440px) {
+        .testframe iframe {
+            width: 100%;
+            height: 86vh;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+    #section-3235289 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1) > strong > span,
+    #section-3235289 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1) > span{
+        font-size: 34px !important;
+    }
