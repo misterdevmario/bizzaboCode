@@ -1,40 +1,42 @@
-<script>
-//EXHIBITORS TAB
-    const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4)")//This selector has to be defined
-    exhibitors.addEventListener("mouseenter",()=>openDropdown("exhibitors"))
+<script type="text/javascript">window.liveSettings={api_key:"a3d4669ebe574e4aa4952a8fcd000830"};</script>
+<script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
 
-
-    const exhibitorsLink1 = document.createElement("a")
-    exhibitorsLink1.innerText =" Past exhibitors"
-    exhibitorsLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected  selected ")
-    exhibitorsLink1.setAttribute("href", "/")
-
-
-//------------------End EXHIBITORS TAB -----------------------------------------
-
-
-
-    function openDropdown (tab) {
-      if(tab == "exhibitors") {
-        dropdownContainer.appendChild(exhibitorsLink1)
-        exhibitors.appendChild(dropdownContainer)
-      }
-    }
-
-    function closeDropdown () {
-        exhibitors.removeChild(dropdownContainer)
-
-    }
-
-
-</script>
-
-<script>
-
-  setTimeout(() => {
-    //Addding mailto to exhibitors Tab on navbar - mario.r@bizzabo.com 06/25/24
-document.querySelector("li.more-tabs-dropdown.dropdown-tip > ul > li:nth-child(2) > a").href = "mailto:events@customercontactweek.com?subject=CCW Nashville exhibitorship (NAV)&body=Please send me information on Sponsoring CCW! [Include Signature Details]"
+<!-- Bizzabo "Session 1" Registration Flow Widget Begin -->
+                    <script type = "text/javascript" 
+                     id="bz-popup-registration-script-6dbf8431-0e31-4954-ae1e-6b67bdbb42fd"
+                     data-event-id="381580"
+                     data-registration-proxy="true"
+                     data-unique-name="381580"
+                     data-flow-id="6dbf8431-0e31-4954-ae1e-6b67bdbb42fd"
+                     data-element-id="8178392"
+                     data-element-class="">
+                        (function() {
+                                var bz = document.createElement("script");
+                                bz.type = "text/javascript";
+                                bz.async = true;
+                                bz.setAttribute("data-flow-id","6dbf8431-0e31-4954-ae1e-6b67bdbb42fd")
+                                bz.src = "https://organizer.bizzabo.com/widgets/flows/popup/registrationPopup.js";
+                                var s = document.getElementsByTagName("script")[0];
+                                s.parentNode.insertBefore(bz, s);
+                            })();
+                    </script>
+    <!-- Bizzabo "Session 1" Registration Flow Widget End -->
     
-
-  }, 200);
-</script>
+    <!-- start script to add Bizzabo lang change listeners to Transifex -->
+<script>
+  Transifex.live.onTranslatePage(function(language_code) {
+  $('iframe').each(function(index) {
+  var splitSrc = this.src.split('?');
+  var srcUrl = splitSrc[0] || '';
+  if (srcUrl.indexOf('bizzabo')!= -1){
+  var srcSearch = decodeURIComponent(splitSrc[1]) || '';
+  var regex = new RegExp("([?;&])lang[^&;]*[;&]?");
+  var query = srcSearch.replace(regex, "$1").replace(/&$/, '');
+  var newQueryStr = '?' + (query.length > 2 ? query + "&" : "") +
+  (language_code
+  ? "lang=" + language_code : '');
+  this.src = srcUrl + newQueryStr;
+  }
+  }); });
+  </script>
+  <!-- end script to add Bizzabo lang change listeners to Transifex -->

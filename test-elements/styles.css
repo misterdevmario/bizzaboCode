@@ -6,6 +6,7 @@
 
 /*-------------End ------------*/
 
+<<<<<<< HEAD
 body:has( > #a2it-agenda-header-element) {
     background-color: white!important;
 }
@@ -17,3 +18,22 @@ body:has( > #a2it-agenda-header-element) {
 .session-page.container {
     background-color: #F1F5F9!important;
 }
+=======
+/*Removing blank spaces around the iframe mario.r@bizzabo.com ZD:170109*/
+
+/*main app container*/
+.home-page, .home-custom-css, #section-4853202 > div > div {
+    padding: 0;
+}
+
+/*atom section main*/
+
+#section-4853202 > div{
+    height: 4338px;
+}
+
+/*-------------End ------------*/
+
+
+
+>>>>>>> 7ba4feda427025286fee698afc58ee456bc043a1
