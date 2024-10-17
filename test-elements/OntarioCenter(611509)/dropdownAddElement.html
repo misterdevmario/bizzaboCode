@@ -1,35 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <style>
-        .answer {
-        display: none;
-        }
-        </style>
-        </head>
-        <body>
-        
-        <b><p onclick="toggleAnswer()">➤ What is DiscoveryX?</p></b>
-        <div id="answer" class="answer">
-        <p>DiscoveryX is THE showcase for Ontario’s innovation ecosystem. This is your chance to get up close and personal with the latest homegrown tech. Unlike other conferences, you will be able to interact directly with technology built right in Ontario.</p>
-        </div>
-        
-        <script>
-        function toggleAnswer() {
-        var answer = document.getElementById("answer");
-        if (answer.style.display === "none") {
-        answer.style.display = "block";
-        } else {
-        answer.style.display = "none";
-        }
-        }
-        </script>
-</body>
-</html>
-
-#section-3235289 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p:nth-child(1) > span > strong > span
+<script>
+    //HOME TAB
+    const home = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(1)")//Tab One
+    home.addEventListener("mouseenter",()=>openDropdown("home"))
+    
+    //Dropdown Container
+    let dropdownContainer = document.createElement("div")
+    dropdownContainer.setAttribute("id","dropdown")
+    dropdownContainer.setAttribute("style","position: absolute; min-height: 50px; min-width: 250px; display: flex; justify-content: space-around; align-items: center; flex-direction: column; padding: 5px; background-color: #45257a;")
+    dropdownContainer.addEventListener("mouseleave", closeDropdown)
+    
+    
+    const homeLink1 = document.createElement("a")
+    homeLink1.innerText ="About Us"
+    homeLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected selected ")
+    homeLink1.setAttribute("href", "https://www.discoveryxconference.ca/page/3900964/about-us") //---------------------------------------> Add URL Here
+    
+    const homeLink2 = document.createElement("a")
+    homeLink2.innerText ="FAQ"
+    homeLink2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected selected ")
+    homeLink2.setAttribute("href", "https://www.discoveryxconference.ca/page/4105568/faq")
+    
+    const homeLink3 = document.createElement("a")
+    homeLink3.innerText ="Contact"
+    homeLink3.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected selected ")
+    homeLink3.setAttribute("href", "https://www.discoveryxconference.ca/page/4055792/contact-us")
+    //------------------End HOME TAB -----------------------------------------
+    
+    //PROGRAM TAB
+    const program = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(2)")//Tab Two
+    program.addEventListener("mouseenter",()=>openDropdown("program"))
+    
+    
+    const programLink1 = document.createElement("a")
+    programLink1.innerText ="Speakers"
+    programLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected selected ")
+    programLink1.setAttribute("href", "https://www.discoveryxconference.ca/page/4111522/speakers")
+    
+    
+    
+    //------------------End PROGRAM TAB -----------------------------------------
+    
+    //SPONSORS TAB
+    const sponsors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(3)")//Tab Three
+    sponsors.addEventListener("mouseenter",()=>openDropdown("sponsors"))
+    
+    
+    const sponsorsLink1 = document.createElement("a")
+    sponsorsLink1.innerText ="Media"
+    sponsorsLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected selected ")
+    sponsorsLink1.setAttribute("href", "https://www.discoveryxconference.ca/page/3900965/sponsors") //--------------------------------------------------------------------------------------------> Add URL Here
+    
+    const sponsorsLink2 = document.createElement("a")
+    sponsorsLink2.innerText ="Past sponsors"
+    sponsorsLink2.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected selected ")
+    sponsorsLink2.setAttribute("href", "https://www.discoveryxconference.ca/page/4142179/past-sponsors") //-------------------------------------------------------------------------------------------> Add URL Here
+    
+    
+    //------------------End SPONSORS TAB -----------------------------------------
+    
+    //EXHIBITORS TAB
+    const exhibitors = document.querySelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(4)")//Tab Four
+    exhibitors.addEventListener("mouseenter",()=>openDropdown("exhibitors"))
+    
+    
+    const exhibitorsLink1 = document.createElement("a")
+    exhibitorsLink1.innerText =" Past exhibitors"
+    exhibitorsLink1.setAttribute("class","nav-menu-btn custom-color color-5 color-1-border color-1-hover color-1-selected selected ")
+    exhibitorsLink1.setAttribute("href", "https://www.discoveryxconference.ca/page/4142181/custom-tab") //<------------------------------------------------------------------------------------------? Add URL Here
+    
+    
+    //------------------End EXHIBITORS TAB -----------------------------------------
+    
+    function openDropdown (tab) {
+    if(tab == "home") {
+    
+    
+    
+    while (dropdownContainer.firstChild) {
+    dropdownContainer.firstChild.remove();
+    }
+    
+    
+    dropdownContainer.appendChild(homeLink1)
+    dropdownContainer.appendChild(homeLink2)
+    dropdownContainer.appendChild(homeLink3)
+    home.appendChild(dropdownContainer)
+    }
+    
+    if(tab == "program") {
+    
+    while (dropdownContainer.firstChild) {
+    dropdownContainer.firstChild.remove();
+    }
+    
+    
+    dropdownContainer.appendChild(programLink1)
+    dropdownContainer.appendChild(programLink2) //--------------->Remove this (programLink2 is the name of the tab)
+    program.appendChild(dropdownContainer)
+    }
+    
+    if(tab == "sponsors") {
+    
+    while (dropdownContainer.firstChild) {
+    dropdownContainer.firstChild.remove();
+    }
+    
+    
+    dropdownContainer.appendChild(sponsorsLink1)
+    dropdownContainer.appendChild(sponsorsLink2)
+    sponsors.appendChild(dropdownContainer)
+    }
+    
+    if(tab == "exhibitors") {
+    while (dropdownContainer.firstChild) {
+    dropdownContainer.firstChild.remove();
+    }
+    
+    
+    dropdownContainer.appendChild(exhibitorsLink1)
+    exhibitors.appendChild(dropdownContainer)
+    }
+    }
+    
+    function closeDropdown () {
+    document.getElementById("dropdown").remove()
+    }
+    
+    </script>
+    

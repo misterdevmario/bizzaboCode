@@ -1,0 +1,4 @@
+
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li.logo-li-holder.hidden-sm.hidden-xs > div > a:focus{
+    border: solid 2px #000;
+}

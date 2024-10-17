@@ -5,3 +5,15 @@
 
 
 /*-------------End ------------*/
+
+body:has( > #a2it-agenda-header-element) {
+    background-color: white!important;
+}
+.main-react-view > div.agenda-view:not(.agenda-day-selector),
+.main-react-view:has(> div.agenda-view) {
+    background-color: white!important;
+}
+.session-section-container,
+.session-page.container {
+    background-color: #F1F5F9!important;
+}

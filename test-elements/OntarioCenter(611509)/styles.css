@@ -1,0 +1,61 @@
+.container {
+  width: 100vw;
+  min-height: 50vh;
+  background-color: blue;
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: 50%;
+  min-height: 10vh
+}
+
+.row {
+  margin-top: 2vh;
+  cursor: pointer;
+}
+
+.toggle {
+  display: none;
+  width: 80%;
+}
+
+.acive {
+  display: block;
+  width: 80%;
+}
+
+.slick-list .location-wrapper .session-location .location-icon {
+  color: #fff;
+}
+
+#section-3834657>div>div>div>div.col-xs-12.text-center.attendees-faces-holder>div>div:nth-child(4) {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+body>div.main-view.footer-padding.footer-padding-confirmation>div>ul {
+  padding: 0;
+}
+
+#section-3759311 {
+  max-width: 100vw;
+}
+
+
+
+/*Remove my interests and interested option from agenda and agnda/sessions pages mario.r@bizzabo.com ZD:171492*/
+body>div.react-main.footer-padding-confirmation>div>div>div.agenda-view.session-list-view.top-agenda-margin-single.agenda-custom-css.agenda-view--search.row>div.tab-buttons-container.margin-bottom-small>div:nth-child(2),
+.session-actions-container,
+body>div.react-main.footer-padding-confirmation>div>div>div>div:nth-child(1)>div.session-info-container>div.session-actions.font-size-14>div>div.session-action-wrapper.starred,
+body>div.react-main.footer-padding-confirmation>div>div>div>div:nth-child(1)>div.session-info-container>div.session-actions.font-size-14>div>span:nth-child(2) {
+  display: none;
+}
+
+

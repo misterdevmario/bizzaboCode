@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+    body{
+        height: 300vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      div {
+        height: 100vh;
+      }
+
+      img {
+        height: 500px;
+        width: auto;
+        opacity: 0;
+        transform: scale(0);
+        transition: all 1s ease-out;
+        
+    
+      }
+
+      img.active {
+        opacity: 1;
+        transform: scale(2);
+      }
+
+    </style>
+
+    <img width="300" height="300" src="./Bizzabo.webp" alt="" />
+    <div></div>
+
+    <script>
+      let bizzy = document.querySelector("img");
+      let observer = new IntersectionObserver(isVisible);
+
+      function isVisible(entries) {
+        let entry = entries[0];
+        if (entry.isIntersecting) {
+          //el elmento es visible
+          console.log("el elmento es visible")
+          bizzy.setAttribute("class","active")
+        } else {
+          //el elemento no es visible
+          console.log("el elemento no es visible")
+          bizzy.classList.remove("active");
+        }
+      }
+      observer.observe(bizzy);
+    </script>
+  </body>
+</html>
+
+
+<script>
+ const title= document.querySelector("#section-4794589 > div.rowHolder.element-23310447.atom-sectionMain.cover-photo-background > div > div > div.col-xs-12.col-sm-10.col-sm-offset-1.text-center.element-23310443 > h1")
+ title.innerHTML = "Ten Giving <br> Buon compleanno T. Rowe Price!"
+</script>

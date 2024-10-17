@@ -1,30 +1,27 @@
-/*Adjusting header container mario.r@bizzabo.com ZD:170065*/
 
-@media screen and (min-width: 1920px){
-    body > div.main-view.footer-padding.footer-padding-confirmation > div > ul > div.sleek-template.section-373172 > div > div > div.element-1200647.col-xs-12.col-sm-6 > div > ul{
-        list-style-position: outside;
+/*mario.r@bizzabo.com ZD:174193*/
+/*Adjusting banner and header on Help page*/
+
+#virtual-venue-banner > div{
+    height: 198px;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    padding: 0 16px;
+    -webkit-font-smoothing: antialiased;
+}
+body > div.main-view.footer-padding.footer-padding-confirmation{
+    margin-top: -114px;
+}
+/*-----------End----------- */
+
+div{
+    box-shadow: 12 p;
+}
+
+body:has( > #a2it-agenda-header-element){
+
+}
+
+react-view:has(> div.agenda-view){
     
-    }
-    
-    body > div.main-view.footer-padding.footer-padding-confirmation > div > ul > div.sleek-template.section-373170 > div > div > div.element-1200637.col-xs-12.col-sm-12 > div > div{
-        right: 17vh;
-    }
 }
-
-@media screen and (min-width: 1440px) and (max-width: 1919px){
-
-    body > div.main-view.footer-padding.footer-padding-confirmation > div > ul > div.sleek-template.section-373170 > div > div > div.element-1200637.col-xs-12.col-sm-12 > div > div{
-        right: 6vh;
-    }
-}
-
-.slick-slide, .slick-active, .slick-current{
-    width: 144px;
-}
-
-#section-4770217 > div{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(https://res.cloudinary.com/bizzaboprod/image/upload/q_auto,f_auto,c_scale,c_crop,g_custom/v1723228064/z8i1zmgezqpdrszdkwdo) !important;
-}
-
-
-
