@@ -1,0 +1,60 @@
+/*Left aligning CTA button English page mario.r@bizzabo.com ZD:175229*/
+
+#section-3688405 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-18299082{
+  position: absolute;
+  bottom: 0;
+}
+/*Left aligning CTA button French page*/
+#section-3911910 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.full-width.text-center.margin-vertical-small.margin-horizontal-auto.element-18299082 > button{
+  margin-right: 100% !important;
+}
+
+/*Making header responsive screens > 1024px*/
+
+#section-3688405 > div > div,
+#section-3911910 > div > div{
+  padding: 0;
+  height: 33vw;
+}
+
+  /*Our Speakers*/
+  #section-3655319 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+  #section-3655319 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2),
+  #section-3655272 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+  #section-3655272 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*Making header responsive screens up to 767px*/
+@media screen and (max-width: 767px) {
+  #section-3688405 > div > div,
+  #section-3911910 > div > div{
+    padding: 0;
+    height: 75vh;
+  }
+
+
+  
+}
+
+/*Our speakers English-French Pages*/
+#section-3655272 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > img,
+#section-3655272 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > img,
+#section-3655319 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > img,
+#section-3655319 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2) > img{
+  width: 300px;
+}
+
+/*----------End-----------*/
+
+#section-5105788 > div.rowHolder.element-24723512.atom-sectionMain.cover-photo-background > div > div > div.date-venue-holder.col-xs-12.text-center.form-group > div > div > div,
+#section-5105788 > div.rowHolder.element-24723512.atom-sectionMain.cover-photo-background > div > div > div:nth-child(4){
+  margin-bottom: 50px;
+}
+
+a{
+  text-decoration: none;
+  background-color: #4ec3e0; font-size: .9rem; width: 30%; height: 80%;
+}

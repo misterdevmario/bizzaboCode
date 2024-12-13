@@ -1,0 +1,91 @@
+<script>
+  setTimeout(() => {
+  // Navbar container                 
+  const container = document.querySelector(".top-bar-navigation")
+  
+  //Tab to clone
+  const onDemandTabS  = document.querySelector("#main-wrap > main > div.activity-details-view-defineVariables > div > div.top-bar-wrap.sm.md.down-lg.down-xl.modify_class.secondary-navigation-wrapper-wrapWithAppTools > div > div.top-bar-navigation.sm.md.down-lg.down-xl > a")?.cloneNode(true)
+  const onDemandTabM  = document.querySelector("#main-wrap > main > div > div > div.top-bar-wrap.sm.md.lg.down-xl.modify_class.secondary-navigation-wrapper-wrapWithAppTools > div > div.top-bar-navigation.sm.md.lg.down-xl > a")?.cloneNode(true)
+  const onDemandTabL  = document.querySelector("#main-wrap > main > div > div > div.top-bar-wrap.sm.md.lg.xl.modify_class.secondary-navigation-wrapper-wrapWithAppTools > div > div.top-bar-navigation.sm.md.lg.xl > a")?.cloneNode(true)
+
+
+  
+if(window.screen.width < 1450)container.appendChild(onDemandTabS)
+if(window.screen.width < 1995 && window.screen.width > 1450)container.appendChild(onDemandTabM)
+if(window.screen.width > 1995 )container.appendChild(onDemandTabL)
+
+if(window.screen.width < 1450)document.querySelector("#main-wrap > main > div.activity-details-view-defineVariables > div > div.top-bar-wrap.sm.md.down-lg.down-xl.modify_class.secondary-navigation-wrapper-wrapWithAppTools > div > div.top-bar-navigation.sm.md.down-lg.down-xl > a:nth-child(4)").href = "https://attendees.bizzabo.com/616277/agenda?date=1730160000000&f_On-Demand%20Content=888498"
+if(window.screen.width < 1995 && window.screen.width > 1870)document.querySelector("#main-wrap > main > div > div > div.top-bar-wrap.sm.md.lg.down-xl.modify_class.secondary-navigation-wrapper-wrapWithAppTools > div > div.top-bar-navigation.sm.md.lg.down-xl > a:nth-child(4)").href = "https://attendees.bizzabo.com/616277/agenda?date=1730160000000&f_On-Demand%20Content=888498"
+
+
+}, 900);
+</script>
+
+<script>
+//  Adding Social Wall Icon
+
+setTimeout(() => {
+
+      const socialIconContainer = document.createElement("div")
+          socialIconContainer.setAttribute("style", "display:flex; justify-content:center; align-items: center; flex-direction-column; height: 300px")
+
+          const venueSocialIcontext = document.createElement("div")
+          venueSocialIcontext.innerText = "Social Wall"
+          venueSocialIcontext.setAttribute("style", "font-size: 16px; color:#fff; font-weight:bold;")
+
+          const venueSocialIconAnchor = document.createElement("a")
+          venueSocialIconAnchor.href = "https://events.bizzabo.com/616277/page/4319217/social-wall"
+          venueSocialIconAnchor.setAttribute("style","position: absolute; top: 24vh; right: 2vw; text-align:center")
+
+
+
+          const venueSocialIconImg = document.createElement("img")
+          venueSocialIconImg.src="https://res.cloudinary.com/bizzaboprod/image/upload/v1729277953/Icon_for_Social_Wall_on_Bizzabo_Venue_Page_lmgavf.png"
+          venueSocialIconImg.alt="Social Wall"
+          venueSocialIconImg.setAttribute("style","width:50px; height: auto; border-radius:30%")
+
+          venueSocialIconAnchor.appendChild(venueSocialIconImg)
+          venueSocialIconAnchor.appendChild(venueSocialIcontext)
+
+          socialIconContainer.appendChild(venueSocialIconAnchor)
+
+          document.querySelector("#main-wrap > main").appendChild(socialIconContainer)
+  }, 700);
+ 
+</script>
+
+
+<style>
+    .session-section-container .speaker-photo img, img.speaker-info-image, .speaker-photo img, img.speaker-image-stub{
+  border-radius:100% !important;
+}
+
+
+/*mario.r@bizzabo.com ZD:174044*/
+/*Adding content to cloned tab (favorites)*/
+.link-wrap-link:nth-child(4){
+    font-size: 0;
+}
+
+.link-wrap-link:nth-child(4)::after{
+    font-size: 1.6rem;
+    content: "On-Demand Content";
+}
+/*On Demand dropdown tab*/
+#main-wrap > main > div > div > div.top-bar-wrap.sm.md.lg.xl.modify_class.secondary-navigation-wrapper-wrapWithAppTools > div > div.top-bar-filters.sm.md.lg.xl > div > div:nth-child(3) > button > div,
+#main-wrap > main > div > div > div.top-bar-wrap.sm.md.lg.down-xl.modify_class.secondary-navigation-wrapper-wrapWithAppTools > div > div.top-bar-filters.sm.md.lg.down-xl > div > div:nth-child(3) > button > div{
+    display: none !important;
+}
+@media screen and (max-width: 1870px) {
+  .link-wrap-link:nth-child(4){
+    width: 193px;
+  }
+}
+
+/*Hidding messages bar*/
+#main-wrap > aside > div > div.AppToolbar-container,
+#root > div > footer{
+display:none !important;
+}
+/*------End----------*/
+</style>
