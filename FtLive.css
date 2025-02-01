@@ -1,0 +1,52 @@
+/*Centering navbar elements on screens greater than 768px of width (Tablet views)*/
+
+  @media screen and (min-width:768px) {
+    .trade-template .navbar-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+  }
+
+
+/*--------------------- Targeting last <a> tag when there are 7 tabs ----------------------*/
+/*Styling "Register Now" button on navbar. Targeting span tag*/
+#bs-example-navbar-collapse-1 > div > span.hide-tab > a > div {
+background-color: #B60D41;  color: #fff;  font-weight: 600;  padding: 16px 24px 14px 24px;  display: inline;
+border: none;  text-align: center;  text-decoration: none;   border-radius: 0px;  margin-left:5px;
+}
+
+  /*Hover Effect*/
+  
+#bs-example-navbar-collapse-1 > div > span.hide-tab > a > div:hover {
+background-color: #B60D41;  color: #fff!important;
+}
+/*---------------------End-----------------*/
+
+  
+  /*-------------------Targeting last <a> tag when there are 6 tabs--------------------*/  
+/*Targeting last navbar child*/
+#bs-example-navbar-collapse-1 > div > span:nth-child(7) > a > div{
+background-color: #B60D41;  color: #fff;  font-weight: 600;  padding: 16px 24px 14px 24px;  display: inline;
+border: none;  text-align: center;  text-decoration: none;   border-radius: 0px;  margin-left:5px;
+}
+/*Hover Effect*/
+#bs-example-navbar-collapse-1 > div > span:nth-child(7) > a > div:hover{
+background-color: #B60D41;  color: #fff!important;
+}
+/*---------------------End-----------------*/
+
+
+/*-------------------Targeting last <a> tag when there are 5 tabs--------------------*/  
+/*Targeting last navbar child*/
+#bs-example-navbar-collapse-1 > div > span:nth-child(5) > a > div{
+background-color: #B60D41;  color: #fff;  font-weight: 600;  padding: 16px 24px 14px 24px;  display: inline;
+border: none;  text-align: center;  text-decoration: none;   border-radius: 0px;  margin-left:5px;
+  }
+/*Hover Effect*/
+#bs-example-navbar-collapse-1 > div > span:nth-child(5) > a > div:hover{
+background-color: #B60D41;  color: #fff!important;
+}
+
+/*---------------------End-----------------*/

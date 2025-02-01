@@ -1,39 +1,23 @@
-/*Removing title from header mario.r@bizzabo.com 08/01/24*/
-#section-4768749 > div.header.rowHolder.element-23185649.atom-sectionMain.global-cover-photo-background > div{
-    display: none;
+#section-3721833 > div,
+#section-3998455 > div{
+    background-color: #ffffff;
+    background-image: url(https://s3.amazonaws.com/bizzabo.users.files/198466/583436/20203343/faq-bg.png);
+    background-size: 100vw;
 }
 
+/*mario.r@bizzabo.com  002/01/25 ZD:181556*/
 
-/*-------------End ------------*/
+/*Removing gray overlay*/
 
-<<<<<<< HEAD
-body:has( > #a2it-agenda-header-element) {
-    background-color: white!important;
-}
-.main-react-view > div.agenda-view:not(.agenda-day-selector),
-.main-react-view:has(> div.agenda-view) {
-    background-color: white!important;
-}
-.session-section-container,
-.session-page.container {
-    background-color: #F1F5F9!important;
-}
-=======
-/*Removing blank spaces around the iframe mario.r@bizzabo.com ZD:170109*/
+#section-3998674 > div.rowHolder.element-19717062.atom-sectionMain.cover-photo-background{
 
-/*main app container*/
-.home-page, .home-custom-css, #section-4853202 > div > div {
-    padding: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(https://res.cloudinary.com/bizzaboprod/image/upload/q_auto,f_auto,c_scale,c_crop,g_custom/v1738425362/polcxwohqpynfwjreplp) !important;
 }
 
-/*atom section main*/
-
-#section-4853202 > div{
-    height: 4338px;
+/*Changing footer background color*/
+footer{
+    background-color: #0F141A;
 }
 
-/*-------------End ------------*/
-
-
-
->>>>>>> 7ba4feda427025286fee698afc58ee456bc043a1
+ 
+/*------------End----------*/

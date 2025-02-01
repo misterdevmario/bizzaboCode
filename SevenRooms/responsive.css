@@ -1,0 +1,11 @@
+/*Changing CTA button position mario.r@bizzabo.com ZD:179367*/
+#section-3964465 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1),
+#section-3964465 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(2){
+    flex-direction: column-reverse;
+}
+
+/*-----------End-----------*/
+
+#section-5594062 > div > div{
+    max-width: 100vw;
+}
