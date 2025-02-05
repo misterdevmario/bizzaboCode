@@ -1,23 +1,133 @@
-#section-3721833 > div,
-#section-3998455 > div{
-    background-color: #ffffff;
-    background-image: url(https://s3.amazonaws.com/bizzabo.users.files/198466/583436/20203343/faq-bg.png);
-    background-size: 100vw;
+/*specific pages container*/
+.home-custom-css{}
+.community-custom-css{}
+.agenda-custom-css{}
+.speakers-custom-css{}
+
+/*main container of each section*/
+.main-app-container {}
+
+/*
+call-to-action buttons e.g:
+Register, Join The Community etc
+*/
+.btn-register {}
+
+/*Top navigation bar container*/
+.template-nav {}
+
+/*Top navigation bar items container*/
+#bs-example-navbar-collapse-1 {}
+
+/*social share buttons container*/
+.social-share-button {}
+
+/*social share buttons per social network*/
+.social-share-button.facebook {}
+.social-share-button.twitter {}
+.social-share-button.linkedin {}
+.social-share-button.google {}
+
+/*This code is to reorder elements in header*/
+.element-13142657 .atom-main {
+ visibility: hidden;
+ display: none; 
+ position: relative;
 }
 
-/*mario.r@bizzabo.com  002/01/25 ZD:181556*/
-
-/*Removing gray overlay*/
-
-#section-3998674 > div.rowHolder.element-19717062.atom-sectionMain.cover-photo-background{
-
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(https://res.cloudinary.com/bizzaboprod/image/upload/q_auto,f_auto,c_scale,c_crop,g_custom/v1738425362/polcxwohqpynfwjreplp) !important;
+.element-13142658 .atom-main {
+ visibility: hidden;
+ position: relative;
 }
 
-/*Changing footer background color*/
-footer{
-    background-color: #0F141A;
+/* center header text */
+.element-13142658 .atom-main:after {
+ visibility: visible;
+ text-align: center;
+ top: 10px;
+ line-height: 100%;
+ font-size: 52px;
+ content:"Sips and Solutions: A Hinge Health & Teladoc Health Networking Event";
+ margin-left: -220px !important;
 }
 
- 
-/*------------End----------*/
+@media only screen and (max-width:763px)
+  {
+ .element-13142658 .atom-main:after {
+ visibility: visible;
+ text-align: center;
+ top: 10px;
+ line-height: 100%;
+ font-size: 52px;
+ content: "Sips and Solutions: A Hinge Health & Teladoc Health Networking Event";
+ /* content:"Games on the Grove"; */
+ margin-left: -170px !important;
+    }
+}
+
+/*Change All Caps to Title Case*/
+.trade-template h2 {
+ text-transform: none;
+text-align: center;
+}
+
+/*Navigation bar to lower case*/
+.nav-menu-btn {
+  text-transform: capitalize !important;
+  font-size: 20px;
+
+}
+
+.main-view.footer-padding, .editor-home-page.footer-padding {
+  padding-bottom: 0px;
+}
+
+/* Hide Website Footer */
+footer {
+  display: all;
+}
+
+/*Video player*/
+.element-13123156 .atom-main:video {
+    display: inline-block;
+    vertical-align: baseline;
+  	height: auto;
+ 	width: 100%;
+}
+.full-width {
+	width: 50%;
+	height: 500px;
+}
+
+#section-2522496 > div > div.main-app-container.custom-space-top.custom-space-bottom > div.element-groups.Component-elementGroups-0-2-1 > div > div{
+  	margin-top: -260px;
+    margin-bottom: -100px;
+}
+
+#section-2506979 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div:nth-child(1) > div > div > p > span{
+  position: relative;
+  transform: translateY(-100%);
+}
+
+/*Why Attend top padding text on Oat background*/
+.element-13143870 .atom-main:{
+    padding-top: 80px;
+}
+
+/*Paragraph text line height,size Juan @Bizzabo*/
+p > span {
+  line-height: 170%;
+  font-size: 18px;
+  
+}
+/*Make Event Logo Bigger*/
+.trade-template .event-image-holder {
+    height: 110px;
+}
+
+/*H1 change all caps to title case*/
+.trade-template h1 {
+ text-transform: none;
+text-align: center;
+}
+
