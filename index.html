@@ -1,4 +1,21 @@
+<script>
+//Adding logo to header mario.r@bizzabo.com ZD:181843
+const container = document.querySelector("#section-1670057 > div > div > div.element-groups.Component-elementGroups-0-2-1 > div > div.atom-main.full-width.margin-custom-element.element-8665574 > div > p:nth-child(1)")
+container.setAttribute("style","margin-top: 20px")
+    const logoContainer = document.createElement("div")
+    const logo = document.createElement("img")
+    logo.setAttribute("style","width:214px")
+    
+    logo.src = "https://s3.amazonaws.com/bizzabo.users.files/198466/705980/27496946/tradewinds.png"
+    const text = document.createElement("h2")
+    text.innerText = "Media Partner"
+    text.setAttribute("style","color:#fff;")
+
+    logoContainer.appendChild(logo)
+    logoContainer.appendChild(text)
+
+    container.prepend(logoContainer)
+
+</script>
 
 
-
-<meta property="og:image" content="https://s3.amazonaws.com/bizzabo.users.files/198466/705980/27496946/image%20(1).png" />

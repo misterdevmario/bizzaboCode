@@ -1,52 +1,112 @@
-/*Centering navbar elements on screens greater than 768px of width (Tablet views)*/
-
-  @media screen and (min-width:768px) {
-    .trade-template .navbar-nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    
-  }
-
-
-/*--------------------- Targeting last <a> tag when there are 7 tabs ----------------------*/
-/*Styling "Register Now" button on navbar. Targeting span tag*/
-#bs-example-navbar-collapse-1 > div > span.hide-tab > a > div {
-background-color: #B60D41;  color: #fff;  font-weight: 600;  padding: 16px 24px 14px 24px;  display: inline;
-border: none;  text-align: center;  text-decoration: none;   border-radius: 0px;  margin-left:5px;
+/*specific pages container*/
+.home-custom-css {
+}
+.community-custom-css {
+}
+.agenda-custom-css {
+}
+.speakers-custom-css {
 }
 
-  /*Hover Effect*/
-  
-#bs-example-navbar-collapse-1 > div > span.hide-tab > a > div:hover {
-background-color: #B60D41;  color: #fff!important;
-}
-/*---------------------End-----------------*/
-
-  
-  /*-------------------Targeting last <a> tag when there are 6 tabs--------------------*/  
-/*Targeting last navbar child*/
-#bs-example-navbar-collapse-1 > div > span:nth-child(7) > a > div{
-background-color: #B60D41;  color: #fff;  font-weight: 600;  padding: 16px 24px 14px 24px;  display: inline;
-border: none;  text-align: center;  text-decoration: none;   border-radius: 0px;  margin-left:5px;
-}
-/*Hover Effect*/
-#bs-example-navbar-collapse-1 > div > span:nth-child(7) > a > div:hover{
-background-color: #B60D41;  color: #fff!important;
-}
-/*---------------------End-----------------*/
-
-
-/*-------------------Targeting last <a> tag when there are 5 tabs--------------------*/  
-/*Targeting last navbar child*/
-#bs-example-navbar-collapse-1 > div > span:nth-child(5) > a > div{
-background-color: #B60D41;  color: #fff;  font-weight: 600;  padding: 16px 24px 14px 24px;  display: inline;
-border: none;  text-align: center;  text-decoration: none;   border-radius: 0px;  margin-left:5px;
-  }
-/*Hover Effect*/
-#bs-example-navbar-collapse-1 > div > span:nth-child(5) > a > div:hover{
-background-color: #B60D41;  color: #fff!important;
+/*main container of each section*/
+.main-app-container {
 }
 
-/*---------------------End-----------------*/
+/*
+call-to-action buttons e.g:
+Register, Join The Community etc
+*/
+.btn-register {
+}
+
+/*Top navigation bar container*/
+.template-nav {
+}
+
+/*Top navigation bar items container*/
+#bs-example-navbar-collapse-1 {
+}
+
+/*social share buttons container*/
+.social-share-button {
+}
+
+/*social share buttons per social network*/
+.social-share-button.facebook {
+}
+.social-share-button.twitter {
+}
+.social-share-button.linkedin {
+}
+.social-share-button.google {
+}
+
+/*Change session title color*/
+.agenda-view
+  .session-list-container
+  .session-day-container
+  .time-row
+  .session-elem
+  .session-container
+  .session-name
+  a,
+.agenda-view
+  .session-list-container
+  .session-day-container
+  .time-row
+  .session-elem
+  .session-container
+  .session-name
+  span {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+}
+
+/*Hide Agenda Session Times*/
+.session-info-text  {
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 21px;
+  color: #32333c;
+  margin-bottom: 5px;
+  display: none ;
+}
+
+.agenda-view .session-page .session-info-container .session-dates {
+  display: none;
+}
+
+.agenda-custom-css,
+.all-sessions-button,
+.my-interests-button,
+.view-button {
+  background-color: black !important;
+}
+
+.session-name > .session-title,
+.speaker-name,
+.speaker-title,
+.speaker-company,
+.speaker-position,
+.day-title {
+  color: white !important;
+}
+/*Hide All Agenda Top Bar Items*/
+.agenda-view .agenda-search-container {
+  display: none;
+}
+.agenda-view .tab-buttons-container {
+  display: none;
+}
+
+/* change background session color */
+.color-1-background-opacity,
+.color-1-background-opacity.custom-color {
+  background-color: black !important;
+}
+
+.main-react-view {
+  height: 100vh;
+  background-color: #000000;
+}
